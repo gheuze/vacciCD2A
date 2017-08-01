@@ -99,8 +99,7 @@ aggregate(jeunes$population,list(jeunes$cantons),sum)
 ##########################################################
 menC <- c("MEN C")
 menACYW <- c("MEN C","M ACYW","M ACYW135") 
-dtp <- c("D(A)TC(A)P","D(A)TP","DT","DTC","DTCP","DTCPHIB","DTCPHIBHB","DTP","DTP CA+HIB",
-             "DTP+C(A)","DTTAB","P","T","TP")
+
 coq <- c("C","D(A)TC(A)P","DTC","DTCP","DTCPHIB","DTCPHIBHB","DTP CA+HIB","DTP+C(A)")
 hib <- c("DTCPHIB","DTCPHIBHB","DTP CA+HIB","HIB")
 vhb <- c("DTCPHIBHB","HA+HB","HB")
@@ -287,7 +286,7 @@ f_coq <- function (df_coq,an){
       tempo_coq <- tempo_coq[order(tempo_coq$nodossier,tempo_coq$dateopv),]
       
       #############################################################
-      # debut des calculs des nombres de vaccines
+      # debut des calculs des nombres de vaccins
       
       # creation d'un df avec une seule repetition pour chaque dossier => nb de vacci 1 dose
       tempo_coq_1dose <- tempo_coq[!duplicated(tempo_coq$nodossier),]
