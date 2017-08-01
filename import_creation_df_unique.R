@@ -7,6 +7,7 @@
 
 
 rm(list=ls())
+setwd("I:\\DIRECTION ACTION TERRITORIALE DE SANTE\\VSSE\\CIRE\\Dossiers MI\\Vaccination\\etude_CG2A\\analyse")
 
 # import donnees administratives
 donnees1 <- read.csv2("donnees/export_1.csv")

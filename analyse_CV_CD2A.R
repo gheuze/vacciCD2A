@@ -1,16 +1,20 @@
 ##################################
 #
-#   analyse donnees vacci CD 2A
+#   analyse donnees vacci CD 2A -- script d'analyse
 #
 # V0.1  avril 2017
 ##################################
+
 rm(list=ls())
+
+setwd("I:\\DIRECTION ACTION TERRITORIALE DE SANTE\\VSSE\\CIRE\\Dossiers MI\\Vaccination\\etude_CG2A\\analyse")
+# import des donnees
+load("donnees/df_pour_analyse.RData")
 
 library(ggplot2)
 library(reshape2)
 
-setwd("I:\\DIRECTION ACTION TERRITORIALE DE SANTE\\VSSE\\CIRE\\Dossiers MI\\Vaccination\\etude_CG2A\\analyse")
-# setwd("D:/Utilisateurs/gheuze/Desktop\\etude_CG2A\\analyse")
+
 
 #####################################################################################
 # fonction donnant le nombre de personne dans la base "df", ayant "age" ans, l'annee "annee"
@@ -385,31 +389,6 @@ for (c in levels(donnees$canton)){
 
 
 
-#######################################################
-# analyse de l'activite du centre de vaccination
-
-tempo_activ <- donnees[donnees$vaccin_code %in% coq &
-                       donnees$age_vacci > 4 &
-                       donnees$dateopv > as.Date("2010-01-01"),]
-table(format(tempo_activ$dateopv,"%Y"))
-
-summary(lm(table(format(tempo_activ$dateopv,"%Y")) ~ c(2010,2011,2012,2013,2014,2015)))
-
-# sortie graphe
-plot(table(format(tempo_activ$dateopv,"%Y")))
-
-png("sorties/coq/activ_centre.png",width=25 ,height=15, units="cm",res = 200)
-plot(table(tempo_activ$age_vacci),xlab = "age a la vaccination")
-dev.off()
-
-
-
-
-
-rm(tempo_activ)
-
-
-
 # fin analyse coqueluche
 ####################################################################################################
 
@@ -730,25 +709,6 @@ for (c in levels(donnees$canton)){
       
 }
 
-#######################################################
-# analyse de l'activite du centre de vaccination
-
-tempo_activ <- donnees[donnees$vaccin_code %in% menACYW &
-                       donnees$age_vacci > 4 &
-                       donnees$dateopv > as.Date("2010-01-01"),]
-table(format(tempo_activ$dateopv,"%Y"))
-# sortie graphe
-plot(table(format(tempo_activ$dateopv,"%Y")))
-
-summary(lm(table(format(tempo_activ$dateopv,"%Y")) ~ c(2010,2011,2012,2013,2014,2015)))
-
-png("sorties/men/activ_centre.png",width=25 ,height=15, units="cm",res = 200)
-plot(table(tempo_activ$age_vacci),xlab = "age a la vaccination")
-dev.off()
-
-
-rm(tempo_activ)
-
 # fin analyse meningo C
 ####################################################################################################
 
@@ -881,28 +841,6 @@ rm(tempo_activ)
 # 
 # 
 # 
-# #######################################################
-# # analyse de l'activite du centre de vaccination
-# 
-# tempo_activ <- donnees[donnees$vaccin_code %in% ror &
-#                        donnees$age_vacci > 4 &
-#                        donnees$dateopv > as.Date("2010-01-01"),]
-# table(format(tempo_activ$dateopv,"%Y"))
-# 
-# summary(lm(table(format(tempo_activ$dateopv,"%Y")) ~ c(2010,2011,2012,2013,2014,2015)))
-# 
-# # sortie graphe
-# plot(table(format(tempo_activ$dateopv,"%Y")))
-# 
-# png("sorties/ror/activ_centre.png",width=25 ,height=15, units="cm",res = 200)
-# plot(table(tempo_activ$age_vacci),xlab = "age a la vaccination")
-# dev.off()
-# 
-# 
-# 
-# 
-# 
-# rm(tempo_activ)
 # 
 # # interet a separer les 3 valences 
 # tempo <- donnees[donnees$vaccin_code %in% ror &
