@@ -288,53 +288,63 @@ for (c in levels(donnees$canton)){
 cat("
       **********************************
       **********************************
-      ****** ANALYSE DU RATTRAPAGE *****
-      ******    DE LA VACCI ************
+      ****** ANALYSE AGE PRIMOVACCI ****
       **********************************
       **********************************")
 
-
-      # on cree un df - tempo_dtp_a_jour - des enfants a jour (3 doses a 4 mois) pour recuperer les n° de dossiers
-      # et selectionner ensuite les enfants n'ayant pas ces n°
-
-      # on restreint sur les valences etudiees
-      tempo_dtp_a_jour <- donnees[donnees$vaccin_code %in% dtp,]
-      # on enleve toutes les vacci effectuees apres 4 mois (365.25/3 = 121,75 jours)
-      tempo_dtp_a_jour <- tempo_dtp_a_jour[tempo_dtp_a_jour$dateopv < (tempo_dtp_a_jour$datenaiss + 122),]
+# avant 2013
+      
+      primovacci <- donnees[donnees$vaccin_code %in% dtp,]
+      # on retire les enfants nes en 2013 ou apres
+      primovacci <- primovacci[primovacci$datenaiss < as.Date("2013-01-01"),]
       
       # on classe suivant le n° de dossier et l'anciennete de l'opv
-      tempo_dtp_a_jour <- tempo_dtp_a_jour[order(tempo_dtp_a_jour$nodossier,tempo_dtp_a_jour$dateopv),]
+      primovacci <- primovacci[order(primovacci$nodossier,primovacci$dateopv),]
       
       #############################################################
       
-      # tempo_dtp_a_jour contient "au moins 2 doses"
-      tempo_dtp_a_jour <- tempo_dtp_a_jour[duplicated(tempo_dtp_a_jour$nodossier),] # toutes les vacci sauf la premiere dose
+      # contient "au moins 2 doses"
+      primovacci <- primovacci[duplicated(primovacci$nodossier),] # toutes les vacci sauf la premiere dose
       # on reapplique, donc, "au moins 3 doses"
-      tempo_dtp_a_jour <- tempo_dtp_a_jour[duplicated(tempo_dtp_a_jour$nodossier),]
+      primovacci <- primovacci[duplicated(primovacci$nodossier),]
       
-      # creation de la liste des n° de dossiers des enfants avec primovacci complete a 4 mois
-      liste_dossier_a_jour <- tempo_dtp_a_jour$nodossier[!duplicated(tempo_dtp_a_jour$nodossier)]
-      
-      # creation df des enfants ayant une primovacci, mais en retard
-      tempo_dtp_rattrapage <- donnees[donnees$vaccin_code %in% dtp,]
-      tempo_dtp_rattrapage <- tempo_dtp_rattrapage[!tempo_dtp_rattrapage$nodossier %in% liste_dossier_a_jour,]
-      
-       # on classe suivant le n° de dossier et l'anciennete de l'opv
-      tempo_dtp_rattrapage <- tempo_dtp_rattrapage[order(tempo_dtp_rattrapage$nodossier,tempo_dtp_rattrapage$dateopv),]
-      
-      # tempo_dtp_rattrapage contient "au moins 2 doses"
-      tempo_dtp_rattrapage <- tempo_dtp_rattrapage[duplicated(tempo_dtp_rattrapage$nodossier),] # toutes les vacci sauf la premiere dose
-      # on reapplique, donc, au moins 3 doses 
-      tempo_dtp_rattrapage <- tempo_dtp_rattrapage[duplicated(tempo_dtp_rattrapage$nodossier),]
       # mais pas plus, pour avoir l'age au dernier acte
-      tempo_dtp_rattrapage <- tempo_dtp_rattrapage[!duplicated(tempo_dtp_rattrapage$nodossier),]
+      primovacci <- primovacci[!duplicated(primovacci$nodossier),]
       
       # analyse en tant que telle
-      summary(tempo_dtp_rattrapage$age_vacci_mois)
+      summary(primovacci$age_vacci_mois)
       # analyse de ce df
-      png("sorties/dtp/age-rattrapage%02d.png")
-      plot(table(tempo_dtp_rattrapage$age_vacci_mois[tempo_dtp_rattrapage$age_vacci_mois < 36])) 
+      png("sorties/dtp/age-primovacci%02d.png")
+      plot(table(primovacci$age_vacci_mois[primovacci$age_vacci_mois < 36])) 
       dev.off()
+
+      
+# apres 2013
+            
+      N_primovacci <- donnees[donnees$vaccin_code %in% dtp,]
+      # on retire les enfants nes en 2013 ou apres
+      N_primovacci <- N_primovacci[N_primovacci$datenaiss > as.Date("2013-01-01"),]
+      
+      # on classe suivant le n° de dossier et l'anciennete de l'opv
+      N_primovacci <- N_primovacci[order(N_primovacci$nodossier,N_primovacci$dateopv),]
+      
+      #############################################################
+      
+      # contient "au moins 2 doses"
+      N_primovacci <- N_primovacci[duplicated(N_primovacci$nodossier),] # toutes les vacci sauf la premiere dose
+      # mais pas plus, pour avoir l'age au dernier acte
+      N_primovacci <- N_primovacci[!duplicated(N_primovacci$nodossier),]
+      
+      
+      # analyse en tant que telle
+      summary(N_primovacci$age_vacci_mois)
+      # analyse de ce df
+      png("sorties/dtp/age-N_primovacci%02d.png")
+      plot(table(N_primovacci$age_vacci_mois[N_primovacci$age_vacci_mois < 36])) 
+      dev.off()
+
+
+      
       
       # pas d'effet CS24
 sink()
