@@ -49,6 +49,7 @@ donnees$age_vacci <- as.numeric(floor((donnees$dateopv-donnees$datenaiss)/365.25
 donnees$age_vacci_mois <- difftime(donnees$dateopv, donnees$datenaiss, units = "days")
 donnees$age_vacci_mois <- donnees$age_vacci_mois/365.25
 donnees$age_vacci_mois <- round(donnees$age_vacci_mois*12,0)
+donnees$age_vacci_mois <- as.numeric(donnees$age_vacci_mois)
 
 # on a mis toutes les dates de naissance au 15 du mois pour anonymisation, 
 # donc age_vacci vaut 0 pour ceux qui ont un age == -1. Par contre, une personne avec age_vacci à -39, 
