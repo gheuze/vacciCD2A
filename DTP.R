@@ -20,7 +20,8 @@ load("donnees/df_pour_analyse.RData")
 dtp <- c("D(A)TC(A)P","D(A)TP","DT","DTC","DTCP","DTCPHIB","DTCPHIBHB","DTP","DTP CA+HIB",
              "DTP+C(A)","DTTAB","P","T","TP")
 
-sink("sorties/dtp/dtp.txt")
+sink("sorties/dtp/dtp.txt") # sorties vers le fichier specifie
+
 print("***************************************************************************************")
 print("*********************************** DTP ***********************************************")
 print("***************************************************************************************")
@@ -28,20 +29,19 @@ print("*************************************************************************
 # interet a separer les 3 valences 
 tempo <- donnees[donnees$vaccin_code %in% dtp &
                        donnees$datenaiss > as.Date("1995-01-01") &
-                       donnees$datenaiss < as.Date("2012-12-31"),]
+                       donnees$datenaiss < as.Date("2012-12-31"),] # on recupere seulement sur les annees qui nous interressent
 
-table(factor(tempo$vaccin_code))
-print("pourcentage de vacci incomplètes par rapport au total")
-sum(table(factor(tempo$vaccin_code[tempo$vaccin_code %in% c("DT","DTC","P","T","TP")]))) /
-      sum(table(factor(tempo$vaccin_code)))*100
+table(factor(tempo$vaccin_code)) # affichage de la repartition
+print("pourcentage de vacci incomplètes par rapport au total :")
+paste(round(sum(table(factor(tempo$vaccin_code[tempo$vaccin_code %in% c("DT","DTC","P","T","TP")]))) /
+      sum(table(factor(tempo$vaccin_code)))*100,3),"%")
 png("sorties/dtp/repartition des vacci incompletes DTP.png")
 plot(table(format(tempo$dateopv[tempo$vaccin_code %in% c("DT","DTC","P","T","TP")],"%Y")))
-dev.off()
+dev.off() # repartition graphique par annee des vacci incompletes
 
-rm(tempo)
+rm(tempo) # on fait de la place
 
-# => aucun, car toujours DTP chez les enfants nes entre 2007 et 2012
-
+# => aucun interet à separer, car pourcentage très faible, on restreint aux vacci avec les 3 valences
 dtp <- c("D(A)TC(A)P","D(A)TP","DTCP","DTCPHIB","DTCPHIBHB","DTP","DTP CA+HIB", "DTP+C(A)")
 
 
@@ -107,15 +107,8 @@ f_dtp24 <- function (df_dtp,an){
       sortie <- list(sortie1,sortie2,sortie3,sortie4) # liste de listes ...
       return(sortie)
       
-      
-      
-    
 }
 ########################
-
-
-
-
 
 #####################################################################
 # creation de la fonction calcul CV 4 ans pour tempo_dtp
@@ -292,6 +285,58 @@ for (c in levels(donnees$canton)){
 
 
 
+cat("
+      **********************************
+      **********************************
+      ****** ANALYSE DU RATTRAPAGE *****
+      ******    DE LA VACCI ************
+      **********************************
+      **********************************")
+
+
+      # on cree un df - tempo_dtp_a_jour - des enfants a jour (3 doses a 4 mois) pour recuperer les n° de dossiers
+      # et selectionner ensuite les enfants n'ayant pas ces n°
+
+      # on restreint sur les valences etudiees
+      tempo_dtp_a_jour <- donnees[donnees$vaccin_code %in% dtp,]
+      # on enleve toutes les vacci effectuees apres 4 mois (365.25/3 = 121,75 jours)
+      tempo_dtp_a_jour <- tempo_dtp_a_jour[tempo_dtp_a_jour$dateopv < (tempo_dtp_a_jour$datenaiss + 122),]
+      
+      # on classe suivant le n° de dossier et l'anciennete de l'opv
+      tempo_dtp_a_jour <- tempo_dtp_a_jour[order(tempo_dtp_a_jour$nodossier,tempo_dtp_a_jour$dateopv),]
+      
+      #############################################################
+      
+      # tempo_dtp_a_jour contient "au moins 2 doses"
+      tempo_dtp_a_jour <- tempo_dtp_a_jour[duplicated(tempo_dtp_a_jour$nodossier),] # toutes les vacci sauf la premiere dose
+      # on reapplique, donc, "au moins 3 doses"
+      tempo_dtp_a_jour <- tempo_dtp_a_jour[duplicated(tempo_dtp_a_jour$nodossier),]
+      
+      # creation de la liste des n° de dossiers des enfants avec primovacci complete a 4 mois
+      liste_dossier_a_jour <- tempo_dtp_a_jour$nodossier[!duplicated(tempo_dtp_a_jour$nodossier)]
+      
+      # creation df des enfants ayant une primovacci, mais en retard
+      tempo_dtp_rattrapage <- donnees[donnees$vaccin_code %in% dtp,]
+      tempo_dtp_rattrapage <- tempo_dtp_rattrapage[!tempo_dtp_rattrapage$nodossier %in% liste_dossier_a_jour,]
+      
+       # on classe suivant le n° de dossier et l'anciennete de l'opv
+      tempo_dtp_rattrapage <- tempo_dtp_rattrapage[order(tempo_dtp_rattrapage$nodossier,tempo_dtp_rattrapage$dateopv),]
+      
+      # tempo_dtp_rattrapage contient "au moins 2 doses"
+      tempo_dtp_rattrapage <- tempo_dtp_rattrapage[duplicated(tempo_dtp_rattrapage$nodossier),] # toutes les vacci sauf la premiere dose
+      # on reapplique, donc, au moins 3 doses 
+      tempo_dtp_rattrapage <- tempo_dtp_rattrapage[duplicated(tempo_dtp_rattrapage$nodossier),]
+      # mais pas plus, pour avoir l'age au dernier acte
+      tempo_dtp_rattrapage <- tempo_dtp_rattrapage[!duplicated(tempo_dtp_rattrapage$nodossier),]
+      
+      # analyse en tant que telle
+      summary(tempo_dtp_rattrapage$age_vacci_mois)
+      # analyse de ce df
+      png("sorties/dtp/age-rattrapage%02d.png")
+      plot(table(tempo_dtp_rattrapage$age_vacci_mois[tempo_dtp_rattrapage$age_vacci_mois < 36])) 
+      dev.off()
+      
+      # pas d'effet CS24
 sink()
 
 
@@ -299,3 +344,10 @@ sink()
 
 # fin analyse DTPolio
 ####################################################################################################
+
+
+#################################
+#
+# THAT'S ALL FOLKS !!!!!!!!!!!
+#
+#################################
