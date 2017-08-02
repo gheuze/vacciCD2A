@@ -42,6 +42,9 @@ a_exclure <- c("BCG","ENC JAP","FJ","G","L","RA","SHA","SHB","TAB","HPV",
 donnees <- donnees[!donnees$vaccin_code %in% a_exclure,]
 donnees$vaccin_code <- factor(donnees$vaccin_code)
 
+# si date opv < ddn, alors on considere qu'ils ont ete vaccines a la naissance
+donnees$dateopv[donnees$dateopv < donnees$datenaiss] <- donnees$datenaiss[donnees$dateopv < donnees$datenaiss]
+
 # calcul d'un age a la vacci
 donnees$age_vacci <- as.numeric(floor((donnees$dateopv-donnees$datenaiss)/365.25))
 
