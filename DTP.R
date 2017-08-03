@@ -316,7 +316,11 @@ cat("
       summary(primovacci$age_vacci_mois)
       # analyse de ce df
       png("sorties/dtp/age-primovacci%01d.png")
-      plot(table(primovacci$age_vacci_mois[primovacci$age_vacci_mois < 36])) 
+      plot(table(primovacci$age_vacci_mois[primovacci$age_vacci_mois < 36]),
+           main = "Répartition de l'âge en mois à la primovaccination DTP,
+pour les enfants nés entre le 1er janvier 1995
+et le 1er janvier 2013, Corse du Sud",
+           xlab = "âge en mois - coupure à 36 mois", ylab = "effectif") 
       dev.off()
 
       
@@ -344,7 +348,11 @@ cat("
       summary(N_primovacci$age_vacci_mois)
       # analyse de ce df
       png("sorties/dtp/age-N_primovacci%01d.png")
-      plot(table(N_primovacci$age_vacci_mois[N_primovacci$age_vacci_mois < 36])) 
+      plot(table(N_primovacci$age_vacci_mois[N_primovacci$age_vacci_mois < 36]),
+           main = "Répartition de l'âge en mois à la primovaccination DTP,
+pour les enfants nés entre le 1er janvier 2013
+et le 31 décembre 2015, Corse du Sud",
+           xlab = "âge en mois - coupure à 36 mois", ylab = "effectif") 
       dev.off()
 
 
@@ -369,7 +377,11 @@ cat("
       summary(rappelvacci$age_vacci_mois)
       # analyse de ce df
       png("sorties/dtp/age-rappelvacci%01d.png")
-      plot(table(rappelvacci$age_vacci_mois[rappelvacci$age_vacci_mois < 60])) 
+      plot(table(rappelvacci$age_vacci_mois[rappelvacci$age_vacci_mois < 60]),
+           main = "Répartition de l'âge en mois lors du rappel DTP,
+pour les enfants nés entre le 1er janvier 1995
+et le 1er janvier 2013, Corse du Sud",
+           xlab = "âge en mois - coupure à 60 mois", ylab = "effectif") 
       dev.off()
 
       
@@ -387,7 +399,11 @@ cat("
       summary(N_rappelvacci$age_vacci_mois)
       # analyse de ce df
       png("sorties/dtp/age-N_rappelvacci%01d.png")
-      plot(table(N_rappelvacci$age_vacci_mois)) 
+      plot(table(N_rappelvacci$age_vacci_mois),
+           main = "Répartition de l'âge en mois lors du rappel DTP,
+pour les enfants nés entre le 1er janvier 2013
+et le 31 décembre 2015, Corse du Sud",
+           xlab = "âge en mois - coupure à 60 mois", ylab = "effectif") 
       dev.off()
       
       
