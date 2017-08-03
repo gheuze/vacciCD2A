@@ -52,7 +52,7 @@ donnees$age_vacci_mois <- round(donnees$age_vacci_mois*12,0)
 donnees$age_vacci_mois <- as.numeric(donnees$age_vacci_mois)
 
 # on enlève ceux qui ont un age negatif a la vacci
-liste <- unique(donnees$nodossier[donnees$age_vacci_mois < 0,])
+liste <- unique(donnees$nodossier[donnees$age_vacci_mois < 0])
 donnees <- donnees[!donnees$nodossier %in% liste,]
 
 
