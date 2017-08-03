@@ -307,6 +307,7 @@ cat("
       primovacci <- primovacci[duplicated(primovacci$nodossier),] # toutes les vacci sauf la premiere dose
       # on reapplique, donc, "au moins 3 doses"
       primovacci <- primovacci[duplicated(primovacci$nodossier),]
+      rappelvacci <- primovacci     # en attente, pour analyse age au rappel
       
       # mais pas plus, pour avoir l'age au dernier acte
       primovacci <- primovacci[!duplicated(primovacci$nodossier),]
@@ -314,7 +315,7 @@ cat("
       # analyse en tant que telle
       summary(primovacci$age_vacci_mois)
       # analyse de ce df
-      png("sorties/dtp/age-primovacci%02d.png")
+      png("sorties/dtp/age-primovacci%01d.png")
       plot(table(primovacci$age_vacci_mois[primovacci$age_vacci_mois < 36])) 
       dev.off()
 
@@ -322,8 +323,8 @@ cat("
 # apres 2013
             
       N_primovacci <- donnees[donnees$vaccin_code %in% dtp,]
-      # on retire les enfants nes en 2013 ou apres
-      N_primovacci <- N_primovacci[N_primovacci$datenaiss > as.Date("2013-01-01"),]
+      # on garde les enfants nes apres 01/01/2013 
+      N_primovacci <- N_primovacci[N_primovacci$datenaiss > as.Date("2013-07-01"),]
       
       # on classe suivant le n° de dossier et l'anciennete de l'opv
       N_primovacci <- N_primovacci[order(N_primovacci$nodossier,N_primovacci$dateopv),]
@@ -332,6 +333,9 @@ cat("
       
       # contient "au moins 2 doses"
       N_primovacci <- N_primovacci[duplicated(N_primovacci$nodossier),] # toutes les vacci sauf la premiere dose
+      
+      N_rappelvacci <- N_primovacci # on met de cote pour analyse des rappels
+      
       # mais pas plus, pour avoir l'age au dernier acte
       N_primovacci <- N_primovacci[!duplicated(N_primovacci$nodossier),]
       
@@ -339,14 +343,55 @@ cat("
       # analyse en tant que telle
       summary(N_primovacci$age_vacci_mois)
       # analyse de ce df
-      png("sorties/dtp/age-N_primovacci%02d.png")
+      png("sorties/dtp/age-N_primovacci%01d.png")
       plot(table(N_primovacci$age_vacci_mois[N_primovacci$age_vacci_mois < 36])) 
       dev.off()
 
 
+cat("
+      **********************************
+      **********************************
+      ******** ANALYSE AGE RAPPEL ******
+      **********************************
+      **********************************")
+
+# avant 2013
+      
+      #############################################################
+      
+      # on reapplique une derniere fois pour enlever la derniere injection de la primovacci
+      rappelvacci <- rappelvacci[duplicated(rappelvacci$nodossier),] 
+      
+      # mais pas plus, pour avoir l'age au dernier acte
+      rappelvacci <- rappelvacci[!duplicated(rappelvacci$nodossier),]
+      
+      # analyse en tant que telle
+      summary(rappelvacci$age_vacci_mois)
+      # analyse de ce df
+      png("sorties/dtp/age-rappelvacci%01d.png")
+      plot(table(rappelvacci$age_vacci_mois[rappelvacci$age_vacci_mois < 60])) 
+      dev.off()
+
+      
+# apres 2013
+            
+      
+      #############################################################
+      # on reapplique une derniere fois pour enlever la derniere injection de la primovacci
+      N_rappelvacci <- N_rappelvacci[duplicated(N_rappelvacci$nodossier),] 
+      # mais pas plus, pour avoir l'age au dernier acte
+      N_rappelvacci <- N_rappelvacci[!duplicated(N_rappelvacci$nodossier),]
       
       
-      # pas d'effet CS24
+      # analyse en tant que telle
+      summary(N_rappelvacci$age_vacci_mois)
+      # analyse de ce df
+      png("sorties/dtp/age-N_rappelvacci%01d.png")
+      plot(table(N_rappelvacci$age_vacci_mois)) 
+      dev.off()
+      
+      
+      
 sink()
 
 
