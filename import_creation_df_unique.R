@@ -42,9 +42,6 @@ a_exclure <- c("BCG","ENC JAP","FJ","G","L","RA","SHA","SHB","TAB","HPV",
 donnees <- donnees[!donnees$vaccin_code %in% a_exclure,]
 donnees$vaccin_code <- factor(donnees$vaccin_code)
 
-# si date opv < ddn, alors on considere qu'ils ont ete vaccines a la naissance
-donnees$dateopv[donnees$dateopv < donnees$datenaiss] <- donnees$datenaiss[donnees$dateopv < donnees$datenaiss]
-
 # calcul d'un age a la vacci
 donnees$age_vacci <- as.numeric(floor((donnees$dateopv-donnees$datenaiss)/365.25))
 
@@ -54,11 +51,10 @@ donnees$age_vacci_mois <- donnees$age_vacci_mois/365.25
 donnees$age_vacci_mois <- round(donnees$age_vacci_mois*12,0)
 donnees$age_vacci_mois <- as.numeric(donnees$age_vacci_mois)
 
-# on a mis toutes les dates de naissance au 15 du mois pour anonymisation, 
-# donc age_vacci vaut 0 pour ceux qui ont un age == -1. Par contre, une personne avec age_vacci à -39, 
-# donc on enleve cette ligne
-donnees <- donnees[donnees$age_vacci >= -1,] # on enlève celui qui a un age inferieur a -1
-donnees$age_vacci[donnees$age_vacci == -1] <- 0 # on met a 0, tout ceux qui ont un age a -1
+# on enlève ceux qui ont un age negatif a la vacci
+liste <- unique(donnees$nodossier[donnees$age_vacci_mois < 0,])
+donnees <- donnees[!donnees$nodossier %in% liste,]
+
 
 # attribution des cantons par CP, si celui-ci unique
 donnees$canton[donnees$cp %in% c("20123","20128","20132","20134","20138","20140","20142","20148",
@@ -88,3 +84,10 @@ save.image("donnees/df_pour_analyse.RData")
 
 # fin creation d'un df unique
 ##########################################################
+
+
+#################################
+#
+# THAT'S ALL FOLKS !!!!!!!!!!!
+#
+#################################
