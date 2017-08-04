@@ -33,7 +33,7 @@ rm(donnees1,donnees2)
 donnees <- donnees[donnees$dateopv <= as.Date("2015-12-31"),]
 
 # restriction aux personnes nees apres le 1er janvier 1995
-donnees <- donnees[donnees$datenaiss > as.Date("1995-01-01"),]
+donnees <- donnees[donnees$datenaiss > as.Date("1993-01-01"),]
 
 # liste des vaccins ne nous interesssant pas, on enleve pour alleger la base
 a_exclure <- c("BCG","ENC JAP","FJ","G","L","RA","SHA","SHB","TAB","HPV",
