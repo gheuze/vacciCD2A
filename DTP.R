@@ -188,9 +188,9 @@ for (d in 1:4){ # d pour dose
       for (i in 1997:2015) {
             tempo <- f_dtp24(donnees,i)[[d]] # on ne recupere que la "d"ieme liste dans la sortie
             sortie[1,i-1996] <- tempo[[1]] # CV
-            sortie[2,i-1996] <- tempo[[2]][1]*100 ; sortie[3,i-2009] <- tempo[[2]][2]*100 # IC
+            sortie[2,i-1996] <- tempo[[2]][1]*100 ; sortie[3,i-1996] <- tempo[[2]][2]*100 # IC
             for (j in 4:7)
-                  sortie[j,i-2009] <- tempo[[3]][j-2] # repartition des ages en mois
+                  sortie[j,i-1996] <- tempo[[3]][j-2] # repartition des ages en mois
       }
       print(round(sortie,2))
       rm(tempo,sortie) # on efface les fichiers temporaires pour faire de la place
@@ -210,9 +210,9 @@ for (d in 1:4){ # d pour dose
       for (i in 1997:2015) {
             tempo <- f_dtp4(donnees,i)[[d]] # on ne recupere que la "d"ieme liste dans la sortie
             sortie[1,i-1996] <- tempo[[1]] # CV
-            sortie[2,i-1996] <- tempo[[2]][1]*100 ; sortie[3,i-2009] <- tempo[[2]][2]*100 # IC
+            sortie[2,i-1996] <- tempo[[2]][1]*100 ; sortie[3,i-1996] <- tempo[[2]][2]*100 # IC
             for (j in 4:7)
-                  sortie[j,i-2009] <- tempo[[3]][j-2] # repartition des ages en mois
+                  sortie[j,i-1996] <- tempo[[3]][j-2] # repartition des ages en mois
       }
       print(round(sortie,2))
       rm(tempo,sortie) # on efface les fichiers temporaires pour faire de la place
@@ -249,9 +249,9 @@ for (c in levels(donnees$canton)){
                   for (i in 1997:2015) {
                         tempo <- f_dtp24(tempo_canton,i)[[d]] # on ne recupere que la "d"ieme liste dans la sortie
                         sortie[1,i-1996] <- tempo[[1]] # CV
-                        sortie[2,i-1996] <- tempo[[2]][1]*100 ; sortie[3,i-2009] <- tempo[[2]][2]*100 # IC
+                        sortie[2,i-1996] <- tempo[[2]][1]*100 ; sortie[3,i-1996] <- tempo[[2]][2]*100 # IC
                         for (j in 4:7)
-                              sortie[j,i-2009] <- tempo[[3]][j-2] # repartition des ages en mois
+                              sortie[j,i-1996] <- tempo[[3]][j-2] # repartition des ages en mois
                   }
                   print(round(sortie,2))
                   rm(tempo,sortie) # on efface les fichiers temporaires pour faire de la place
@@ -271,9 +271,9 @@ for (c in levels(donnees$canton)){
                   for (i in 1997:2015) {
                         tempo <- f_dtp4(tempo_canton,i)[[d]] # on ne recupere que la "d"ieme liste dans la sortie
                         sortie[1,i-1996] <- tempo[[1]] # CV
-                        sortie[2,i-1996] <- tempo[[2]][1]*100 ; sortie[3,i-2009] <- tempo[[2]][2]*100 # IC
+                        sortie[2,i-1996] <- tempo[[2]][1]*100 ; sortie[3,i-1996] <- tempo[[2]][2]*100 # IC
                         for (j in 4:7)
-                              sortie[j,i-2009] <- tempo[[3]][j-2] # repartition des ages en mois
+                              sortie[j,i-1996] <- tempo[[3]][j-2] # repartition des ages en mois
                   }
                   print(round(sortie,2))
                   rm(tempo,sortie) # on efface les fichiers temporaires pour faire de la place
