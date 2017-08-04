@@ -26,9 +26,7 @@ print("*********************************** DTP *********************************
 print("***************************************************************************************")
 
 # interet a separer les 3 valences 
-tempo <- donnees[donnees$vaccin_code %in% dtp &
-                       donnees$datenaiss > as.Date("1995-01-01") &
-                       donnees$datenaiss < as.Date("2012-12-31"),] # on recupere seulement sur les annees qui nous interressent
+tempo <- donnees[donnees$vaccin_code %in% dtp,] 
 
 table(factor(tempo$vaccin_code)) # affichage de la repartition
 print("pourcentage de vacci incomplètes par rapport au total :")
@@ -182,15 +180,15 @@ for (d in 1:4){ # d pour dose
       print(paste("---------------------------",d," dose(s) ----------------------------"))
       
       sortie <- matrix(NA,7,19)
-      colnames(sortie) <- 1997:2015
+      colnames(sortie) <- 1995:2013
       rownames(sortie) <- c("CV en %","IC inf (%)","IC sup (%)","1er quartile","médiane","moyenne","3ième quartile")
    
-      for (i in 1997:2015) {
+      for (i in 1995:2013) {
             tempo <- f_dtp24(donnees,i)[[d]] # on ne recupere que la "d"ieme liste dans la sortie
-            sortie[1,i-1996] <- tempo[[1]] # CV
-            sortie[2,i-1996] <- tempo[[2]][1]*100 ; sortie[3,i-1996] <- tempo[[2]][2]*100 # IC
+            sortie[1,i-1994] <- tempo[[1]] # CV
+            sortie[2,i-1994] <- tempo[[2]][1]*100 ; sortie[3,i-1994] <- tempo[[2]][2]*100 # IC
             for (j in 4:7)
-                  sortie[j,i-1996] <- tempo[[3]][j-2] # repartition des ages en mois
+                  sortie[j,i-1994] <- tempo[[3]][j-2] # repartition des ages en mois
       }
       print(round(sortie,2))
       rm(tempo,sortie) # on efface les fichiers temporaires pour faire de la place
@@ -243,15 +241,15 @@ for (c in levels(donnees$canton)){
                   print(paste("---------------------------",d," dose(s) ----------------------------"))
                   
                   sortie <- matrix(NA,7,19)
-                  colnames(sortie) <- 1997:2015
+                  colnames(sortie) <- 1995:2013
                   rownames(sortie) <- c("CV en %","IC inf (%)","IC sup (%)","1er quartile","médiane","moyenne","3ième quartile")
                
-                  for (i in 1997:2015) {
+                  for (i in 1995:2013) {
                         tempo <- f_dtp24(tempo_canton,i)[[d]] # on ne recupere que la "d"ieme liste dans la sortie
-                        sortie[1,i-1996] <- tempo[[1]] # CV
-                        sortie[2,i-1996] <- tempo[[2]][1]*100 ; sortie[3,i-1996] <- tempo[[2]][2]*100 # IC
+                        sortie[1,i-1994] <- tempo[[1]] # CV
+                        sortie[2,i-1994] <- tempo[[2]][1]*100 ; sortie[3,i-1994] <- tempo[[2]][2]*100 # IC
                         for (j in 4:7)
-                              sortie[j,i-1996] <- tempo[[3]][j-2] # repartition des ages en mois
+                              sortie[j,i-1994] <- tempo[[3]][j-2] # repartition des ages en mois
                   }
                   print(round(sortie,2))
                   rm(tempo,sortie) # on efface les fichiers temporaires pour faire de la place
@@ -291,12 +289,9 @@ cat("
       **********************************
       **********************************")
 
-# avant 2013
-      
+
       primovacci <- donnees[donnees$vaccin_code %in% dtp,]
-      # on retire les enfants nes en 2013 ou apres
-      primovacci <- primovacci[primovacci$datenaiss < as.Date("2013-02-01"),]
-      
+
       # on classe suivant le n° de dossier et l'anciennete de l'opv
       primovacci <- primovacci[order(primovacci$nodossier,primovacci$dateopv),]
       
@@ -317,43 +312,12 @@ cat("
       png("sorties/dtp/age-primovacci%01d.png")
       plot(table(primovacci$age_vacci_mois[primovacci$age_vacci_mois < 36]),
            main = "Répartition de l'âge en mois à la primovaccination DTP,
-pour les enfants nés entre le 1er janvier 1995
-et le 31 janvier 2013, Corse du Sud",
+pour les enfants nés entre le 1er janvier 1993
+et le 31 décembre 2011, Corse-du-Sud",
            xlab = "âge en mois - coupure à 36 mois", ylab = "effectif") 
       dev.off()
 
       
-# apres 2013
-            
-      N_primovacci <- donnees[donnees$vaccin_code %in% dtp,]
-      # on garde les enfants nes apres 01/01/2013 
-      N_primovacci <- N_primovacci[N_primovacci$datenaiss > as.Date("2013-02-01"),]
-      
-      # on classe suivant le n° de dossier et l'anciennete de l'opv
-      N_primovacci <- N_primovacci[order(N_primovacci$nodossier,N_primovacci$dateopv),]
-      
-      #############################################################
-      
-      # contient "au moins 2 doses"
-      N_primovacci <- N_primovacci[duplicated(N_primovacci$nodossier),] # toutes les vacci sauf la premiere dose
-      
-      N_rappelvacci <- N_primovacci # on met de cote pour analyse des rappels
-      
-      # mais pas plus, pour avoir l'age au dernier acte
-      N_primovacci <- N_primovacci[!duplicated(N_primovacci$nodossier),]
-      
-      
-      # analyse en tant que telle
-      summary(N_primovacci$age_vacci_mois)
-      # analyse de ce df
-      png("sorties/dtp/age-N_primovacci%01d.png")
-      plot(table(N_primovacci$age_vacci_mois[N_primovacci$age_vacci_mois < 36]),
-           main = "Répartition de l'âge en mois à la primovaccination DTP,
-pour les enfants nés entre le 1er février 2013
-et le 31 décembre 2015, Corse du Sud",
-           xlab = "âge en mois - coupure à 36 mois", ylab = "effectif") 
-      dev.off()
-
 
 cat("
       **********************************
@@ -362,8 +326,7 @@ cat("
       **********************************
       **********************************")
 
-# avant 2013
-      
+
       #############################################################
       
       # on reapplique une derniere fois pour enlever la derniere injection de la primovacci
@@ -378,35 +341,11 @@ cat("
       png("sorties/dtp/age-rappelvacci%01d.png")
       plot(table(rappelvacci$age_vacci_mois[rappelvacci$age_vacci_mois < 60]),
            main = "Répartition de l'âge en mois lors du rappel DTP,
-pour les enfants nés entre le 1er janvier 1995
-et le 31 janvier 2013, Corse du Sud",
+pour les enfants nés entre le 1er janvier 1993
+et le 31 décembre 2011, Corse-du-Sud",
            xlab = "âge en mois - coupure à 60 mois", ylab = "effectif") 
       dev.off()
 
-      
-# apres 2013
-            
-      
-      #############################################################
-      # on reapplique une derniere fois pour enlever la derniere injection de la primovacci
-      N_rappelvacci <- N_rappelvacci[duplicated(N_rappelvacci$nodossier),] 
-      # mais pas plus, pour avoir l'age au dernier acte
-      N_rappelvacci <- N_rappelvacci[!duplicated(N_rappelvacci$nodossier),]
-      
-      
-      # analyse en tant que telle
-      summary(N_rappelvacci$age_vacci_mois)
-      # analyse de ce df
-      png("sorties/dtp/age-N_rappelvacci%01d.png")
-      plot(table(N_rappelvacci$age_vacci_mois),
-           main = "Répartition de l'âge en mois lors du rappel DTP,
-pour les enfants nés entre le 1er février 2013
-et le 31 décembre 2015, Corse du Sud",
-           xlab = "âge en mois - coupure à 60 mois", ylab = "effectif") 
-      dev.off()
-      
-      
-      
 sink()
 
 
