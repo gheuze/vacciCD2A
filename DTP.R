@@ -7,7 +7,6 @@
 
 
 
-
 # # nb de chaque vaccin
 # table(donnees$vaccin_code[donnees$vaccin_code %in% dtp])
 # 
@@ -296,7 +295,7 @@ cat("
       
       primovacci <- donnees[donnees$vaccin_code %in% dtp,]
       # on retire les enfants nes en 2013 ou apres
-      primovacci <- primovacci[primovacci$datenaiss < as.Date("2013-01-01"),]
+      primovacci <- primovacci[primovacci$datenaiss < as.Date("2013-02-01"),]
       
       # on classe suivant le n° de dossier et l'anciennete de l'opv
       primovacci <- primovacci[order(primovacci$nodossier,primovacci$dateopv),]
@@ -319,7 +318,7 @@ cat("
       plot(table(primovacci$age_vacci_mois[primovacci$age_vacci_mois < 36]),
            main = "Répartition de l'âge en mois à la primovaccination DTP,
 pour les enfants nés entre le 1er janvier 1995
-et le 1er janvier 2013, Corse du Sud",
+et le 31 janvier 2013, Corse du Sud",
            xlab = "âge en mois - coupure à 36 mois", ylab = "effectif") 
       dev.off()
 
@@ -328,7 +327,7 @@ et le 1er janvier 2013, Corse du Sud",
             
       N_primovacci <- donnees[donnees$vaccin_code %in% dtp,]
       # on garde les enfants nes apres 01/01/2013 
-      N_primovacci <- N_primovacci[N_primovacci$datenaiss > as.Date("2013-07-01"),]
+      N_primovacci <- N_primovacci[N_primovacci$datenaiss > as.Date("2013-02-01"),]
       
       # on classe suivant le n° de dossier et l'anciennete de l'opv
       N_primovacci <- N_primovacci[order(N_primovacci$nodossier,N_primovacci$dateopv),]
@@ -350,7 +349,7 @@ et le 1er janvier 2013, Corse du Sud",
       png("sorties/dtp/age-N_primovacci%01d.png")
       plot(table(N_primovacci$age_vacci_mois[N_primovacci$age_vacci_mois < 36]),
            main = "Répartition de l'âge en mois à la primovaccination DTP,
-pour les enfants nés entre le 1er janvier 2013
+pour les enfants nés entre le 1er février 2013
 et le 31 décembre 2015, Corse du Sud",
            xlab = "âge en mois - coupure à 36 mois", ylab = "effectif") 
       dev.off()
@@ -380,7 +379,7 @@ cat("
       plot(table(rappelvacci$age_vacci_mois[rappelvacci$age_vacci_mois < 60]),
            main = "Répartition de l'âge en mois lors du rappel DTP,
 pour les enfants nés entre le 1er janvier 1995
-et le 1er janvier 2013, Corse du Sud",
+et le 31 janvier 2013, Corse du Sud",
            xlab = "âge en mois - coupure à 60 mois", ylab = "effectif") 
       dev.off()
 
@@ -401,7 +400,7 @@ et le 1er janvier 2013, Corse du Sud",
       png("sorties/dtp/age-N_rappelvacci%01d.png")
       plot(table(N_rappelvacci$age_vacci_mois),
            main = "Répartition de l'âge en mois lors du rappel DTP,
-pour les enfants nés entre le 1er janvier 2013
+pour les enfants nés entre le 1er février 2013
 et le 31 décembre 2015, Corse du Sud",
            xlab = "âge en mois - coupure à 60 mois", ylab = "effectif") 
       dev.off()
