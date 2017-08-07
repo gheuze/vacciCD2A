@@ -73,9 +73,6 @@ axis(1,at=1:19,labels=1997:2015)
 legend(14,89,legend = rownames(donnees_nat), col = couleurs, cex=0.8,bty="n",lwd=1)
 dev.off()
  
- 
-# rajouter analyse regression lin + legende + axe x
-# lm(as.matrix(matrice[1,]) ~ 1997:2015)
 
 # fin analyse nationale DTP     
 #################################
@@ -214,7 +211,7 @@ f_dtp4 <- function (df_dtp,an){
 print("###################################### 24 mois #########################################")
 
 #remplissage des tableaux de sortie
-for (d in 1:4){ # d pour dose
+for (d in 3:4){ # d pour dose
       print(paste("---------------------------",d," dose(s) ----------------------------"))
       
       sortie <- matrix(NA,7,19)
@@ -236,7 +233,7 @@ for (d in 1:4){ # d pour dose
 print("###################################### 4 ans #########################################")
 
 #remplissage des tableaux de sortie
-for (d in 1:4){ # d pour dose
+for (d in 3:4){ # d pour dose
       print(paste("---------------------------",d," dose(s) ----------------------------"))
       
       sortie <- matrix(NA,7,19)
@@ -275,7 +272,7 @@ for (c in levels(donnees$canton)){
       print("###################################### 24 mois #########################################")
 
             #remplissage des tableaux de sortie
-            for (d in 1:4){ # d pour dose
+            for (d in 3:4){ # d pour dose
                   print(paste("---------------------------",d," dose(s) ----------------------------"))
                   
                   sortie <- matrix(NA,7,19)
@@ -297,7 +294,7 @@ for (c in levels(donnees$canton)){
             print("###################################### 4 ans #########################################")
             
             #remplissage des tableaux de sortie
-            for (d in 1:4){ # d pour dose
+            for (d in 3:4){ # d pour dose
                   print(paste("---------------------------",d," dose(s) ----------------------------"))
                   
                   sortie <- matrix(NA,7,19)
