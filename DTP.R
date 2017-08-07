@@ -264,49 +264,47 @@ cat("
 
 
 for (c in levels(donnees$canton)){
-      print(paste("*****************************",c,"************************************************************"))
+      print(paste("************************",c,"*********************************"))
       tempo_canton <- donnees[donnees$canton == c,]
       
       
       
-      print("###################################### 24 mois #########################################")
+      print("########################### 24 mois ###############################")
 
             #remplissage des tableaux de sortie
             for (d in 3:4){ # d pour dose
-                  print(paste("---------------------------",d," dose(s) ----------------------------"))
+                  print(paste("-----------------",d," dose(s) --------------------"))
                   
-                  sortie <- matrix(NA,7,19)
-                  colnames(sortie) <- 1995:2013
-                  rownames(sortie) <- c("CV en %","IC inf (%)","IC sup (%)","1er quartile","médiane","moyenne","3ième quartile")
+                  sortie <- matrix(NA,3,5)
+                  colnames(sortie) <- 2009:2013
+                  rownames(sortie) <- c("CV en %","IC inf (%)","IC sup (%)")
                
-                  for (i in 1995:2013) {
+                  for (i in 2009:2013) {
                         tempo <- f_dtp24(tempo_canton,i)[[d]] # on ne recupere que la "d"ieme liste dans la sortie
-                        sortie[1,i-1994] <- tempo[[1]] # CV
-                        sortie[2,i-1994] <- tempo[[2]][1]*100 ; sortie[3,i-1994] <- tempo[[2]][2]*100 # IC
-                        for (j in 4:7)
-                              sortie[j,i-1994] <- tempo[[3]][j-2] # repartition des ages en mois
+                        sortie[1,i-2008] <- tempo[[1]] # CV
+                        sortie[2,i-2008] <- tempo[[2]][1]*100 ; sortie[3,i-2008] <- tempo[[2]][2]*100 # IC
+                        
                   }
                   print(round(sortie,2))
                   rm(tempo,sortie) # on efface les fichiers temporaires pour faire de la place
             }
             
             
-            print("###################################### 4 ans #########################################")
+            print("########################## 4 ans #############################")
             
             #remplissage des tableaux de sortie
             for (d in 3:4){ # d pour dose
-                  print(paste("---------------------------",d," dose(s) ----------------------------"))
+                  print(paste("----------------",d," dose(s) --------------------"))
                   
-                  sortie <- matrix(NA,7,19)
-                  colnames(sortie) <- 1997:2015
-                  rownames(sortie) <- c("CV en %","IC inf (%)","IC sup (%)","1er quartile","médiane","moyenne","3ième quartile")
+                  sortie <- matrix(NA,3,5)
+                  colnames(sortie) <- 2011:2015
+                  rownames(sortie) <- c("CV en %","IC inf (%)","IC sup (%)")
                
-                  for (i in 1997:2015) {
+                  for (i in 2011:2015) {
                         tempo <- f_dtp4(tempo_canton,i)[[d]] # on ne recupere que la "d"ieme liste dans la sortie
-                        sortie[1,i-1996] <- tempo[[1]] # CV
-                        sortie[2,i-1996] <- tempo[[2]][1]*100 ; sortie[3,i-1996] <- tempo[[2]][2]*100 # IC
-                        for (j in 4:7)
-                              sortie[j,i-1996] <- tempo[[3]][j-2] # repartition des ages en mois
+                        sortie[1,i-2010] <- tempo[[1]] # CV
+                        sortie[2,i-2010] <- tempo[[2]][1]*100 ; sortie[3,i-2010] <- tempo[[2]][2]*100 # IC
+                        
                   }
                   print(round(sortie,2))
                   rm(tempo,sortie) # on efface les fichiers temporaires pour faire de la place
@@ -314,6 +312,19 @@ for (c in levels(donnees$canton)){
 
       
 }
+
+
+# ###### analyse des donnees
+
+moyenne <- read.csv2("sorties/dtp/dtp24_3_canton_pour moyenne.csv")
+
+round(addmargins(moyenne,2,mean)[,6],1)
+
+result <- matrix(round(as.numeric(addmargins(moyenne,2,mean)[,6]),1)[c(T,F,F)],2,6)
+
+rownames(result) <- c("primovacci","rappel")
+colnames(result) <- levels(donnees$canton)
+write.csv2(result,"sorties/dtp/result_cantons.csv")
 
 
 
@@ -382,6 +393,11 @@ et le 31 décembre 2011, Corse-du-Sud",
       dev.off()
 
 sink()
+
+
+
+
+
 
 
 
