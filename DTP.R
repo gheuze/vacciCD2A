@@ -50,12 +50,24 @@ donnees_nat <- read.csv2("donnees/donnees_nationales_CS_24_DTP.csv",header=F)
 colnames(donnees_nat) <- 1997:2015
 rownames(donnees_nat) <- c("primovaccination DT", "rappel DT", "primovaccination P", "rappel P")
 
-couleurs <- c("blue","red","darkgreen", "black")
+
+# analyse evolution DT
+for (i in 1:4){
+      print(rownames(donnees_nat)[i])
+      print(summary(lm(as.numeric(donnees_nat[i,]) ~ as.numeric(1997:2015))))
+      
+}
+
+
+
+
+# graphe evolution
+couleurs <- c("blue","red","orange", "black")
 
 png("sorties/dtp/evolution_nat_CS24.png",width=25 ,height=15, units="cm",res = 200)
 matplot(t(donnees_nat),type="b",pch=21,xlab = "années", ylim = c(85,100),ylab = "taux de couverture vaccinal en %",
          main = "Couverture vaccinale diphtérie, tétanos, poliomyélite à l'âge de 24 mois, 
-         analyse des CS 24 - France, 1990-2015 - résultats en % - axe des ordonnées débutant à 85 %", xaxt="n",
+         analyse des CS 24 - France, 1997-2015 - résultats en % - axe des ordonnées débutant à 85 %", xaxt="n",
         col = couleurs)
 axis(1,at=1:19,labels=1997:2015)
 legend(14,89,legend = rownames(donnees_nat), col = couleurs, cex=0.8,bty="n",lwd=1)
