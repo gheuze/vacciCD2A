@@ -41,6 +41,32 @@ rm(tempo) # on fait de la place
 # => aucun interet à separer, car pourcentage très faible, on restreint aux vacci avec les 3 valences
 dtp <- c("D(A)TC(A)P","D(A)TP","DTCP","DTCPHIB","DTCPHIBHB","DTP","DTP CA+HIB", "DTP+C(A)")
 
+####################################################################
+# analyse donnees nationales
+###################################################################
+
+donnees_nat <- read.csv2("donnees/donnees_nationales_CS_24_DTP.csv",header=F)
+
+colnames(donnees_nat) <- 1997:2015
+rownames(donnees_nat) <- c("primovaccination DT", "rappel DT", "primovaccination P", "rappel P")
+
+couleurs <- c("blue","red","darkgreen", "black")
+
+png("sorties/dtp/evolution_nat_CS24.png",width=25 ,height=15, units="cm",res = 200)
+matplot(t(donnees_nat),type="b",pch=21,xlab = "années", ylim = c(85,100),ylab = "taux de couverture vaccinal en %",
+         main = "Couverture vaccinale diphtérie, tétanos, poliomyélite à l'âge de 24 mois, 
+         analyse des CS 24 - France, 1990-2015 - résultats en % - axe des ordonnées débutant à 85 %", xaxt="n",
+        col = couleurs)
+axis(1,at=1:19,labels=1997:2015)
+legend(14,89,legend = rownames(donnees_nat), col = couleurs, cex=0.8,bty="n",lwd=1)
+dev.off()
+ 
+ 
+# rajouter analyse regression lin + legende + axe x
+# lm(as.matrix(matrice[1,]) ~ 1997:2015)
+
+# fin analyse nationale DTP     
+#################################
 
 #####################################################################
 # creation de la fonction calcul CV 24 mois pour tempo_dtp
