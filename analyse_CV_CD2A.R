@@ -16,28 +16,6 @@ library(reshape2)
 
 
 
-#####################################################################################
-# fonction donnant le nombre de personne dans la base "df", ayant "age" ans, l'annee "annee"
-#####################################################################################
-
-comptage <- function(comptage_df,comptage_annee,comptage_age){
-      # 
-      # comptage_df <- donnees ; comptage_annee <- 2015 ; comptage_age <- 5
-      # calcul CV a 4 ans en 2016
-      
-                # ann <- annee
-            difference <- comptage_annee-comptage_age
-            comptage_ddn_min <- as.Date(paste(difference,"-01-01",sep=""))
-            comptage_ddn_max <- as.Date(paste(difference,"-12-31",sep=""))
-            df_sortie <- comptage_df[comptage_df$datenaiss > comptage_ddn_min &
-                                   comptage_df$datenaiss < comptage_ddn_max,]
-            df_sortie <- df_sortie[!duplicated(df_sortie$nodossier),]
-            dim(df_sortie)[1]
-      
-}
-# fin fonction comptage
-######################################################################
-
 ######################################################################
 # donnees population 2A
 ######################################################################
@@ -787,11 +765,7 @@ for (c in levels(donnees$canton)){
 
 
 
-#################################
-#
-# THAT'S ALL FOLKS !!!!!!!!!!!
-#
-#################################
+
 
 table(factor(DTPolio_2015$acte_code))
 summary(DTPolio_2015$age_vacci[DTPolio_2015$acte_code == "P3"])
