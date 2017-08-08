@@ -89,12 +89,13 @@ f_dtp24 <- function (df_dtp,an){
       tempo_dtp <- df_dtp[df_dtp$datenaiss > ddn_min &
                           df_dtp$datenaiss < ddn_max,] # temp_dtp ne contient que les enfants de 24 mois l'annee choisie
       
-      # on enleve toutes les vacci effectuees apres 24 mois (2 ans = 730 jours)
-      tempo_dtp <- tempo_dtp[(tempo_dtp$datenaiss + 730) > tempo_dtp$dateopv,]
+      tempo_population <- length(unique(tempo_dtp$nodossier)) # calcul population denominateur avant restriction sur vaccins et age a la vacci
       
-      tempo_population <- comptage(tempo_dtp,an,2) # calcul population denominateur avant restriction sur vaccins
-      tempo_dtp <- tempo_dtp[tempo_dtp$vaccin_code %in% dtp,]
+      # on garde les vacci effectuees avant 24 mois (2 ans = 730 jours) et vacci DTP
+      tempo_dtp <- tempo_dtp[tempo_dtp$dateopv < (tempo_dtp$datenaiss + 730)  &
+                                   tempo_dtp$vaccin_code %in% dtp,]
       
+
       # on classe suivant le n° de dossier et l'anciennete de l'opv
       tempo_dtp <- tempo_dtp[order(tempo_dtp$nodossier,tempo_dtp$dateopv),]
       
@@ -154,11 +155,12 @@ f_dtp4 <- function (df_dtp,an){
       tempo_dtp <- df_dtp[df_dtp$datenaiss > ddn_min &
                           df_dtp$datenaiss < ddn_max,]
       
-         # on enleve toutes les vacci effectuees apres 4 ans (= 1460 jours)
-      tempo_dtp <- tempo_dtp[(tempo_dtp$datenaiss + 1460) > tempo_dtp$dateopv,]
+      tempo_population <- length(unique(tempo_dtp$nodossier)) # calcul population denominateur avant restriction sur vaccins
       
-      tempo_population <- comptage(tempo_dtp,an,4) # calcul population denominateur avant restriction sur vaccines
-      tempo_dtp <- tempo_dtp[tempo_dtp$vaccin_code %in% dtp,]
+      # on garde les vacci effectuees avant 4 ans (= 1460 jours) et sur dtp
+      tempo_dtp <- tempo_dtp[tempo_dtp$dateopv < (tempo_dtp$datenaiss + 1460) &
+                                   tempo_dtp$vaccin_code %in% dtp,]
+      
       
       # on classe suivant le n° de dossier et l'anciennete de l'opv
       tempo_dtp <- tempo_dtp[order(tempo_dtp$nodossier,tempo_dtp$dateopv),]
