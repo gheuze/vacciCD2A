@@ -142,7 +142,7 @@ summary(compl)
 table(pop$sexe)[3]/table(pop$sexe)[1]
 
 ("répartition par canton")
-table(pop$canton)/dim(pop)[1]*100
+table(pop$canton)/dim(pop[!is.na(pop$canton),])[1]*100
 
 summary(pop$canton)
 
