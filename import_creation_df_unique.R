@@ -29,11 +29,9 @@ donnees2$datemax <- as.Date(donnees2$datemax,format="%d/%m/%Y")
 donnees <- merge(donnees1,donnees2,by.x="nodossier",by.y="noetcv")
 rm(donnees1,donnees2)
 
-# analyse des donnees jusqu'au 31/12/2015 car base 2016 non complete
-donnees <- donnees[donnees$dateopv < as.Date("2015-12-31"),]
-
-# restriction aux personnes nees apres le 1er janvier 1993
-donnees <- donnees[donnees$datenaiss > as.Date("1993-01-01"),]
+# restriction des personnes suivant la ddn
+donnees <- donnees[donnees$datenaiss > as.Date("1993-01-01") &
+                         donnees$datenaiss < as.Date("2011-12-31"),]
 
 # liste des vaccins ne nous interesssant pas, on enleve pour alleger la base
 a_exclure <- c("BCG","ENC JAP","FJ","G","L","RA","SHA","SHB","TAB","HPV",
