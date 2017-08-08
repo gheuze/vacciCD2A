@@ -263,54 +263,73 @@ cat("
       ****** PAR CANTONS ***********
       ******************************")
 
+#####################################################################
+# fonction calcul CV 24 mois pour tempo_dtp pour les cantons
+f_dtp24_canton <- function (df_dtp){
+      ############################################################
+      # preparation
+      # df_dtp <- donnees[donnees$,] ; an <- 1997
+      # restriction du df d'entree a l'annee voulue et au vaccin
+      ddn_min <- as.Date("2007-01-01") # on veut les enfants ayants 24 mois 
+      ddn_max <- as.Date("2011-12-31")
+      tempo_dtp <- df_dtp[df_dtp$datenaiss > ddn_min &
+                          df_dtp$datenaiss < ddn_max,] # temp_dtp ne contient que les enfants de 24 mois l'annee choisie
+      
+      # calcul population denominateur avant restriction sur vaccins et age
+      tempo_population <- length(unique(tempo_dtp$nodossier))
+      
+      # on garde les vacci effectuees avant 24 mois (2 ans = 730 jours) et en lien dtp
+      tempo_dtp <- tempo_dtp[tempo_dtp$dateopv < (tempo_dtp$datenaiss + 730) &
+                                   tempo_dtp$vaccin_code %in% dtp,]
+
+      # on classe suivant le n° de dossier et l'anciennete de l'opv
+      tempo_dtp <- tempo_dtp[order(tempo_dtp$nodossier,tempo_dtp$dateopv),]
+      
+      #############################################################
+      # debut des calculs des nombres de vaccins
+      
+      # creation d'un df avec une seule repetition pour chaque dossier => nb de vacci 1 dose
+      tempo_dtp_1dose <- tempo_dtp[!duplicated(tempo_dtp$nodossier),]
+      # pour 2 doses, on prend les autres vacci donc, sans "!", puis on réapplique
+      # utilisation d'un df "pivot" tempo_dtp_dose
+      tempo_dtp_dose <- tempo_dtp[duplicated(tempo_dtp$nodossier),] # toutes les vacci sauf la premiere dose
+      tempo_dtp_2dose <- tempo_dtp_dose[!duplicated(tempo_dtp_dose$nodossier),]
+      # idem 3ieme dose
+      tempo_dtp_dose <- tempo_dtp_dose[duplicated(tempo_dtp_dose$nodossier),]
+      tempo_dtp_3dose <- tempo_dtp_dose[!duplicated(tempo_dtp_dose$nodossier),]
+      # idem 4ieme dose
+      tempo_dtp_dose <- tempo_dtp_dose[duplicated(tempo_dtp_dose$nodossier),]
+      tempo_dtp_4dose <- tempo_dtp_dose[!duplicated(tempo_dtp_dose$nodossier),]
+      
+      sortie <- cat(
+            "CV primovaccination DTP dans le canton à 24 mois entre 2009 et 2013 en % : ",
+            round(length(unique(tempo_dtp_3dose$nodossier))/tempo_population*100,1),"\n",
+            "intervalle de confiance : ",
+            round(binom.test(dim(tempo_dtp_3dose)[1],tempo_population)$conf.int*100,1),"\n",
+            "CV rappel DTP dans le canton à 24 mois entre 2009 et 2013 en % : ",
+            round(length(unique(tempo_dtp_4dose$nodossier))/tempo_population*100,1),"\n",
+            "intervalle de confiance : ",
+            round(binom.test(dim(tempo_dtp_4dose)[1],tempo_population)$conf.int*100,1)
+      )
+      return(sortie)
+      
+}
+########################
 
 
 for (c in levels(donnees$canton)){
       print(paste("************************",c,"*********************************"))
+      
       tempo_canton <- donnees[donnees$canton == c,]
-      
-      
       
       print("########################### 24 mois ###############################")
 
-            #remplissage des tableaux de sortie
-            for (d in 3:4){ # d pour dose
-                  print(paste("-----------------",d," dose(s) --------------------"))
-                  
-                  sortie <- matrix(NA,3,5)
-                  colnames(sortie) <- 2009:2013
-                  rownames(sortie) <- c("CV en %","IC inf (%)","IC sup (%)")
-               
-                  for (i in 2009:2013) {
-                        tempo <- f_dtp24(tempo_canton,i)[[d]] # on ne recupere que la "d"ieme liste dans la sortie
-                        sortie[1,i-2008] <- tempo[[1]] # CV
-                        sortie[2,i-2008] <- tempo[[2]][1]*100 ; sortie[3,i-2008] <- tempo[[2]][2]*100 # IC
-                        
-                  }
-                  print(round(sortie,2))
-                  rm(tempo,sortie) # on efface les fichiers temporaires pour faire de la place
-            }
+            f_dtp24_canton(tempo_canton)
+      
+            
+      print("########################## 4 ans #############################")
             
             
-            print("########################## 4 ans #############################")
-            
-            #remplissage des tableaux de sortie
-            for (d in 3:4){ # d pour dose
-                  print(paste("----------------",d," dose(s) --------------------"))
-                  
-                  sortie <- matrix(NA,3,5)
-                  colnames(sortie) <- 2011:2015
-                  rownames(sortie) <- c("CV en %","IC inf (%)","IC sup (%)")
-               
-                  for (i in 2011:2015) {
-                        tempo <- f_dtp4(tempo_canton,i)[[d]] # on ne recupere que la "d"ieme liste dans la sortie
-                        sortie[1,i-2010] <- tempo[[1]] # CV
-                        sortie[2,i-2010] <- tempo[[2]][1]*100 ; sortie[3,i-2010] <- tempo[[2]][2]*100 # IC
-                        
-                  }
-                  print(round(sortie,2))
-                  rm(tempo,sortie) # on efface les fichiers temporaires pour faire de la place
-            }
 
       
 }
