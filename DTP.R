@@ -29,7 +29,7 @@ print("*************************************************************************
 tempo <- donnees[donnees$vaccin_code %in% dtp,] 
 
 table(factor(tempo$vaccin_code)) # affichage de la repartition
-print("pourcentage de vacci incomplètes par rapport au total :")
+print("pourcentage de vacci incomplètes DTP par rapport au total :")
 paste(round(sum(table(factor(tempo$vaccin_code[tempo$vaccin_code %in% c("DT","DTC","P","T","TP")]))) /
       sum(table(factor(tempo$vaccin_code)))*100,3),"%")
 png("sorties/dtp/repartition des vacci incompletes DTP.png")
@@ -65,12 +65,12 @@ for (i in 1:4){
 couleurs <- c("blue","red","orange", "black")
 
 png("sorties/dtp/evolution_nat_CS24.png",width=25 ,height=15, units="cm",res = 200)
-matplot(t(donnees_nat),type="b",pch=21,xlab = "années", ylim = c(85,100),ylab = "taux de couverture vaccinal en %",
+matplot(t(donnees_nat),type="b",pch=1:4,xlab = "années", ylim = c(85,100),ylab = "taux de couverture vaccinal en %",
          main = "Couverture vaccinale diphtérie, tétanos, poliomyélite à l'âge de 24 mois, 
          analyse des CS 24 - France, 1997-2015 - résultats en % - axe des ordonnées débutant à 85 %", xaxt="n",
         col = couleurs)
 axis(1,at=1:19,labels=1997:2015)
-legend(14,89,legend = rownames(donnees_nat), col = couleurs, cex=0.8,bty="n",lwd=1)
+legend(14,89,legend = rownames(donnees_nat), pch=1:4,col = couleurs, cex=0.8,bty="n",lwd=1)
 dev.off()
  
 
@@ -230,6 +230,8 @@ for (d in 3:4){ # d pour dose
       print(round(sortie,2))
       rm(tempo,sortie) # on efface les fichiers temporaires pour faire de la place
 }
+
+
 
 
 print("###################################### 4 ans #########################################")
