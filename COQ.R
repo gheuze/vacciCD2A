@@ -42,6 +42,7 @@ matplot(t(donnees_nat),type="b",pch=1:2,xlab = "années", ylim = c(85,100),ylab =
         col = couleurs)
 axis(1,at=1:19,labels=1997:2015)
 legend(14,88,legend = rownames(donnees_nat), pch=1:2,col = couleurs, cex=0.8,bty="n",lwd=1)
+abline(h = 95, col = "darkorange",lty = 2)
 dev.off()
  
 
