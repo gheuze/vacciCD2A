@@ -121,22 +121,22 @@ f_dtp24 <- function (df_dtp,an){
       sortie1 <- list(
             round(dim(tempo_dtp_1dose)[1] / tempo_population * 100,2),
             binom.test(dim(tempo_dtp_1dose)[1],tempo_population)$conf.int,
-            summary(as.numeric(tempo_dtp_1dose$age_vacci_mois[tempo_dtp_1dose$acte_code == "P1"]))
+            summary(as.numeric(tempo_dtp_1dose$age_vacci_mois))
             )
       sortie2 <- list(
             round(dim(tempo_dtp_2dose)[1] / tempo_population * 100,2),
             binom.test(dim(tempo_dtp_2dose)[1],tempo_population)$conf.int,
-            summary(as.numeric(tempo_dtp_2dose$age_vacci_mois[tempo_dtp_2dose$acte_code == "P2"]))
+            summary(as.numeric(tempo_dtp_2dose$age_vacci_mois))
             )
       sortie3 <- list(
             round(dim(tempo_dtp_3dose)[1] / tempo_population * 100,2),
             binom.test(dim(tempo_dtp_3dose)[1],tempo_population)$conf.int,
-            summary(as.numeric(tempo_dtp_3dose$age_vacci_mois[tempo_dtp_3dose$acte_code == "P3"]))
+            summary(as.numeric(tempo_dtp_3dose$age_vacci_mois))
             )
       sortie4 <- list(
             round(dim(tempo_dtp_4dose)[1] / tempo_population * 100,2),
             binom.test(dim(tempo_dtp_4dose)[1],tempo_population)$conf.int,
-            summary(as.numeric(tempo_dtp_4dose$age_vacci_mois[tempo_dtp_4dose$acte_code == "R01"]))
+            summary(as.numeric(tempo_dtp_4dose$age_vacci_mois))
             )
       sortie <- list(sortie1,sortie2,sortie3,sortie4) # liste de listes ...
       return(sortie)
@@ -185,22 +185,22 @@ f_dtp4 <- function (df_dtp,an){
       sortie1 <- list(
             round(dim(tempo_dtp_1dose)[1] / tempo_population * 100,2),
             binom.test(dim(tempo_dtp_1dose)[1],tempo_population)$conf.int,
-            summary(as.numeric(tempo_dtp_1dose$age_vacci_mois[tempo_dtp_1dose$acte_code == "P1"]))
+            summary(as.numeric(tempo_dtp_1dose$age_vacci_mois))
             )
       sortie2 <- list(
             round(dim(tempo_dtp_2dose)[1] / tempo_population * 100,2),
             binom.test(dim(tempo_dtp_2dose)[1],tempo_population)$conf.int,
-            summary(as.numeric(tempo_dtp_2dose$age_vacci_mois[tempo_dtp_2dose$acte_code == "P2"]))
+            summary(as.numeric(tempo_dtp_2dose$age_vacci_mois))
             )
       sortie3 <- list(
             round(dim(tempo_dtp_3dose)[1] / tempo_population * 100,2),
             binom.test(dim(tempo_dtp_3dose)[1],tempo_population)$conf.int,
-            summary(as.numeric(tempo_dtp_3dose$age_vacci_mois[tempo_dtp_3dose$acte_code == "P3"]))
+            summary(as.numeric(tempo_dtp_3dose$age_vacci_mois))
             )
       sortie4 <- list(
             round(dim(tempo_dtp_4dose)[1] / tempo_population * 100,2),
             binom.test(dim(tempo_dtp_4dose)[1],tempo_population)$conf.int,
-            summary(as.numeric(tempo_dtp_4dose$age_vacci_mois[tempo_dtp_4dose$acte_code == "R01"]))
+            summary(as.numeric(tempo_dtp_4dose$age_vacci_mois))
             )
       sortie <- list(sortie1,sortie2,sortie3,sortie4) # liste de listes ...
       return(sortie)
