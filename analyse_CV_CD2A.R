@@ -77,9 +77,7 @@ aggregate(jeunes$population,list(jeunes$cantons),sum)
 ##########################################################
 menC <- c("MEN C")
 menACYW <- c("MEN C","M ACYW","M ACYW135") 
-
 hib <- c("DTCPHIB","DTCPHIBHB","DTP CA+HIB","HIB")
-vhb <- c("DTCPHIBHB","HA+HB","HB")
 ror <- c("O","ROR","ROU","RRUB","RUB")
 
 
@@ -210,64 +208,6 @@ for (i in 2010:2015) {
 # fin analyse Haemophilus influenza de type b
 ####################################################################################################
 
-####################################################################################################
-# ANALYSE HEPATITE B
-####################################################################################################
-
-# creation de la fonction calcul CV pour tempo_vhb
-f_vhb <- function (df_vhb,an){
-      ############################################################
-      # preparation
-      
-      # restriction du df d'entree a l'annee voulue et au vaccin
-      ddn_min <- as.Date(paste(an-3,"-01-01",sep="")) # on veut les enfants ayants 3/4 ans l'annee choisie
-      ddn_max <- as.Date(paste(an-3,"-12-31",sep=""))
-      tempo_vhb <- df_vhb[df_vhb$datenaiss > ddn_min &
-                          df_vhb$datenaiss < ddn_max,]
-      
-      tempo_population <- comptage(tempo_vhb,an,3) # calcul population denominateur avant restriction sur vaccins
-      tempo_vhb <- tempo_vhb[tempo_vhb$vaccin_code %in% vhb,]
-      
-      # on classe suivant le n° de dossier et l'anciennete de l'opv
-      tempo_vhb <- tempo_vhb[order(tempo_vhb$nodossier,tempo_vhb$dateopv),]
-      
-      #############################################################
-      # debut des calculs des nombres de vaccines
-      
-      # creation d'un df avec une seule repetition pour chaque dossier => nb de vacci 1 dose
-      tempo_vhb_1dose <- tempo_vhb[!duplicated(tempo_vhb$nodossier),]
-      # pour 2 doses, on prend les autres vacci donc, sans "!", puis on réapplique
-      # utilisation d'un df "pivot" tempo_vhb_dose
-      tempo_vhb_dose <- tempo_vhb[duplicated(tempo_vhb$nodossier),] # toutes les vacci sauf la premiere dose
-      tempo_vhb_2dose <- tempo_vhb_dose[!duplicated(tempo_vhb_dose$nodossier),]
-      # idem 3ieme dose
-      tempo_vhb_dose <- tempo_vhb_dose[duplicated(tempo_vhb_dose$nodossier),]
-      tempo_vhb_3dose <- tempo_vhb_dose[!duplicated(tempo_vhb_dose$nodossier),]
-      # idem 4ieme dose
-      tempo_vhb_dose <- tempo_vhb_dose[duplicated(tempo_vhb_dose$nodossier),]
-      tempo_vhb_4dose <- tempo_vhb_dose[!duplicated(tempo_vhb_dose$nodossier),]
-      
-      sortie <- list(
-            ("vhb, 1iere dose, resume des ages"), summary(as.numeric(tempo_vhb_1dose$age_vacci_mois[tempo_vhb_1dose$acte_code == "P1"])),
-            ("vhb, 2ieme dose, resume des ages"), summary(as.numeric(tempo_vhb_2dose$age_vacci_mois[tempo_vhb_2dose$acte_code == "P2"])),
-            ("vhb, 3ieme dose, resume des ages"), summary(as.numeric(tempo_vhb_3dose$age_vacci_mois[tempo_vhb_3dose$acte_code == "P3"])),
-            ("vhb, 4ieme dose, resume des ages"), summary(as.numeric(tempo_vhb_4dose$age_vacci_mois[tempo_vhb_4dose$acte_code == "R01"])),
-            ("vhb, CV, 1 dose"), dim(tempo_vhb_1dose)[1] / tempo_population * 100,
-            ("vhb, CV, 2 doses"), dim(tempo_vhb_2dose)[1] / tempo_population * 100,
-            ("vhb, CV, 3 doses"), dim(tempo_vhb_3dose)[1] / tempo_population * 100,
-            ("vhb, CV, 4 doses"), dim(tempo_vhb_4dose)[1] / tempo_population * 100
-     )
-      return(sortie)
-}
-
-for (i in 2010:2015) {
-      print(paste("*************",i,"***************"))
-      print(f_vhb(donnees,i))
-}
-
-
-# fin analyse hepatite b
-####################################################################################################
 
 
 ####################################################################################################
