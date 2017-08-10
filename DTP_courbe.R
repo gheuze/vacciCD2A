@@ -10,6 +10,7 @@ matplot(t(graphe),type="b",pch=1:4,xlab = "années", ylim = c(75,100),ylab = "tau
         col = couleurs)
 axis(1,at=1:19,labels=1997:2015)
 legend(13,80,legend = rownames(graphe), pch=1:4,col = couleurs, cex=0.8,bty="n",lwd=1)
+abline(h = 95, col = "darkorange",lty = 2)
 dev.off()
 
 
