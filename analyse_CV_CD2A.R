@@ -84,24 +84,7 @@ hib <- c("DTCPHIB","DTCPHIBHB","DTP CA+HIB","HIB")
 # fin regroupement codes vaccins
 ###########################################################################
 
-###########################################################################
-# activité brute du CV
-###########################################################################
 
-summary(donnees$dateopv)
-plot(table(donnees$dateopv))
-
-# p <- ggplot(donnees)
-# p + geom_bar(aes(x=dateopv,colour = "blue"))
-# p + geom_histogram(aes(x=dateopv,colour = "blue"))
-# 
-# donnees$age_fin_2016 <- as.numeric(floor((as.Date("2016-12-31")-donnees$datenaiss)/365.25))
-# png("sorties/age_fin_2016.png",width=25 ,height=15, units="cm",res = 200)
-# p + geom_bar(aes(x=age_fin_2016))
-# dev.off()
-
-# fin activite brute du centre de vacci
-############################################################################
 
 ############################################################################
 # analyse de la population
