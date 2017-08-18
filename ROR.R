@@ -7,24 +7,15 @@
 
 
 
-# # nb de chaque vaccin
-# table(donnees$vaccin_code[donnees$vaccin_code %in% ror])
-# 
-# # annee vacci 
-# plot(table(format(rorolio_2015$dateopv,"%Y")))
-# plot(table(rorolio_2015$age_vacci)) 
 
 rm(list=ls())
+setwd("I:\\DIRECTION ACTION TERRITORIALE DE SANTE\\VSSE\\CIRE\\Dossiers MI\\Vaccination\\etude_CG2A\\analyse")
+
 
 load("donnees/df_pour_analyse.RData")
 
 ror <- c("O","ROR","ROU","RRUB","RUB")
 
-sink("sorties/ror/ror.txt") # sorties vers le fichier specifie
-
-print("***************************************************************************************")
-print("*********************************** ror ***********************************************")
-print("***************************************************************************************")
 
 # interet a separer les 3 valences 
 tempo <- donnees[donnees$vaccin_code %in% ror,] 
@@ -102,13 +93,6 @@ f_ror24 <- function (df_ror,an){
       # utilisation d'un df "pivot" tempo_ror_dose
       tempo_ror_dose <- tempo_ror[duplicated(tempo_ror$nodossier),] # toutes les vacci sauf la premiere dose
       tempo_ror_2dose <- tempo_ror_dose[!duplicated(tempo_ror_dose$nodossier),]
-      # idem 3ieme dose
-      tempo_ror_dose <- tempo_ror_dose[duplicated(tempo_ror_dose$nodossier),]
-      tempo_ror_3dose <- tempo_ror_dose[!duplicated(tempo_ror_dose$nodossier),]
-      # idem 4ieme dose
-      tempo_ror_dose <- tempo_ror_dose[duplicated(tempo_ror_dose$nodossier),]
-      tempo_ror_4dose <- tempo_ror_dose[!duplicated(tempo_ror_dose$nodossier),]
-      
       
       
       sortie1 <- list(
@@ -121,17 +105,8 @@ f_ror24 <- function (df_ror,an){
             binom.test(dim(tempo_ror_2dose)[1],tempo_population)$conf.int,
             summary(as.numeric(tempo_ror_2dose$age_vacci_mois))
             )
-      sortie3 <- list(
-            round(dim(tempo_ror_3dose)[1] / tempo_population * 100,2),
-            binom.test(dim(tempo_ror_3dose)[1],tempo_population)$conf.int,
-            summary(as.numeric(tempo_ror_3dose$age_vacci_mois))
-            )
-      sortie4 <- list(
-            round(dim(tempo_ror_4dose)[1] / tempo_population * 100,2),
-            binom.test(dim(tempo_ror_4dose)[1],tempo_population)$conf.int,
-            summary(as.numeric(tempo_ror_4dose$age_vacci_mois))
-            )
-      sortie <- list(sortie1,sortie2,sortie3,sortie4) # liste de listes ...
+      
+      sortie <- list(sortie1,sortie2) # liste de listes ...
       return(sortie)
       
 }
@@ -168,12 +143,7 @@ f_ror4 <- function (df_ror,an){
       # utilisation d'un df "pivot" tempo_ror_dose
       tempo_ror_dose <- tempo_ror[duplicated(tempo_ror$nodossier),] # toutes les vacci sauf la premiere dose
       tempo_ror_2dose <- tempo_ror_dose[!duplicated(tempo_ror_dose$nodossier),]
-      # idem 3ieme dose
-      tempo_ror_dose <- tempo_ror_dose[duplicated(tempo_ror_dose$nodossier),]
-      tempo_ror_3dose <- tempo_ror_dose[!duplicated(tempo_ror_dose$nodossier),]
-      # idem 4ieme dose
-      tempo_ror_dose <- tempo_ror_dose[duplicated(tempo_ror_dose$nodossier),]
-      tempo_ror_4dose <- tempo_ror_dose[!duplicated(tempo_ror_dose$nodossier),]
+      
       
       sortie1 <- list(
             round(dim(tempo_ror_1dose)[1] / tempo_population * 100,2),
@@ -185,29 +155,20 @@ f_ror4 <- function (df_ror,an){
             binom.test(dim(tempo_ror_2dose)[1],tempo_population)$conf.int,
             summary(as.numeric(tempo_ror_2dose$age_vacci_mois))
             )
-      sortie3 <- list(
-            round(dim(tempo_ror_3dose)[1] / tempo_population * 100,2),
-            binom.test(dim(tempo_ror_3dose)[1],tempo_population)$conf.int,
-            summary(as.numeric(tempo_ror_3dose$age_vacci_mois))
-            )
-      sortie4 <- list(
-            round(dim(tempo_ror_4dose)[1] / tempo_population * 100,2),
-            binom.test(dim(tempo_ror_4dose)[1],tempo_population)$conf.int,
-            summary(as.numeric(tempo_ror_4dose$age_vacci_mois))
-            )
-      sortie <- list(sortie1,sortie2,sortie3,sortie4) # liste de listes ...
+      
+      sortie <- list(sortie1,sortie2) # liste de listes ...
       return(sortie)
 }
 ########################
 ###################################################
 # boucle de sortie des resultats
 
-
+sink("sorties/ror/ror_24.txt") # sorties vers le fichier specifie
 
 print("###################################### 24 mois #########################################")
 
 #remplissage des tableaux de sortie
-for (d in 3:4){ # d pour dose
+for (d in 1:2){ # d pour dose
       print(paste("---------------------------",d," dose(s) ----------------------------"))
       
       sortie <- matrix(NA,7,19)
@@ -225,13 +186,14 @@ for (d in 3:4){ # d pour dose
       rm(tempo,sortie) # on efface les fichiers temporaires pour faire de la place
 }
 
+sink()
 
-
+sink("sorties/ror/ror_4.txt") # sorties vers le fichier specifie
 
 print("###################################### 4 ans #########################################")
 
 #remplissage des tableaux de sortie
-for (d in 3:4){ # d pour dose
+for (d in 1:2){ # d pour dose
       print(paste("---------------------------",d," dose(s) ----------------------------"))
       
       sortie <- matrix(NA,7,19)
@@ -249,7 +211,9 @@ for (d in 3:4){ # d pour dose
       rm(tempo,sortie) # on efface les fichiers temporaires pour faire de la place
 }
 
+sink()
 
+sink("sorties/ror/ror_canton.txt") # sorties vers le fichier specifie
 
 
 cat("
@@ -290,22 +254,16 @@ f_ror24_canton <- function (df_ror){
       # utilisation d'un df "pivot" tempo_ror_dose
       tempo_ror_dose <- tempo_ror[duplicated(tempo_ror$nodossier),] # toutes les vacci sauf la premiere dose
       tempo_ror_2dose <- tempo_ror_dose[!duplicated(tempo_ror_dose$nodossier),]
-      # idem 3ieme dose
-      tempo_ror_dose <- tempo_ror_dose[duplicated(tempo_ror_dose$nodossier),]
-      tempo_ror_3dose <- tempo_ror_dose[!duplicated(tempo_ror_dose$nodossier),]
-      # idem 4ieme dose
-      tempo_ror_dose <- tempo_ror_dose[duplicated(tempo_ror_dose$nodossier),]
-      tempo_ror_4dose <- tempo_ror_dose[!duplicated(tempo_ror_dose$nodossier),]
       
       sortie <- cat(
-            "primovaccination ror dans le canton à 24 mois entre 2009 et 2013 en % : ",
-            round(length(unique(tempo_ror_3dose$nodossier))/tempo_population*100,1),"\n",
+            "vaccination ror dans le canton à 24 mois entre 2009 et 2013 en % : ",
+            round(length(unique(tempo_ror_1dose$nodossier))/tempo_population*100,1),"\n",
             "intervalle de confiance : ",
-            round(binom.test(dim(tempo_ror_3dose)[1],tempo_population)$conf.int*100,1),"\n",
-            "rappel ror dans le canton à 24 mois entre 2009 et 2013 en % : ",
-            round(length(unique(tempo_ror_4dose$nodossier))/tempo_population*100,1),"\n",
+            round(binom.test(dim(tempo_ror_1dose)[1],tempo_population)$conf.int*100,1),"\n",
+            "2ieme vaccination ror dans le canton à 24 mois entre 2009 et 2013 en % : ",
+            round(length(unique(tempo_ror_2dose$nodossier))/tempo_population*100,1),"\n",
             "intervalle de confiance : ",
-            round(binom.test(dim(tempo_ror_4dose)[1],tempo_population)$conf.int*100,1)
+            round(binom.test(dim(tempo_ror_2dose)[1],tempo_population)$conf.int*100,1)
       )
       return(sortie)
       
@@ -344,22 +302,16 @@ f_ror4_canton <- function (df_ror){
       # utilisation d'un df "pivot" tempo_ror_dose
       tempo_ror_dose <- tempo_ror[duplicated(tempo_ror$nodossier),] # toutes les vacci sauf la premiere dose
       tempo_ror_2dose <- tempo_ror_dose[!duplicated(tempo_ror_dose$nodossier),]
-      # idem 3ieme dose
-      tempo_ror_dose <- tempo_ror_dose[duplicated(tempo_ror_dose$nodossier),]
-      tempo_ror_3dose <- tempo_ror_dose[!duplicated(tempo_ror_dose$nodossier),]
-      # idem 4ieme dose
-      tempo_ror_dose <- tempo_ror_dose[duplicated(tempo_ror_dose$nodossier),]
-      tempo_ror_4dose <- tempo_ror_dose[!duplicated(tempo_ror_dose$nodossier),]
       
       sortie <- cat(
-            "primovaccination ror dans le canton à 4 ans entre 2011 et 2015 en % : ",
-            round(length(unique(tempo_ror_3dose$nodossier))/tempo_population*100,1),"\n",
+            "vaccination ror dans le canton à 4 ans entre 2011 et 2015 en % : ",
+            round(length(unique(tempo_ror_1dose$nodossier))/tempo_population*100,1),"\n",
             "intervalle de confiance : ",
-            round(binom.test(dim(tempo_ror_3dose)[1],tempo_population)$conf.int*100,1),"\n",
-            "rappel ror dans le canton à 4 ans entre 2011 et 2015 en % : ",
-            round(length(unique(tempo_ror_4dose$nodossier))/tempo_population*100,1),"\n",
+            round(binom.test(dim(tempo_ror_1dose)[1],tempo_population)$conf.int*100,1),"\n",
+            "2ième vaccination ror dans le canton à 4 ans entre 2011 et 2015 en % : ",
+            round(length(unique(tempo_ror_2dose$nodossier))/tempo_population*100,1),"\n",
             "intervalle de confiance : ",
-            round(binom.test(dim(tempo_ror_4dose)[1],tempo_population)$conf.int*100,1)
+            round(binom.test(dim(tempo_ror_2dose)[1],tempo_population)$conf.int*100,1)
       )
       return(sortie)
       
@@ -389,11 +341,11 @@ round(addmargins(moyenne,2,mean)[,6],1)
 
 result <- matrix(round(as.numeric(addmargins(moyenne,2,mean)[,6]),1)[c(T,F,F)],2,6)
 
-rownames(result) <- c("primovacci","rappel")
+rownames(result) <- c("vacci","2ième vacci")
 colnames(result) <- levels(donnees$canton)
 write.csv2(result,"sorties/ror/result_cantons.csv")
 
-
+sink()
 
 cat("
       **********************************
@@ -403,31 +355,27 @@ cat("
       **********************************")
 
 
-      primovacci <- donnees[donnees$vaccin_code %in% ror,]
+      vacci <- donnees[donnees$vaccin_code %in% ror,]
 
       # on classe suivant le n° de dossier et l'anciennete de l'opv
-      primovacci <- primovacci[order(primovacci$nodossier,primovacci$dateopv),]
+      vacci <- vacci[order(vacci$nodossier,vacci$dateopv),]
       
       #############################################################
       
-      # contient "au moins 2 doses"
-      primovacci <- primovacci[duplicated(primovacci$nodossier),] # toutes les vacci sauf la premiere dose
-      # on reapplique, donc, "au moins 3 doses"
-      primovacci <- primovacci[duplicated(primovacci$nodossier),]
-      rappelvacci <- primovacci     # en attente, pour analyse age au rappel
+      # contient 1 vacci
+      Prem_vacci <- vacci[!duplicated(vacci$nodossier),] # seulement la premiere vacci
       
-      # mais pas plus, pour avoir l'age au dernier acte
-      primovacci <- primovacci[!duplicated(primovacci$nodossier),]
+      # rappelvacci <- primovacci     # en attente, pour analyse age au rappel
       
       # analyse en tant que telle
-      summary(primovacci$age_vacci_mois)
+      summary(Prem_vacci$age_vacci_mois)
       # analyse de ce df
-      png("sorties/ror/age-primovacci%01d.png")
-      plot(table(primovacci$age_vacci_mois[primovacci$age_vacci_mois < 36]),
-           main = "Répartition de l'âge en mois à la primovaccination ror,
+      png("sorties/ror/age-Prem_vacci%01d.png", width=25 ,height=15, units="cm",res = 400)
+      barplot(table(Prem_vacci$age_vacci_mois[Prem_vacci$age_vacci_mois < 48]),
+           main = "Répartition de l'âge en mois à la première vaccination ROR,
 pour les enfants nés entre le 1er janvier 1993
 et le 31 décembre 2011, Corse-du-Sud",
-           xlab = "âge en mois - coupure à 36 mois", ylab = "effectif") 
+           xlab = "âge en mois - coupure à 48 mois", ylab = "effectif") 
       dev.off()
 
       
@@ -435,41 +383,33 @@ et le 31 décembre 2011, Corse-du-Sud",
 cat("
       **********************************
       **********************************
-      ******** ANALYSE AGE RAPPEL ******
+      ******** ANALYSE AGE 2ieme vaccination ******
       **********************************
       **********************************")
 
 
       #############################################################
-      
-      # on reapplique une derniere fois pour enlever la derniere injection de la primovacci
-      rappelvacci <- rappelvacci[duplicated(rappelvacci$nodossier),] 
-      
+      # on reapplique, donc, 2 vacci
+      Deuz_vacci <- vacci[duplicated(vacci$nodossier),]
       # mais pas plus, pour avoir l'age au dernier acte
-      rappelvacci <- rappelvacci[!duplicated(rappelvacci$nodossier),]
-      
+      Deuz_vacci <- Deuz_vacci[!duplicated(Deuz_vacci$nodossier),]      
+
       # analyse en tant que telle
-      summary(rappelvacci$age_vacci_mois)
+      summary(Deuz_vacci$age_vacci_mois)
       # analyse de ce df
-      png("sorties/ror/age-rappelvacci%01d.png")
-      plot(table(rappelvacci$age_vacci_mois[rappelvacci$age_vacci_mois < 60]),
-           main = "Répartition de l'âge en mois lors du rappel ror,
+      png("sorties/ror/age-deuxieme_vacci%01d.png", width=25 ,height=15, units="cm",res = 400)
+      barplot(table(Deuz_vacci$age_vacci_mois[Deuz_vacci$age_vacci_mois < 48]),
+           main = "Répartition de l'âge en mois lors de la deuxième vaccination ROR,
 pour les enfants nés entre le 1er janvier 1993
 et le 31 décembre 2011, Corse-du-Sud",
-           xlab = "âge en mois - coupure à 60 mois", ylab = "effectif") 
+           xlab = "âge en mois - coupure à 48 mois", ylab = "effectif") 
       dev.off()
 
-sink()
 
 
 
 
-
-
-
-
-
-# fin analyse rorolio
+# fin analyse ror
 ####################################################################################################
 
 
