@@ -72,18 +72,6 @@ aggregate(jeunes$population,list(jeunes$cantons),sum)
 
 
 
-##########################################################
-# regroupement de vaccins
-##########################################################
-
-hib <- c("DTCPHIB","DTCPHIBHB","DTP CA+HIB","HIB")
-
-
-
-# fin regroupement codes vaccins
-###########################################################################
-
-
 
 ############################################################################
 # analyse de la population
@@ -129,66 +117,6 @@ summary(pop$canton)
  # fin analyse population
 ####################################################################################################
 
-
-
-####################################################################################################
-# ANALYSE HAEMOPHILUS INFLUENZA DE TYPE B
-####################################################################################################
-
-# creation de la fonction calcul CV pour tempo_hib
-f_hib <- function (df_hib,an){
-      ############################################################
-      # preparation
-      
-      # restriction du df d'entree a l'annee voulue et au vaccin
-      ddn_min <- as.Date(paste(an-3,"-01-01",sep="")) # on veut les enfants ayants 3/4 ans l'annee choisie
-      ddn_max <- as.Date(paste(an-3,"-12-31",sep=""))
-      tempo_hib <- df_hib[df_hib$datenaiss > ddn_min &
-                          df_hib$datenaiss < ddn_max,]
-      
-      tempo_population <- comptage(tempo_hib,an,3) # calcul population denominateur avant restriction sur vaccines
-      tempo_hib <- tempo_hib[tempo_hib$vaccin_code %in% hib,]
-      
-      # on classe suivant le n° de dossier et l'anciennete de l'opv
-      tempo_hib <- tempo_hib[order(tempo_hib$nodossier,tempo_hib$dateopv),]
-      
-      #############################################################
-      # debut des calculs des nombres de vaccines
-      
-      # creation d'un df avec une seule repetition pour chaque dossier => nb de vacci 1 dose
-      tempo_hib_1dose <- tempo_hib[!duplicated(tempo_hib$nodossier),]
-      # pour 2 doses, on prend les autres vacci donc, sans "!", puis on réapplique
-      # utilisation d'un df "pivot" tempo_hib_dose
-      tempo_hib_dose <- tempo_hib[duplicated(tempo_hib$nodossier),] # toutes les vacci sauf la premiere dose
-      tempo_hib_2dose <- tempo_hib_dose[!duplicated(tempo_hib_dose$nodossier),]
-      # idem 3ieme dose
-      tempo_hib_dose <- tempo_hib_dose[duplicated(tempo_hib_dose$nodossier),]
-      tempo_hib_3dose <- tempo_hib_dose[!duplicated(tempo_hib_dose$nodossier),]
-      # idem 4ieme dose
-      tempo_hib_dose <- tempo_hib_dose[duplicated(tempo_hib_dose$nodossier),]
-      tempo_hib_4dose <- tempo_hib_dose[!duplicated(tempo_hib_dose$nodossier),]
-      
-      sortie <- list(
-            ("hib, 1iere dose, resume des ages"), summary(as.numeric(tempo_hib_1dose$age_vacci_mois[tempo_hib_1dose$acte_code == "P1"])),
-            ("hib, 2ieme dose, resume des ages"), summary(as.numeric(tempo_hib_2dose$age_vacci_mois[tempo_hib_2dose$acte_code == "P2"])),
-            ("hib, 3ieme dose, resume des ages"), summary(as.numeric(tempo_hib_3dose$age_vacci_mois[tempo_hib_3dose$acte_code == "P3"])),
-            ("hib, 4ieme dose, resume des ages"), summary(as.numeric(tempo_hib_4dose$age_vacci_mois[tempo_hib_4dose$acte_code == "R01"])),
-            ("hib, CV, 1 dose"), dim(tempo_hib_1dose)[1] / tempo_population * 100,
-            ("hib, CV, 2 doses"), dim(tempo_hib_2dose)[1] / tempo_population * 100,
-            ("hib, CV, 3 doses"), dim(tempo_hib_3dose)[1] / tempo_population * 100,
-            ("hib, CV, 4 doses"), dim(tempo_hib_4dose)[1] / tempo_population * 100
-     )
-      return(sortie)
-}
-
-for (i in 2010:2015) {
-      print(paste("*************",i,"***************"))
-      print(f_hib(donnees,i))
-}
-
-
-# fin analyse Haemophilus influenza de type b
-####################################################################################################
 
 
 table(factor(DTPolio_2015$acte_code))
