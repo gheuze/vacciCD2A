@@ -1,0 +1,734 @@
+
+
+
+
+
+
+Évaluation de la couverture vaccinale des enfants de 24 mois et 4 ans en Corse-du-Sud à partir des données du fichier départemental des vaccinations du conseil départemental de la Corse-du-Sud.
+
+
+
+
+
+
+
+Rédacteur : 
+
+Personnes ayant participé à l’étude :
+ 
+Sommaire
+
+
+ 
+
+1.	Contexte
+En 2014, un rapport sur l’organisation de la vaccination et mesure de la couverture vaccinale en région Corse (1) a permis d’identifier les sources importantes de données de couverture vaccinale (CV) sur l’île, de préciser les données ponctuelles et celles pérennes et de fournir des évaluations de CV, en établissant un parallèle avec le niveau national. 
+L’analyse des données des certificats de santé du 24ième mois (CS24) montraient des CV souvent supérieures aux moyennes nationales, mais cependant inférieures aux objectifs de 95 %.
+Dans le cadre de ce rapport, plusieurs propositions avaient été faites, et notamment :
+-	l’exploitation des CS 24 au niveau régional, afin de permettre des analyses infra départementales ;
+-	l’analyse des bilans de santé en école maternelle, permettant de recueillir des informations au-delà de l’âge de 2 ans.
+Le présent rapport répond à cette dernière proposition, grâce à une collaboration entre le conseil départemental de Corse-du-Sud et la cellule d’intervention en région (Cire) de Santé publique France.
+2.	Le conseil départemental de la Corse-du-Sud et la vaccination
+Afin d’assurer un maximum d’accès à la vaccination, le conseil départemental de la Corse-du-Sud assure la vaccination de toute personne qui en fait la demande et toutes les vaccinations sont gratuites (hormis celles concernant la médecine des voyages). Les vaccinations sont réalisées au centre départemental des vaccinations au sein du pôle prévention sanitaire et dans le service de la protection maternelle et infantile (PMI).
+2.1.	Pôle prévention sanitaire
+Ce pôle comprend deux services, l’un concernant le centre de vaccination et le centre gratuit d’information, de dépistage et de diagnostic (CeGIDD) des virus du sida, des hépatites virales et des infections sexuellement transmissibles (IST) et l’autre, un service regroupant le centre de lutte antituberculeuse (CLAT) et la lutte contre le cancer.
+Le centre de vaccination dispose, pour les séances de vaccination publiques d’un site principal sur Ajaccio et de deux antennes sur Sartène et Porto-Vecchio. Le centre d’Ajaccio est également habilité comme centre antiamaril (vaccination des voyageurs) et antenne antirabique. Le dépistage et la vaccination contre la tuberculose sont réalisés par l’équipe du CLAT à Ajaccio et par le médecin de PMI sur Sartène et Porto-Vecchio.
+Le conseil départemental, en partenariat avec l’ARS de Corse, s’est doté d’un bus de prévention qui permet de réaliser des vaccinations sur l’ensemble du département dans des lieux dépourvus d’infirmerie mais réalise également des vaccinations « hors les murs » comme au pôle de santé de Cargèse.
+
+2.2.	Protection maternelle et infantile
+Les médecins de la PMI pratiquent la vaccination à Ajaccio dans les locaux de la 1ère et 2ième circonscription, au centre social des Salines, à Propriano, Sartène et Porto-Vecchio dans les locaux de la 3ième circonscription. Des consultations médicales avec des séances de vaccination sont dispensées à Baléone-Sarrola, Bonifacio, Levie, Figari, Cargèse.
+Par ailleurs, la PMI réalise des bilans de santé chez les 3-4 ans dans toutes les écoles maternelles du département, qu’elles soient publiques ou privées. Lors de ces bilans, les infirmières relèvent manuellement les vaccinations ayant été effectuées aux enfants et les transmettent sur des fiches aux secrétaires du centre de vaccination.
+2.3.	Les données de vaccination
+Le centre de vaccination est équipé depuis 1997 d’un logiciel vaccinal permettant la saisie de toutes les informations vaccinales concernant :
+-	les personnes qui se présentent au centre ;
+-	les enfants qui ont fait l’objet d’un bilan de santé en école maternelle réalisé par la PMI.
+La saisie des informations des bilans de santé en école maternelle permet au centre de vaccination de réaliser des relances auprès de tous les parents lorsque des rappels sont préconisés. Étant le seul opérateur public sur le département, il reçoit également une grande partie de la population de la Corse-du-Sud pour laquelle il établit des relances vaccinales.
+Cette base constitue donc une source de données très importante afin de connaître l’état de la couverture vaccinale en Corse du sud, notamment chez les 3-4 ans, ainsi que l’évolution sur les dernières années.
+3.	Objectifs :
+L’objectif principal de l’analyse de cette base de données est de permettre de mieux orienter les politiques publiques en matière de vaccination en ayant une meilleure connaissance des CV départementales et infra-départementales.
+Les objectifs secondaires sont de :
+-	connaître les valeurs et l’évolution de la CV entre 1997 et 2015 pour les enfants de Corse-du-Sud sur les vaccins suivants : diphtérie-tétanos-poliomyélite (DTP), coqueluche, Haemophilus influenzae de type b (Hib), hépatite B, pneumocoque, méningocoque C, rougeole, oreillons, rubéole (ROR), suivant l’âge des enfants (à 24 mois et 4 ans) ;
+-	mieux connaître l’âge à l’injection par rapport aux âges recommandés, ainsi que els délais de rattrapage en cas de retard ;
+-	déterminer s’il existe des différences de CV entre cantons du département ;
+-	comparer les données de cette base de données par rapport aux données remontées via les CS24.
+4.	Méthodologie  
+4.1.	Regroupement des cantons
+La base de données du conseil départemental comprend les communes des personnes mais pas les cantons. Les regroupements ont donc été réalisés sur la base des communes mentionnées dans la base. Les communes d’Ajaccio et de Porto Vecchio étant réparties entre plusieurs cantons, l’ensemble des cantons comprenant Ajaccio a été regroupé et dénommé «  canton d’Ajaccio ». De même, les cantons de Bavella et du Grand Sud, comprenant chacun une partie de Porto-Vecchio, ont été regroupés et appelé « canton de Bavella-Grand Sud » pour cette étude. 
+La figure XX présente la répartition des cantons en Corse du sud (faire une vraie carte avec le regroupement des cantons, avec principales communes, routes). 
+
+ 
+
+D’après les recensements Insee entre 1997 et 2014 [source], le nombre moyen d’habitants sur la période ainsi que la répartition suivant les cantons, est la suivante (tableau XX).
+	Ajaccio	Bavella-Grand sud	Gravona-Prunelli	Sartenais Valinco	Sevi-Sorru-Cinarca	Taravo-Ornano	total
+Tout âge	74654	26752	14720	11325	7560	14097	149108
+Répartition en %	50,0	17,9	9,9	7,6	5,1	9,4	100
+24 mois ans							
+Répartition en %							
+4 ans	1579	647	309	198	93	214	2040
+Répartition en %	51,9	21,3	10,2	6,5	3,0	7,0	100
+
+Malgré la différence de répartition de la population, notamment sur le canton de Sevi-Sorru-Cinarca, il n’est pas possible de regrouper ce dernier avec le canton voisin (Gravona-Prunelli), étant donné l’hétérogénéité entre les deux populations. En effet, le premier canton est très rural/montagneux avec un accès plus contraignant, le second étant principalement composé des communes du bassin d’emploi d’Ajaccio, avec des possibilités plus faciles pour se déplacer. La comparaison entre les différents cantons s’est donc faite sur cette base.
+4.2.	Modalités de récupération des données  
+Le logiciel vaccinal du conseil départemental de Corse-du-Sud comporte un module permettant l’extraction de données. Les variables suivantes ont été extraites : 
+-	données sociodémographiques : mois et année de naissance, âge à l’injection, sexe, code postal, commune ;
+-	données sur tous les vaccins réalisés : nombre de doses réalisées, dates.
+Aucune donnée liée aux nom, prénom, jour de naissance, numéro de téléphone, adresse (hormis la commune) n’a été collectée. 
+4.3.	Analyse des données  
+Les données ont été analysées par le logiciel R (version 3.2.3), interface graphique Rstudio (version 1.0.136). 
+La base analysée a été extraite début 2017. De ce fait, l’ensemble des informations concernant l’année 2016 n’était pas encore disponible au sein de la base (enquête de l’année scolaire 2016-2017 non encore rentrée dans l’application). L’analyse a donc été réalisée pour les enfants nés entre le 1er janvier 1993 (intégration des données des visites de la PMI pour les enfants de 3-4 ans à partir de 1997) et le 31 décembre 2011 (ayant donc eu la visite de la PMI en 2015). 
+L’analyse a porté sur les vaccins suivants :
+-	diphtérie-tétanos-poliomyélite (DTP) ;
+-	coqueluche ;
+-	Haemophilus influenza de type b (Hib) ;
+-	hépatite B ;
+-	pneumocoque ;
+-	méningocoque C ;
+-	rougeole-oreillons-rubéole (ROR).
+
+L’ensemble des injections pour les vaccinations non étudiées a été retiré de la base. 
+Pour chaque valence, la présentation des données rappelle l’évolution du calendrier vaccinal. Étant donné que l’étude porte sur les enfants nés jusqu’en 2011, la réforme du calendrier vaccinal de 2013 n’est pas incluse dans la présente analyse.
+L’analyse des âges à la primo-vaccination et au rappel a été réalisée par sélection des valences considérées, exclusion des injections réalisées après l’âge étudié (24 mois ou 4 ans), puis comptage du nombre d’injections permettant la primo-vaccination, puis le rappe l. 
+Une couverture vaccinale à 24 mois l’année N est calculée comme le nombre d’enfants vaccinés ayant eu 24 mois au court de l’année N, ayant reçu le nombre d’injections nécessaires, rapporté au nombre d’enfants ayant eu 24 mois cette année-là.
+
+Étant donné les faibles effectifs sur certains cantons et afin de pouvoir discerner des différences entre cantons, l’analyse par canton a été réalisée en calculant une CV sur les 5 dernières années (2009-2013 pour les 24 mois et 2011-2015 pour les 4 ans). 
+5.	Résultats 
+5.1.	Description de la population d’étude 
+La base de données, pour les enfants nés entre le 1er janvier 1993 et le 31 décembre 2011, et concernant les valences étudiées, représente 22 566 personnes et 207 065 actes de vaccination. 
+Le sexe-ratio H/F est de 1,1. La répartition des personnes par canton, est donnée dans le tableau XX.
+
+	Ajaccio	Bavella-Grand sud	Gravona-Prunelli	Sartenais Valinco	Sevi-Sorru-Cinarca	Taravo-Ornano	total
+population	10785	4404	1993	2140	557	1889	21768 
+Répartition en %	49,5	20,2	9,2	9,8	2,6	8,7	100
+
+
+  
+Explication du décrochage de 1987/88 à peu près ?.
+5.2.	Représentativité
+Sur la base des recensements entre 1997 et 2014, l’évolution du pourcentage des enfants de 4 ans inclus dans la base est présentée dans le tableau XX.
+année	2010	2011	2012	2013	2014	2015
+% de complétude de la base	73,7	70,9	78,9	81,4	 81,8	81,8
+   
+À faire, % de complétude de la base par cantons, en attente données Insee.
+En 2010, le pourcentage de  retour des CS24 en Corse-du-Sud était de 51,3 % (1). En 2017, il était de 33 % en 2A .
+Les données issues de l’enquête PMI en petite section permet donc d’avoir une meilleure précision sur les couvertures vaccinales. Par ailleurs, l’analyse de la base permet de descendre à une échelle infra départementale, ce que ne permettent pas les CS24 issus du niveau national. 
+ 
+5.3.	Vaccination contre la diphtérie, le tétanos et la poliomyélite
+En plus des vaccinations pour les trois valences associées, la base de données contient des codes pour diphtérie-tétanos, poliomyélite, tétanos, tétanos-poliomyélite. Les vaccinations avec ces valences représentent 0,065 % des vaccinations DTP + ces valences. Il a donc été choisi de n’analyser que les injections comportant les 3 valences en même temps. 
+5.3.1.	Calendrier vaccinal
+Les données concernent les enfants nés jusqu’en 2011. Pour ceux-ci, le vaccin combiné DTP était à administrer à partir de 2 mois, puis 3 et 4 mois (3 injections). Des rappels étaient à faire entre 16 et 18 mois. Étant donné l’origine des données, les CV sur les injections suivantes ne peuvent être étudiées.
+La primovaccination (3 injections initiales puis le 1er rappel entre 16 et 18 mois) est obligatoire.
+5.3.1.	Données de couverture vaccinale venant d’autres sources
+•	CS 24, niveau national
+Les données de couverture vaccinale nationale, pour la diphtérie, le tétanos et la poliomyélite, sont données dans le tableau XX. L’évolution est présentée en figure XX.
+Couverture vaccinale diphtérie, tétanos, poliomyélite à l’âge de 24 mois, France, 1997-2015 (source : Drees, remontées des services de PMI – certificat de santé du 24ème mois. Traitement Santé publique France) – résultats en % 
+	1997	1998	1999	2000	2001	2002	2003	2004	2005	2006	2007	2008	2009	2010	2011	2012	2013	2014	2015
+DT primovaccination	97,6	97,3	97,7	98,1	98,1	97,5	96,5	98,5	98,5	98,8	98,8	98,5	98,4	98,5	98,7	98,7	98,5	98,4	98,9
+DT rappel	89,7	87,6	87,7	88	87,9	88,4	89,3	89,3	89,4	90,8	91,5	91,9	91,7	91,3	91,3	91,7	91	-	96,7
+Polio primovaccination	97,4	97,2	97,6	98	98	97,4	96,2	98,5	98,4	98,7	98,6	98,3	98,4	98,5	98,7	98,7	98,5	98,4	98,9
+Polio rappel	89,3	87,4	87,5	87,7	87,7	88,3	89,1	89,1	89,2	90,5	91,2	91,5	91,7	91,3	91,3	91,7	91	-	96,7
+
+  
+Les CV au niveau national montrent une augmentation significative entre 1997 et 2015, que ce soit pour les primovaccinations (p < 0,002) ou les rappels (p < 10-4). 
+•	CS 24, niveau départemental
+Les données des CS24 spécifiques à la Corse-du-Sud sont données dans le tableau XX(2) (3).
+
+années	2004	2005	2006	2007	2008	2009	2010(1)	2011(1)	2012(1)	2013	2014	2015
+DT primovaccination	98,4	99,1	99,3	99,1	94,4  	99,3	99,3	99,1	99,2	99,6	99,5	99,1
+DT rappel	87,5	86,9	88,3	92,9	89,3	94,3	92,6	91,7	93,6	92,4	99,3	96,6
+Polio primovaccination	98,4	99,1	99,3	99,1	94,4	99,3	  
+
+Polio rappel	87,4	86,7	88,2	93	89,1	94,3	
+
+Les données fluctuent autour des valeurs de CV que l’on retrouve au niveau national.
+•	Données à 6 ans
+Aucune donnée n’existe au niveau national pour les enfants de 4 ans. De ce fait, il a été choisi de présenter les données des CV à 5-6 ans (4) (5). Celles-ci sont présentées sur trois années scolaires (2002-2003, 2005-206 et 2012-2013), dans le tableau XX.
+Couverture vaccinale diphtérie, tétanos, poliomyélite chez les enfants scolarisés en grande section de maternelle (5-6 ans), France (source : Drees-Dgesco, enquêtes nationales de santé auprès des élèves scolarisés en grande section de maternelle. Traitement InVS) 
+  	2002-2003	2005-2006	2012-2013
+DTP	96,0 %	96,7 % [96,3 – 97,0]	95,8 % [95,5-96,0]
+
+5.3.2.	Analyse de l’âge à la primo-vaccination et lors du rappel
+La répartition de l’âge à la primo-vaccination, c'est-à-dire ayant reçu 3 injections,  pour les enfants nés entre 1993 et 2011, est représenté en graphique XX. 
+ 
+La courbe montre une vaccination principalement à 4 mois, conformément au calendrier vaccinal, avec un rattrapage majoritairement à 5 et 6 mois.  
+Le graphe XX montre la répartition des âges des enfants lors de la 4ième injection, c'est-à-dire au rappel.
+ 
+La majorité des 4ièmes injections sont bien faites entre 16 et 18 mois, conformément au calendrier, avec un rattrapage sur les 3 mois suivants.  Un léger rebond à 24 mois peut s’expliquer par un rattrapage du rappel lors de la visite médicale pour le certificat de santé du CS24ième mois.
+Le tableau XX, montrant l’âge médian en mois, lors de la primo-vaccination et du rappel, entre 1995 et 2013 en Corse-du-Sud, montre une amélioration du respect de l’âge préconisé, soit 4 mois lors de la primovaccination et entre 16 et 18 mois pour le rappel.
+Tableau XX : âge médian, en mois, lors de la primovaccination et du rappel pour le DTP – Corse-du-Sud, 1995-2013
+	1995	1996	1997	1998	1999	2000	2001	2002	2003	2004	2005	2006	2007	2008	2009	2010	2011	2012	2013
+primovaccination	6	5	5	5	5	5	5	5	5	5	5	5	5	5	5	5	4	4	4
+rappel	19	19	18	18	18	18	18	18	18	18	18	18	18	17	17	18	18	17	17 
+
+5.3.3.	Évolution des couvertures vaccinales à 24 mois entre 1995 et 2013 
+Sur l’ensemble de la Corse-du-Sud, l’évolution de la CV DTP (primovaccination et rappel) entre 1997 et 2013 est donnée en tableau XX. 
+années	1995	1996	1997	1998	1999	2000	2001	2002	2003	2004	2005	2006	2007	2008	2009	2010	2011	2012	2013
+primovaccination	95,1	95,9	94,8	96,2	96,8	96,2	96,6	97,0	96,9	95,9	95,5	97,3	96,9	96,8	97,9	97,8	98,2	97,0	97,7
+IC inf (%)	93,7	94,7	93,4	95,1	95,5	95,0	95,3	95,9	95,8	94,5	94,1	96,2	95,6	95,6	96,8	96,8	97,3	95,9	96,8
+IC sup (%)	96,2	96,9	95,9	97,2	97,7	97,3	97,5	97,8	97,9	97,0	96,7	98,1	97,8	97,7	98,6	98,6	98,9	97,9	98,5
+rappel	78,4	80,8	80,4	81,3	79,9	79,5	80,0	80,9	81,5	80,2	80,8	81,1	82,8	83,2	85,5	82,9	84,2	85,6	85,2
+IC inf (%)	76,0	78,5	78,2	79,1	77,4	77,0	77,5	78,7	79,1	77,7	78,3	78,7	80,4	80,9	83,3	80,7	82,0	83,5	83,1
+IC sup (%)	80,6	82,9	82,5	83,4	82,3	81,8	82,2	83,0	83,6	82,5	83,1	83,4	85,0	85,4	87,6	85,0	86,2	87,5	87,2
+
+L’évolution est représentée en graphe XX . La primovaccination entre 1995 et 2013 présente une légère augmentation (p < 10-4), de même que le rappel (p < 10-5). 
+5.3.1.	Évolution des couvertures vaccinales à 4 ans entre 1997 et 2015 
+L’évolution des CV à 4 ans en Corse-du-Sud entre 1997 et 2015 est présentée dans le tableau XX.
+années	1997	1998	1999	2000	2001	2002	2003	2004	2005	2006	2007	2008	2009	2010	2011	2012	2013	2014	2015
+primovaccination	95,7	96,7	96,4	97,9	97,4	96,8	97,2	97,7	98,0	96,6	96,8	97,9	97,3	97,2	98,3	98,3	98,7	98,1	98,1
+IC inf (%)	94,4	95,6	95,2	96,9	96,3	95,7	96,0	96,8	97,1	95,3	95,6	96,9	96,2	96,1	97,4	97,4	97,9	97,1	97,2
+IC sup (%)	96,8	97,6	97,3	98,6	98,3	97,8	98,0	98,4	98,8	97,6	97,8	98,7	98,2	98,1	99,0	99,0	99,3	98,8	98,8
+rappel	93,2	94,5	92,6	95,2	95,4	94,0	94,8	95,3	95,9	93,7	94,0	94,5	93,8	93,7	95,0	93,5	93,8	93,2	92,9
+IC inf (%)	91,6	93,1	91,1	93,9	94,0	92,4	93,4	94,1	94,6	92,1	92,4	93,0	92,2	92,1	93,5	92,0	92,3	91,6	91,3
+IC sup (%)	94,5	95,7	94,0	96,3	96,6	95,3	96,0	96,4	97,0	95,1	95,3	95,7	95,2	95,0	96,2	94,8	95,0	94,5	94,3
+
+Le graphique XX montre l’évolution des primovaccination et rappels chez les enfants de 4 ans entre 1997 et 2015 en Corse-du-Sud.
+  
+Il n’y a pas d’augmentation particulière de la primovaccination entre 24 mois et 4 ans. Par contre, la CV au rappel à 4 ans est bien meilleure que celle à 24 mois (valeurs dépassant les 90 %), bien que n’atteignant pas l’objectif de 95 % . 
+5.3.2.	Comparaison des couvertures vaccinales suivant les regroupements de cantons
+Le tableau XX présente les CV à 24 mois et à 4 ans dans les différents cantons de Corse-du-Sud pour les enfants nés entre 2007 et 2011.
+	24 mois	4 ans
+	primovaccination	rappel	primovaccination	rappel
+ 	valeur	IC	valeur	IC	valeur	IC	valeur	IC
+Ajaccio	99,0	[98,4 - 99,3]	89,4	[88,1 - 90,7]	99,2	[98,7 - 99,5]	96,7	[95,8 - 97,4]
+Bavella-Grand sud	96,8	[95,8 - 97,6]	80,6	[78,6 - 82,6]	97,8	[96,9 - 98,4]	92,4	[90,9 - 93,6]
+Gravona-Prunelli	98,5	[97,2 - 99,3]	88,4	[85,6 - 90,8]	99,0	[97,9 - 99,6]	96,1	[94,2 - 97,5]
+Sartenais Valinco	96,7	[95,0 - 98,0]	79,6	[76,3 - 82,6]	97,2	[95,6 - 98,3]	85,8	[82,9 - 88,4]
+Sevi-Sorru-Cinarca	97,8	[92,3 - 99,7]	82,4	[73,0 - 89,6]	97,8	[92,3 - 99,7]	94,5	[87,6 - 98,2]
+Taravo-Ornano	97,3	[95,5 - 98,5]	82,9	[79,3 - 86,0]	98,2	[96,7 - 99,2]	93	[90,4 - 95,0]
+
+Pour le rappel à 24 mois, aucun canton n’attend une CV de 95 %. Trois cantons ont une CV significativement plus faible que celle du canton d’Ajaccio, différence aussi valable pour certains avec le canton Gravona-Prunelli, lui aussi urbain. Concernant le canton de Sevi-Sorru-Cinarca, on ne peut voir de différence du fait d’un intervalle de confiance assez large (plus de 16 points de pourcentage).
+Pour le rappel à 4 ans, les différences entre les différents cantons se maintiennent. La CV du canton Sartenais-Valinco est la plus basse avec 85,8 % [82,9 – 88,4]. Les autres cantons atteignent ou approchent l’objectif de 95 % d’enfants vaccinés.
+5.3.3.	Discussion
+Les couvertures vaccinales à 24 mois pour le DTP en Corse-du-Sud pour les enfants nés entre 1993 et 2011 est inférieure à la CV nationale, notamment au niveau du rappel.
+Par ailleurs, les données issues de la base du conseil départemental montrent des valeurs inférieures à celles issues de l’analyse des CS24, notamment au niveau du rappel. La base étudiée contient XX % de la classe d’âge, alors que la remontée des CS24 ne concerne que XX % des enfants, soit une moindre représentativité. Les données nationales ne fournissent pas d’intervalle de confiance . Cette différence peut aussi s’expliquer par le fait que les CS24 sont remplis par un médecin, ce qui suppose que l’enfant est obligatoirement suivi médicalement, ce qui n’est pas le cas pour les enfants visités par la PMI. Le médecin, peut aussi profiter de la visite pour le certificat pour réaliser le rappel, comme le montre la figure XX .
+Pour la CV à 4 ans, les données issues de la base montrent des valeurs supérieures aux données nationales à 5-6 ans. Ces dernières années, les valeurs de CV pour le rappel sont proches de 95 % sans les atteindre. 
+
+5.4.	Vaccination contre la coqueluche 
+5.4.1.	Calendrier vaccinal
+Le vaccin contre la coqueluche est un vaccin recommandé. Il est cependant classiquement combiné aux valences diphtérie, tétanos et poliomyélite, obligatoires. Comme celles-ci, les injections sont à réaliser à partir de 2 mois, puis 3 et 4 mois (3 injections). Des rappels étaient à faire entre 16 et 18 mois. Étant donné l’origine des données, les CV sur les injections suivantes ne peuvent être étudiées.
+Il n’a pas été réalisé d’analyse sur le passage entre le vaccin à germe atténué et le vaccin acellulaire (Ca). 
+5.4.2.	Données de couverture vaccinale venant d’autres sources
+•	CS 24, niveau national
+Les données de couverture vaccinale nationale, pour la coqueluche, sont données dans le tableau XX. L’évolution est présentée en figure XX.
+Couverture vaccinale coqueluche à l’âge de 24 mois, France, 1997-2015 (source : Drees, remontées des services de PMI – certificat de santé du 24ème mois. Traitement Santé publique France) – résultats en % 
+	1997	1998	1999	2000	2001	2002	2003	2004	2005	2006	2007	2008	2009	2010	2011	2012	2013	2014	2015
+primovaccination	96,8	96,4	96,8	97,4	97,5	97,1	96,7	98,2	98,2	98,5	98,4	97,9	98,2	98,2	98,4	98,4	98,3	98	98,6
+rappel	88,8	86,7	86,8	87,2	87,2	87,9	88,8	88,9	89	90,3	91	91,1	91,4	90,8	90,5	90,9	90,3	-	96,3
+
+  
+Les CV au niveau national montrent une augmentation significative entre 1997 et 2015, que ce soit pour les primovaccinations (p < 0,002) ou les rappels (p < 10-4). 
+•	CS 24, niveau départemental
+Les données des CS24 spécifiques à la Corse-du-Sud sont données dans le tableau XX(2) (3).
+années	2004	2005	2006	2007	2008	2009	2010	2011 	2012	2013	2014	2015
+primovaccination	97,8	-	99,1	99	99,4	98,6	99,1	99,2	99,2	99,5	99,3	98,7
+rappel	86,9	-	87,7	93,4	94,3  	93	97,7	91,2	92,7	91,4	-	96,3
+
+Pour la primo-vaccination, les CV sont supérieures aux CV nationales. Les taux de CV pour le rappel le sont aussi. 
+•	Données à 6 ans
+Aucune donnée n’existe au niveau national pour les enfants de 4 ans. De ce fait, il a été choisi de présenter les données des CV à 5-6 ans (4) (5). Celles-ci sont présentées sur trois années scolaires (2002-2003, 2005-206 et 2012-2013), dans le tableau XX.
+Couverture vaccinale coqueluche chez les enfants scolarisés en grande section de maternelle (5-6 ans), France (source : Drees-Dgesco, enquêtes nationales de santé auprès des élèves scolarisés en grande section de maternelle. Traitement InVS)
+  	2002-2003	2005-2006	2012-2013
+CV	92,3 %	95 % [94,6 – 95,4]	95,1 % [94,8-95,4]
+
+
+5.4.3.	Analyse de l’âge à la primo-vaccination et lors du rappel
+La répartition de l’âge à la primo-vaccination, c'est-à-dire ayant reçu 3 injections,  pour les enfants nés entre 1993 et 2011, est représenté en graphique XX. 
+ 
+La courbe montre une vaccination principalement à 4 mois, conformément au calendrier vaccinal, avec un rattrapage majoritairement à 5 et 6 mois.  
+Le graphe XX montre la répartition des âges des enfants lors de la 4ième injection, c'est-à-dire au rappel.
+ 
+La majorité des 4ièmes injections sont bien faites entre 16 et 18 mois, conformément au calendrier, avec un rattrapage sur les 3 mois suivants.  Un léger rebond à 24 mois peut s’expliquer par un rattrapage du rappel lors de la visite médicale pour le certificat de santé du CS24ième mois.
+Le tableau XX, montrant l’âge médian en mois, lors de la primo-vaccination et du rappel, entre 1995 et 2013 en Corse-du-Sud, montre une amélioration du respect de l’âge préconisé, soit 4 mois lors de la primovaccination et entre 16 et 18 mois pour le rappel.
+Tableau XX : âge médian, en mois, lors de la primovaccination et du rappel pour la coqueluche – Corse-du-Sud, 1995-2013
+	1995	1996	1997	1998	1999	2000	2001	2002	2003	2004	2005	2006	2007	2008	2009	2010	2011	2012	2013
+primovaccination	6	5	5	5	5	5	5	5	5	5	5	5	5	5	5	5	4	4	4
+rappel	19	18	18	18	18	18	18	18	18	18	18	18	18	17	17	18	17	17	17 
+
+5.4.4.	Évolution des couvertures vaccinales à 24 mois entre 1995 et 2013 
+Sur l’ensemble de la Corse-du-Sud, l’évolution de la CV coqueluche (primovaccination et rappel) entre 1997 et 2013 est donnée en tableau XX. 
+années	1995	1996	1997	1998	1999	2000	2001	2002	2003	2004	2005	2006	2007	2008	2009	2010	2011	2012	2013
+primovaccination	94,0	95,2	94,2	95,6	96,3	96,0	96,3	96,6	96,9	95,4	95,5	97,2	96,6	96,8	97,9	97,8	98,1	97,0	97,7
+IC inf (%)	92,5	93,9	92,8	94,4	94,9	94,7	95,0	95,5	95,7	94,0	94,1	96,1	95,3	95,6	96,8	96,7	97,2	95,9	96,8
+IC sup (%)	95,2	96,3	95,4	96,7	97,3	97,0	97,3	97,5	97,8	96,6	96,7	98,1	97,6	97,7	98,6	98,5	98,8	97,9	98,5
+rappel	77,2	80,1	79,8	80,9	79,6	79,0	79,9	80,5	80,9	79,7	80,6	80,7	82,5	83,2	85,4	82,9	84,1	85,6	85,2
+IC inf (%)	74,8	77,8	77,5	78,7	77,0	76,6	77,5	78,3	78,6	77,2	78,1	78,3	80,1	80,9	83,2	80,7	82,0	83,5	83,1
+IC sup (%)	79,5	82,2	81,9	82,9	82,0	81,4	82,2	82,6	83,2	82,1	82,9	82,9	84,7	85,4	87,5	85,0	86,1	87,5	87,2
+
+5.4.5.	Évolution des couvertures vaccinales à 4 ans entre 1997 et 2015 
+L’évolution des CV à 4 ans en Corse-du-Sud entre 1997 et 2015 est présentée dans le tableau XX.
+années	1997	1998	1999	2000	2001	2002	2003	2004	2005	2006	2007	2008	2009	2010	2011	2012	2013	2014	2015
+primovaccination	94,6	96,0	95,7	97,2	96,9	96,6	96,9	97,2	98,0	96,0	96,7	97,8	96,9	97,2	98,3	98,3	98,6	98,1	98,1
+IC inf (%)	93,2	94,8	94,4	96,2	95,7	95,4	95,7	96,2	97,0	94,7	95,5	96,8	95,7	96,1	97,4	97,3	97,8	97,1	97,2
+IC sup (%)	95,8	97,0	96,7	98,0	97,9	97,6	97,8	98,0	98,7	97,1	97,7	98,6	97,9	98,1	99,0	98,9	99,2	98,8	98,8
+rappel	91,3	93,5	91,7	94,5	94,8	93,4	94,7	94,8	95,5	93,3	93,8	94,0	93,5	93,7	94,9	93,4	93,7	93,2	92,9
+IC inf (%)	89,6	92,0	90,1	93,2	93,3	91,8	93,3	93,5	94,1	91,6	92,2	92,5	91,9	92,1	93,4	91,9	92,2	91,6	91,3
+IC sup (%)	92,8	94,8	93,2	95,7	96,1	94,8	96,0	95,9	96,6	94,7	95,2	95,3	94,9	95,0	96,1	94,8	95,0	94,5	94,3
+
+Le graphique XX montre l’évolution des primovaccination et rappels chez les enfants à 24 mois et à 4 ans entre 1997 et 2015 en Corse-du-Sud.
+  
+Il y a des augmentations de CV pour les primovaccinations à 24 mois (p < 10-5) et 4 ans (p < 10-4), ainsi que pour le rappel à 24 mois (p < 10-6) . Le rappel à 4 ans ne montre pas d’évolution particulière entre 1997 et 2015 et reste en-dessous de l’objectif à 95 %. Par contre, il présente un bien meilleur taux que celui à 24 mois (valeurs dépassant les 90 %). 
+5.4.6.	Comparaison des couvertures vaccinales suivant les regroupements de cantons
+Le tableau XX présente les CV à 24 mois et à 4 ans dans les différents cantons de Corse-du-Sud pour les enfants nés entre 2007 et 2011.
+	24 mois	4 ans
+	primovaccination	rappel	primovaccination	rappel
+ 	valeur	IC	valeur	IC	valeur	IC	valeur	IC
+Ajaccio	99,0	[98,4 - 99,3]	89,4	[88,0 - 90,6]	99,2	[98,7 - 99,5]	96,6	[95,8 - 97,3]
+Bavella-Grand sud	96,8	[95,8 - 97,6]	80,6	[78,6 - 82,6]	97,8	[96,9 - 98,4]	92,4	[90,9 - 93,6]
+Gravona-Prunelli	98,5	[97,2 - 99,3]	88,4	[85,6 - 90,8]	99,0	[97,9 - 99,6]	96,1	[94,2 - 97,5]
+Sartenais Valinco	96,6	[94,9 - 97,8]	79,6	[76,3 - 82,6]	97,0	[95,4 - 98,2]	85,7	[82,7 - 88,3]
+Sevi-Sorru-Cinarca	97,8	[92,3 - 99,7]	82,4	[73,0 - 89,6]	97,8	[92,3 - 99,7]	94,5	[87,6 - 98,2]
+Taravo-Ornano	97,1	[95,2 - 98,4]	82,7	[79,1 - 85,9]	98,1	[96,5 - 99,1]	92,8	[90,2 - 94,9]
+
+Pour le rappel à 24 mois, aucun canton n’attend une CV de 95 %. Trois cantons ont une CV significativement plus faible que celle du canton d’Ajaccio, différence aussi valable pour certains avec le canton Gravona-Prunelli, lui aussi urbain. Concernant le canton de Sevi-Sorru-Cinarca, on ne peut voir de différence du fait d’un intervalle de confiance assez large (plus de 16 points de pourcentage).
+Pour le rappel à 4 ans, les différences entre les différents cantons se maintiennent. La CV du canton Sartenais-Valinco est la plus basse avec 85,8 % [82,9 – 88,4]. Les autres cantons atteignent ou approchent l’objectif de 95 % d’enfants vaccinés.
+5.4.7.	Discussion
+Les couvertures vaccinales pour la coqueluche sont les mêmes que pour le DTP, à quelques différences mineures prêts (dans la base, 4683 injections concernent DTP seul, sur 90857 vaccinations comprenant au moins le DTP+C). Les conclusions sont donc les mêmes, à savoir que la en Corse-du-Sud pour les enfants nés entre 1993 et 2011 est inférieure à la CV nationale, notamment au niveau du rappel.
+Par ailleurs, les données issues de la base du conseil départemental montrent des valeurs inférieures à celles issues de l’analyse des CS24, notamment au niveau du rappel. La base étudiée contient XX % de la classe d’âge, alors que la remontée des CS24 ne concerne que XX % des enfants, soit une moindre représentativité. Les données nationales ne fournissent pas d’intervalle de confiance . Cette différence peut aussi s’expliquer par le fait que les CS24 sont remplis par un médecin, ce qui suppose que l’enfant est obligatoirement suivi médicalement, ce qui n’est pas le cas pour les enfants visités par la PMI. Le médecin, peut aussi profiter de la visite pour le certificat pour réaliser le rappel, comme le montre la figure XX .
+Pour la CV à 4 ans, les données issues de la base montrent des valeurs supérieures aux données nationales à 5-6 ans. Ces dernières années, les valeurs de CV pour le rappel sont proches de 95 % sans les atteindre.
+En 2013, alors que la primo-vaccination coqueluche est comparable au niveau national (98,38 % versus 95,1 % à 98,3 %), la vaccination complète, semble supérieur au niveau national (93,7 % versus 90,3 %).
+Pour 2015, la primo-vaccination présente une baisse non significative. Par contre, la vaccination complète est inférieure à celle des années antérieures (85,25 % vs 92,89 %). 
+L’analyse suivant les cantons montre que cette baisse est surtout portée par le canton de Bavella-Grand Sud. Certains autres cantons montrent une baisse, mais non significative, étant donné la largeur des intervalles de confiance.
+Les données issues du CS24 pour 2011 montraient, pour la Corse-du-Sud, des CV de 99,2 % pour 3 doses et de 91,2 % après le rappel (1).  
+ 
+
+5.5.	Vaccination contre Haemophilus influenzae de type b (Hib)
+5.5.1.	Calendrier vaccinal
+La vaccination contre le Hib, recommandée, a été introduite dans le calendrier vaccinale de 1993, les injections étant à faire au même moment que la vaccination associée DTCoq-polio, c'est-à-dire à 2, 3 et 4 mois, suivi d’un rappel à 18 mois. 
+5.5.2.	Données de couverture vaccinale venant d’autres sources
+•	CS 24, niveau national
+Les données de couverture vaccinale nationale, pour le Hib, sont données dans le tableau XX. L’évolution est présentée en figure XX.
+Tableau XX : couverture vaccinale Haemophilus influenzae b à l’âge de 24 mois, France, 1998-2015 (source : Drees, Remontées des services de PMI – certificat de santé du 24e mois. Traitement Santé publique France) (%)
+	1998	1999	2000	2001	2002	2003	2004	2005	2006	2007	2008	2009	2010	2011	2012	2013	2014	2015
+primovaccination*	79,4	84,5	86,1	85,8	86,5	86,6	96,6	96,6	97,1	96,7	96,6	97,3	 97,3	97,6	97,5	97,5	97,3	98
+rappel**							87,2	87,5	88,7	88,9	89,3	89,9	 89,2	88,6	89	88,4	-	95,7
+* Jusqu’en 2014, la primovaccination correspond à 3 doses de vaccin et le rappel à 4 doses ;
+** À partir de 2015, la primovaccination correspond à 2 doses de vaccins et le rappel à 3 doses. En 2014, les données pour le rappel ne sont pas présentées en raison de la transition entre les deux calendriers vaccinaux.
+
+Les CV au niveau national montrent une nette augmentation (p < 10-10).  Celle-ci atteint 88,1 % en 2015. 
+•	CS 24, niveau départemental
+Les données des CS24 spécifiques à la Corse-du-Sud, pour la primovaccination et le rappel 3 doses, sont données dans le tableau XX(2) (3).
+Tableau XX : Couverture vaccinale pour la primovaccination et le rappel Hib à 24 mois, Corse-du-Sud, 
+(source : Drees, Remontées des services de PMI – Certificats de santé du 24e mois. Traitement Santé publique France)
+année	2006	2007	2008	2009	2010	2011	2012	2013	2014	2015
+primovaccination	98,9	98,7	97,4	97,5	98,0	98,2	98,5	98,7	98,9	98,5
+rappel	87,7	91,7	91,4	91,0	89,4	88,8	89,8	88,5		95,6
+
+Les données issues des CS 24 montrent un taux de primovaccination supérieur aux taux nationaux. Sur les premières années, le taux de vaccination pour le rappel était aussi supérieur mais est équivalent sur les dernières années, dépassant les 95 % en 2015. 
+•	Données à 6 ans
+Il n’y a pas de données de vaccination à 6 ans au niveau national. Par contre, des données existent au niveau régional pour la période 2005-2006. Pour la Corse, la CV est de 87,6 % [82,7 – 91,2].
+
+5.5.3.	Analyse de l’âge à la primo-vaccination et lors du rappel
+Les répartitions de l’âge à la primo-vaccination et au rappel pour les enfants nés entre 1993 et 2011, sont représentées en graphique XX et XX. 
+  
+La courbe montre une primovaccination (3 doses) réalisée principalement à 4-5 mois, conformément au calendrier vaccinal (4 mois). Le rappel a bien lieu entre 16 et 18 mois, avec un nombre encore important à 19 mois. Un léger rebond est présent à 24 mois, correspondant très certainement à la visite médicale pour le CS24.
+Le tableau XX, présentant l’évolution de l’âge médian en mois lors de la primovaccination et du rappel, entre 1995 et 2013 en Corse-du-Sud. Il montre une amélioration du respect des recommandations au niveau de l’âge, avec un âge de 4 mois sur les dernières années pour la primovaccination et un âge de 17 mois, pour le rappel la recommandation étant entre 16 et 18 mois. 
+Tableau XX : âge médian, en mois, de la primovaccination pour le VHB – Corse-du-Sud, 1995-2013
+année	1995	1996	1997	1998	1999	2000	2001	2002	2003	2004	2005	2006	2007	2008	2009	2010	2011	2012	2013
+primovaccination	6	5	5	5	5	5	5	5	5	5	5	5	5	5	5	5	4	4	4
+rappel	18	18	18	18	18	18	18	18	18	18	18	18	18	17	17	18	17	17	17
+
+5.5.4.	Évolution des couvertures vaccinales à 24 mois entre 1995 et 2013 
+Sur l’ensemble de la Corse-du-Sud, l’évolution de la CV contre le Hib entre 1995 et 2013 est donnée en tableau XX. 
+années	1995	1996	1997	1998	1999	2000	2001	2002	2003	2004	2005	2006	2007	2008	2009	2010	2011	2012	2013
+CV en %	61,9	88,3	91,3	93,5	93,8	93,9	95,3	95,9	95,0	93,1	93,6	95,0	92,8	91,7	96,7	92,5	95,3	96,7	97,7
+IC inf (%)	59,1	86,4	89,6	92,0	92,2	92,3	93,9	94,7	93,6	91,4	92,0	93,6	91,1	89,9	95,4	90,9	94,0	95,6	96,7
+IC sup (%)	64,6	90,0	92,7	94,7	95,2	95,2	96,4	96,9	96,2	94,5	95,0	96,2	94,3	93,3	97,7	93,9	96,4	97,6	98,4
+CV en %	51,0	74,7	77,8	79,1	76,6	76,8	76,9	78,9	78,9	77,3	79,1	77,4	78,4	78,6	81,2	78,8	82,7	85,2	85,1
+IC inf (%)	48,2	72,2	75,5	76,8	73,9	74,3	74,4	76,6	76,5	74,6	76,5	74,8	75,9	76,1	78,7	76,3	80,4	83,1	83,0
+IC sup (%)	53,8	77,0	80,1	81,2	79,1	79,3	79,3	81,1	81,2	79,7	81,5	79,8	80,9	81,0	83,5	81,0	84,7	87,1	87,1
+
+L’évolution comparée entre les données nationales, les remontés des CS24 pour la Corse-du-Sud et les données issues de la base est représentée en figure XX. 
+  
+Les données de la base montrent une primovaccination supérieure à l’objectif de 95 % sur les dernières années. Les données issues de la base montrent une CV inférieure à celle issue de l’analyse des CS 24. 
+5.5.5.	Évolution des couvertures vaccinales à 4 ans entre 1997 et 2015 
+L’évolution des CV à 4 ans en Corse-du-Sud entre 1997 et 2015 est présentée dans le tableau XX.
+années	1997	1998	1999	2000	2001	2002	2003	2004	2005	2006	2007	2008	2009	2010	2011	2012	2013	2014	2015
+CV en %	62,8	89,0	92,6	95,0	94,5	94,5	95,9	96,5	96,1	93,6	94,8	95,6	93,2	92,1	97,1	93,0	95,7	97,8	98,1
+IC inf (%)	60,0	87,2	91,1	93,7	92,9	93,0	94,5	95,4	94,8	91,9	93,3	94,3	91,5	90,3	95,9	91,4	94,4	96,8	97,1
+IC sup (%)	65,5	90,7	94,0	96,1	95,8	95,7	96,9	97,4	97,1	94,9	96,1	96,7	94,6	93,6	98,0	94,4	96,8	98,5	98,8
+CV en %	59,0	87,0	89,2	91,9	91,1	90,6	91,6	92,9	93,1	90,4	92,1	90,5	89,4	88,6	90,6	89,2	92,0	92,7	92,7
+IC inf (%)	56,3	85,0	87,4	90,3	89,2	88,8	89,9	91,4	91,5	88,5	90,3	88,7	87,4	86,6	88,7	87,3	90,3	91,1	91,1
+IC sup (%)	61,8	88,8	90,8	93,3	92,8	92,2	93,2	94,2	94,5	92,1	93,7	92,2	91,1	90,4	92,3	90,9	93,4	94,1	94,1
+
+Le graphique XX montre l’évolution comparée des vaccinations chez les enfants nés entre 1993 et 2011 à 24 mois et 4 ans en Corse-du-Sud.
+ 
+La figure XX montre qu’il n’y a pas de rattrapage vaccinale pour le Hib entre 2 et 4 ans, alors qu’il peut être effectué jusqu’à l’âge de 5 ans. 
+5.5.6.	Comparaison des couvertures vaccinales suivant les regroupements de cantons
+Le tableau XX présente les CV moyennes à 24 mois et à 4 ans dans les différents cantons de Corse-du-Sud pour les enfants nés entre 2007 et 2011.
+	24 mois	4 ans
+	primovaccination	rappel	primovaccination	rappel
+ 	valeur	IC	valeur	IC	valeur	IC	valeur	IC
+Ajaccio	98,0	[97,3 – 98,6]	88,6	[87,2 – 89,9]	98,2	[97,6 – 98,7]	95,7	[94,8 – 96,6]
+Bavella-Grand sud	95,8	[94,7 - 96,7]	79,9	[77,9 - 81,9]	96,8	[95,8 - 97,6]	91,5	[90,0 - 92,9]
+Gravona-Prunelli	98,5	[97,2 – 99,3]	88,4	[85,6 – 90,8]	99,0	[97,9 – 99,6]	96,1	[94,2 – 97,5]
+Sartenais Valinco	84,7	[81,7 – 87,4]	66,4	[62,6 – 70,0]	85,2	[82,2 – 87,9]	72,3	[68,6 – 75,7]
+Sevi-Sorru-Cinarca	97,8	[92,3 – 99,7]	82,4	[73,0 – 89,6]	97,8	[92,3 – 99,7]	94,5	[87,6 – 98,2]
+Taravo-Ornano	96,7	[94,8 – 98,1]	82,1	[78,5 – 85,3]	97,7	[96,0 – 98,8]	92,0	[89,3 – 94,2]
+
+Il existe une différence de vaccination à 24 mois entre le canton de Taravo-Ornano et celui d’Ajaccio, qui subsiste à 4 ans. Le canton Sartenais-Valinco présente aussi une différence avec celui d’Ajaccio. Le canton de Sevi-Sorru-Cinarca présente une largeur d’intervalle de confiance de 20 points, ne permettant pas de le comparer aux autres.
+5.5.7.	Discussion
+L’absence de rattrapage vaccinal entre 2 et 4 ans est temporisé par le fait que les CV sont supérieures à 95 %. De ce fait, la protection communautaire fait son effet.
+L’âge médian plus faible d’un mois (16 au lieu de 17) par rapport à la vaccination DTP et coqueluche, alors que les injections sont préconisées entre 16 et 18 mois, pourrait s’expliquer par un intérêt plus grand pour la vaccination, chez les parents des enfants concernés et donc un meilleur suivi, voire une anticipation des délais de vaccination. 
+Les CV à 24 mois montrent des valeurs environ de 10 point de pourcentage inférieurs à celle données, pour la Corse-du-Sud, par les CS24. est là-aussi envisageable, qu’étant donné les taux de retour des CS24, que les familles qui effectuent la démarche, même si celle-ci est obligatoire, il n’y a aucun sanction, sont celles ayant un meilleur suivi de l’évolution des enfants. La différence est plus importante que pour DTP, ce qui peut s’expliquer par une moindre CV (vaccination non obligatoire, polémique sur celle-ci) qui met en exergue l’effet suivi médical.  
+Tout enfant non vacciné à 24 mois, c'est-à-dire dont les parents n’ayant pas profités des vaccinations DTPC, ne sera que très peu vaccinés au cours des 2 ans plus tard.
+ 
+
+5.6.	Vaccination contre l’hépatite B
+5.6.1.	Calendrier vaccinal
+La vaccination contre le virus de l’hépatite B est introduite dans le calendrier vaccinal de 1995. Elle est alors recommandée pour les adolescents et les nourrissons, avec l’existence de 2 schémas vaccinaux :
+-	en 3 injections : 2 injections à 1 mois d’intervalle, la 3ième 6 mois après la première ;
+-	en 4 injections : 3 injections à 1 mois d’intervalle, la 4ième 1 an après la première, c'est-à-dire, même schéma que pour DTP et coqueluche. 
+Pour le calendrier vaccinal de 1996, le vaccin doit être recommandé systématiquement poru les adolescents et les nourrissons.
+En 1999, dans le cadre général et, en particulier pour les enfants, le schéma à appliquer est celui en 3 injections. Le calendrier vaccinal de 2005 précise que, dans le cadre d’injections combinées avec les valences DTP, coqueluche et Hib, les injections sont à faire à 2, 4 et entre 16 et 18 mois.
+Dans l’analyse, il sera considéré que les enfants sont vaccinés s’ils ont reçu 3 injections, quelques soit les délais entre chaque injection.
+5.6.2.	Données de couverture vaccinale venant d’autres sources
+•	CS 24, niveau national
+Les données de couverture vaccinale nationale, pour l’hépatite B, sont données dans le tableau XX. L’évolution est présentée en figure XX.
+Couverture vaccinale VHB à l’âge de 24 mois, France, 1998-2015 (source : Drees, remontées des services de PMI – certificat de santé du 24ème mois. Traitement Santé publique France) – résultats en %
+	1998	1999	2000	2001	2002	2003	2004	2005	2006	2007	2008	2009	2010	2011	2012	2013	2014	2015
+3 doses	27,5	23,9	26	28	29,2	27,6	34,5	35,1	39,3	41,9	47	51	64,6	74,2	78,1	81,5	83,1	88,1
+
+ 
+Les CV au niveau national montrent une nette augmentation (p < 10-10).  Celle-ci atteint 88,1 % en 2015. 
+•	CS 24, niveau départemental
+Les données des CS24 spécifiques à la Corse-du-Sud, pour 3 doses, sont données dans le tableau XX(2) (3).
+années	2006	2007	2008	2009	2010	2011	2012	2013	2014	2015
+VHB	45,6	51,1	54,2	56,3	68,5	77,1	81,4	83,2	84	91,4
+
+Les données issues des CS 24 montrent un taux de vaccination pour le VHB supérieur aux taux nationaux et suivant la même progression 
+•	Données à 6 ans
+Aucune donnée n’existe au niveau national pour les enfants de 4 ans. De ce fait, il a été choisi de présenter les données des CV à 5-6 ans (4) (5). Celles-ci sont présentées sur trois années scolaires (2002-2003, 2005-2006 et 2012-2013), dans le tableau XX.
+Couverture vaccinale VHB chez les enfants scolarisés en grande section de maternelle (5-6 ans), France (source : Drees-Dgesco, enquêtes nationales de santé auprès des élèves scolarisés en grande section de maternelle. Traitement InVS) 
+  	2002-2003	2005-2006	2012-2013
+VHB	33,5 %	37,9 % [37,0 – 38,7]	50,9 % [50,1 – 51,6]
+
+5.6.3.	Analyse de l’âge à la primo-vaccination et lors du rappel
+La répartition de l’âge à la primo-vaccination  pour les enfants nés entre 1993 et 2011, est représenté en graphique XX. 
+ 
+La courbe montre une vaccination à 3 doses principalement à 16 mois. Cependant, l’étalement est important. Pour les enfants ayant reçu 3 doses, la dernière est majoritairement avant 19 mois. 
+Le tableau XX, présentant l’âge médian en mois, entre 1995 et 2013 en Corse-du-Sud, montre une baisse puis une hausse de l’âge médian. Sur les dernières années, celui est de 16 ans, c'est-à-dire tel que préconisé dans le schéma vaccinal en étant toutefois plus faible d’un mois (16 au lieu de 17) par rapport aux valences DTP et coqueluche.
+Tableau XX : âge médian, en mois, de la primovaccination pour le VHB – Corse-du-Sud, 1995-2013
+	1995	1996	1997	1998	1999	2000	2001	2002	2003	2004	2005	2006	2007	2008	2009	2010	2011	2012	2013
+VHB	17	18	14	11	11	13	12	11	11	11	14	14	14	14	15	16	16	16	16
+
+5.6.4.	Évolution des couvertures vaccinales à 24 mois entre 1995 et 2013 
+Sur l’ensemble de la Corse-du-Sud, l’évolution de la CV contre le VHB entre 1995 et 2013 est donnée en tableau XX. 
+années	1995	1996	1997	1998	1999	2000	2001	2002	2003	2004	2005	2006	2007	2008	2009	2010	2011	2012	2013
+VHB	7,88	17,98	44,04	45,66	44,41	33,07	39,9	36,49	37,19	44,84	34,84	38,28	42,13	42,55	48,56	55,67	66,21	69,24	73,59
+IC inf (%)	6,45	15,92	41,34	42,98	41,37	30,34	37,06	33,92	34,42	41,86	31,97	35,45	39,16	39,64	45,54	52,8	63,49	66,59	71,04
+IC sup (%)	9,51	20,19	46,77	48,37	47,48	35,89	42,78	39,12	40,03	47,86	37,78	41,17	45,14	45,51	51,59	58,5	68,85	71,8	76,02
+
+L’évolution comparée entre les données nationales, les remontés des CS24 et les données issues de la base est représentée en graphe XX. 
+ 
+Les données de la base montrent une augmentation de la CV très importante sur la période 1995-1997, puis une stagnation. Le taux de CV remonte sur les dernières années, bien que passé en-dessous de la CV au niveau national. Ce graphique montre une différence importante entre les taux issus des CS24 et les taux issus de la base, d’environ 10 points de pourcentage. 
+5.6.5.	Évolution des couvertures vaccinales à 4 ans entre 1997 et 2015 
+L’évolution des CV à 4 ans en Corse-du-Sud entre 1997 et 2015 est présentée dans le tableau XX.
+années	1997	1998	1999	2000	2001	2002	2003	2004	2005	2006	2007	2008	2009	2010	2011	2012	2013	2014	2015
+VHB	43,04	51,86	58,31	54,63	52,72	44,3	47,24	43,15	44,34	51,84	43,47	46,09	51,11	51,12	56,17	61,58	72,29	75,12	79,64
+IC inf (%)	40,28	49,09	55,60	51,93	49,65	41,39	44,33	40,49	41,47	48,82	40,47	43,17	48,08	48,14	53,15	58,76	69,70	72,62	77,29
+IC sup (%)	45,83	54,62	60,99	57,31	55,78	47,24	50,16	45,84	47,23	54,85	46,51	49,04	54,13	54,08	59,16	64,35	74,77	77,50	81,86
+
+Le graphique XX montre l’évolution des vaccinations chez les enfants de 24 mois et 4 ans entre 1997 et 2015 en Corse-du-Sud.
+
+ 
+Mis à part pour les premières années, il y a sinon un faible rattrapage de la couverture vaccinale pour le VHB entre 24 mois et 4 ans.
+5.6.6.	Comparaison des couvertures vaccinales suivant les regroupements de cantons
+Le tableau XX présente les CV à 24 mois et à 4 ans dans les différents cantons de Corse-du-Sud pour les enfants nés entre 2007 et 2011.
+
+	24 mois	4 ans
+ 	valeur	IC	valeur	IC
+Ajaccio	65,0	[63,0 – 67,03]	71,9	[69,9 – 73,7]
+Bavella-Grand sud	63,1	[60,7 - 65,5]	70,2	[67,9 - 72,4]
+Gravona-Prunelli	63,5	[59,5 – 67,3]	68,7	[64,9 – 72,4]
+Sartenais Valinco	61,5	[57,6 – 65,3]	65	[61,1 – 68,6]
+Sevi-Sorru-Cinarca	62,6	[51,9 – 72,6]	68,1	[57,5 – 77,5]
+Taravo-Ornano	56,4	[52,0 – 60,8]	61,9	[57,5 – 66,1]
+
+Il existe une différence de vaccination à 24 mois entre le canton de Taravo-Ornano et celui d’Ajaccio, qui subsiste à 4 ans. Le canton Sartenais-Valinco présente aussi une différence avec celui d’Ajaccio. Le canton de Sevi-Sorru-Cinarca présente une largeur d’intervalle de confiance de 20 points, ne permettant pas de le comparer aux autres.
+5.6.7.	Discussion
+L’âge médian plus faible d’un mois (16 au lieu de 17) par rapport à la vaccination DTP et coqueluche, alors que les injections sont préconisées entre 16 et 18 mois, pourrait s’expliquer par un intérêt plus grand pour la vaccination, chez les parents des enfants concernés et donc un meilleur suivi, voire une anticipation des délais de vaccination. 
+Les CV à 24 mois montrent des valeurs environ de 10 point de pourcentage inférieurs à celle données, pour la Corse-du-Sud, par les CS24. est là-aussi envisageable, qu’étant donné les taux de retour des CS24, que les familles qui effectuent la démarche, même si celle-ci est obligatoire, il n’y a aucun sanction, sont celles ayant un meilleur suivi de l’évolution des enfants. La différence est plus importante que pour DTP, ce qui peut s’expliquer par une moindre CV (vaccination non obligatoire, polémique sur celle-ci) qui met en exergue l’effet suivi médical.  
+Tout enfant non vacciné à 24 mois, c'est-à-dire dont les parents n’ayant pas profités des vaccinations DTPC, ne sera que très peu vaccinés au cours des 2 ans plus tard.
+ 
+
+5.7.	Vaccination contre le pneumocoque
+5.7.1.	Calendrier vaccinal
+Avant le calendrier vaccinal de 2006, le vaccin contre le pneumocoque (23-valent ou heptavalent) faisait partie des recommandations particulières. À partir de celui-ci, le vaccin conjugué heptavalent a été recommandé pour l’ensemble des enfants de moins de 2 ans, selon un schéma comportant 3 injections à un mois d’intervalle (la première injection dès l’âge de 2 mois) et un rappel entre 12 et 15 mois. À partir du calendrier vaccinal 2009, le schéma a été simplifié avec 2 injections à 2 mois d’intervalle (la première injection dès l’âge de 2 mois) et un rappel à l’âge de 12 mois. Depuis le calendrier 2010, il est demandé de vacciner avec le vaccin 13-valent.
+L’analyse des données a été réalisée sur les vaccins hepta (3 injections) et 13-valent (26681 injections). 
+Pour l’analyse des données, il a été considéré qu’un enfant était vacciné lorsqu’il avait reçu 3 doses .
+5.7.2.	Données de couverture vaccinale venant d’autres sources
+•	CS24, niveau national
+Les données de couverture vaccinale nationale (3 doses reçues) à 24 mois, pour le pneumocoque, sont données dans le tableau XX. L’évolution est présentée en figure XX.
+
+Couverture vaccinale "au moins 3 doses" à l’âge de 24 mois par le vaccin pneumococcique conjugué, France, 2010-2015 (source : Drees, Remontées des services de PMI – Certificats de santé du 24e mois. Traitement Santé publique France)
+Année de collecte	2010	2011	2012	2013	2014	2015
+3 doses à 24 mois	88,6 %	88,8 %	88,8 %	89,2 %	89,3 %	91,4 %
+
+La CV au niveau national montre une augmentation (p <) entre  2010 et 2015.
+•	Données à 6 ans, niveau national
+La couverture vaccinale nationale pour au moins 3 doses à 6 ans, issus de l’enquête nationale de santé 2012-2013, est de 83,3 % [82,8-83,8]. 
+•	CS24, niveau régional
+Le tableau XX présente l’évolution de la couverture vaccinale pneumocoque à 24 mois, entre 2010 et 2015, d’après l’analyse des certificats de santé du 24ième mois.
+Évolution de la couverture vaccinale pneumocoque conjugué "au moins 3 doses" 
+à 24 mois (%) entre 2010 et 2015
+2010	2011	2012	2013	2014	2015
+NI	83,4	87,6	88	88,9	91,8
+
+Les données montrent que les taux de CV en Corse-du-Sud ont progressés sur la période entre 2011 et 2015 et rejoints les taux nationaux.
+5.7.3.	Analyse de l’âge à la vaccination
+Le calendrier vaccinal de 2009 est sorti en avril. De ce fait, les enfants, nés à partir du 1er janvier 2009, devait suivre ce nouveau calendrier, en supposant une mise en application hypothétique immédiate. De ce fait, la présentation des âges à la vaccination avec rappel est faite sur 2 figures, d’une part, pour les enfants nés entre le 1er janvier 2007 et le 31 décembre 2008 (figure XX), puis pour les enfants nés à partir du 1er janvier 2009. 
+ 
+
+ 
+Jusqu’à début 2009 (schéma à 3+1 injections), le rappel devait être fait entre 12 et 15 mois. La figure XX montre qu’en fait, le rappel était majoritairement effectué entre 16 et 19 mois, c'est-à-dire, très certainement lors du rappel DTCaPolio. On note, là-aussi, une remonté à 24 mois du nombre de rappel.
+À partir de 2009, le rappel est effectué à 12-13 mois, suivant en cela le calendrier en vigueur (rappel à 12 mois). Le pic à 4-5 mois correspond à des enfants vaccinés suivant l’ancien calendrier vaccinal. À noter que, pour les enfants nés après le 1er janvier 2010, il est toujours présent, comme le montre la figure XX.
+ 
+Le tableau XX, présente l’âge médian en mois, entre 2006 et 2013 en Corse-du-Sud, de l’âge lors du rappel. Entre XX et 2008, les données correspondent à la 4ième injection, et, à partir de 2010, à la 3ième injection. L’âge médian au rappel en 2009 n’est pas montré, afin d’éviter les phénomènes de transition. 
+Tableau XX : âge médian, en mois, de la vaccination contre le pneumocoque– Corse-du-Sud, 2006-2013
+2006	2007	2008	2009	2010	2011	2012	2013
+17	18	17	17	17	17	16	16
+
+5.7.4.	Évolution des couvertures vaccinales à 24 mois entre 2010 et 2013 
+Sur l’ensemble de la Corse-du-Sud, l’évolution de la CV à 24 mois contre le pneumocoque entre 2006 et 2013 est donnée en tableau XX. 
+	vaccination 3+1 doses	vaccination 2+1 doses
+année	2006	2007	2008	2009	2010	2011	2012	2013
+CV	29,32	38,7	51,29	64,81	59,75	78,93	78,02	85,62
+IC inf (%)	26,69	35,79	48,32	61,87	56,91	76,55	75,61	83,54
+IC sup (%)	32,06	41,68	54,26	67,66	62,54	81,18	80,29	87,53
+
+L’évolution comparée entre les données nationales et régionales, issus des CS24 et les données issues de la base est représentée en graphe XX. 
+
+ 
+Pour la couverture vaccinale à 24 mois en 2010 (enfants nés en 2008), les données présentées via les CS 24, sont des couvertures à 3 doses. Celles issus des données sont à 3 + 1 dose. Les données à 2+1 dose sont présentées à partir de l’année 2011.
+La CV de Corse-du-Sud issu des CS 24 est inférieure au niveau nationale. De même, les CV retrouvées à travers les données du conseil départemental sont inférieures à celles issues des analyse des CS24 au niveau régional.
+5.7.5.	Évolution des couvertures vaccinales à 4 ans entre 2010 et 2015 
+L’évolution des CV à 4 ans en Corse-du-Sud entre 2007 et 2015 est présentée dans le tableau XX. Jusqu’en 2012, il s’agit de la CV à 3+1 injections, puis du schéma à 2+1. 
+ années	2007	2008	2009	2010	2011	2012	2013	2014	2015
+CV	19,25	34,59	43,89	57,36	71,4	64,67	80,96	81,32	88,61
+IC inf (%)	16,92	31,83	40,9	54,4	68,6	61,89	78,65	79,04	86,71
+IC sup (%)	21,75	37,44	46,91	60,28	74,09	67,37	83,11	83,45	90,33
+
+Le graphique XX montre l’évolution des couvertures vaccinales chez les enfants de 24 mois et 4 ans nés entre 2003 et 2011 en Corse-du-Sud.
+ 
+Le graphe XX montre un rattrapage quasiment constant entre 24 mois et 4 ans, celui-ci diminuant cependant légèrement ces dernières années, ne laissant apparaître qu’un très faible écart.
+5.7.6.	Comparaison des couvertures vaccinales suivant les regroupements de cantons
+Le tableau XX présente les CV à 24 mois et à 4 ans dans les différents cantons de Corse-du-Sud pour les enfants nés entre 2007 et 2011. Les CV sont à 3 doses, quel que soit l’année de naissance .
+
+	24 mois	4 ans
+ 	valeur	IC	valeur	IC
+Ajaccio	85,1	[83,5 –86,5]	87,0	[85,5 – 88,4]
+Bavella-Grand sud	80,2	[78,1 - 82,1]	82,8	[80,8 - 84,6]
+Gravona-Prunelli	87,7	[84,9 – 90,2]	89,9	[87,2 – 92,1]
+Sartenais Valinco	71,7	[68,0 – 75,1]	72,9	[69,3 – 76,3]
+Sevi-Sorru-Cinarca	79,0	[69,3 – 86,9]	82,4	[73,0 – 89,6]
+Taravo-Ornano	77,4	[73,6 – 81,0]	78,6	[74,8 – 82,1]
+
+Il existe une différence de vaccination, à 24 mois et à 4 ans, entre, d’une part, les cantons de Bavella-Grand sud, Sartenais-Valinco, d’autre part, ceux d’Ajaccio et Gravona-Prunelli. Le canton de Sevi-Sorru-Cinarca présente une largeur d’intervalle de confiance de 17 points, ne permettant pas de le comparer aux autres.
+5.7.7.	Discussion
+Suite à l’introduction de la recommandation vaccinale contre le pneumocoque, la CV a augmenté pour arriver à presque 86 % à 24 mois en 2013.
+La répartition de l’âge à la vaccination, entre 2010 et 2015, montre une tendance à se rapprocher des préconisations, à savoir une vaccination à 12 mois. Cette vaccination a donc lieu sans attendre la visite médicale liée au certificat médical du 24ième mois.  
+Deux regroupements de cantons se distinguent. D’une part les cantons d’Ajaccio et Gravona-Prunelli, cantons principalement urbains ou péri-urbains et, d’autre part, les cantons de Bavella-Grand sud, Sartenais-Valinco et Taravo-Ornano, qui sont des cantons plus ruraux. 
+La répartition des âges à 3 doses pour les enfants nés depuis le 1er janvier 2010 (figure XX), montre qu’il faut plus d’un an pour qu’une modification du calendrier vaccinal soit totalement mis en application.
+Les CV issues de l’étude de la base montrent des valeurs toujours inférieures à celle retrouvées par l’analyse des CS24.
+
+ 
+
+5.8.	Vaccination contre le méningocoque C 
+5.8.1.	Calendrier vaccinal
+En octobre 2002, le Comité technique des vaccinations (CTV) a considéré qu’il n’y avait pas lieu de recommander la vaccination généralisée par le vaccin conjugué contre le méningocoque C aux nourrissons, enfants, adolescents ou adultes jeunes. Elle n’était recommandée que dans certains groupes à risque. En avril et juin 2009, le nouvel avis du Haut Conseil de Santé Publique (HCSP) (6), sur proposition du CTV, recommande la vaccination systématique des nourrissons de 12 à 24 mois, avec une seule dose de vaccin méningococcique C conjugué. Durant la période initiale de mise en place de cette stratégie et en attendant son impact optimal par la création d’une immunité de groupe, le HCSP recommande l’extension de cette vaccination systématique jusqu’à l’âge de 24 ans révolus selon le même schéma vaccinal à une dose. De ce fait, la vaccination a été introduite dans le calendrier vaccinal en 2010.
+En 2014, le HCSP a rendu un avis portant sur l’adaptation de la stratégie de vaccination contre les infections invasives à méningocoque de sérogroupe C en situation de pénurie de vaccins. Il estime que les enfants âgés de 12 mois à 4 ans doivent être prioritaires pour l’utilisation des vaccins méningococciques C conjugués monovalents. Pour les âges de 4 à 24 ans, il recommande l’utilisation des vaccins tétravalents (IIM A, C, Y et W135).
+Concernant l’étude portant sur la vaccination chez les 3-4 ans, l’analyse a été faite sur la vaccination par le vaccin monovalent C.
+5.8.2.	Données de couverture vaccinale venant d’autres sources
+•	niveau national
+Les données de couverture vaccinale nationale à 24 mois et entre 3 et 9 ans, pour le méningocoque C, sont données dans le tableau XX. Ces données proviennent l’échantillon généralisé de bénéficiaires (EGB). L’évolution est présentée en figure XX.
+Proportion de personnes vaccinées depuis janvier 2010 (source : EGB)
+âge	2011	2012	2013	2014	2015	2016
+24 mois	48,00%	54,10%	56,40%	64,00%	69,80%	70,9 %
+3-9 ans	29,20%	36,80%	46,20%	53,60%	59,80%	65,5 %
+
+La CV au niveau national montre une augmentation (p < 2.10-3) entre  2011 et 2015.
+Par ailleurs, l’enquête chez les enfants scolarisés en grande section de maternelle (5-6 ans), donne, pour la période 2014-2015, une CV de 43,8 % [43,1 – 44,5]
+•	niveau régional
+Aucune donnée au niveau de la Corse-du-Sud n’a été retrouvée. De ce fait, le tableau XX présente les données au niveau de la Corse.
+Couverture vaccinale méningocoque C par département et par classe d'âge à 24 mois et 2-4 ans (%)
+âge	2013	2014	2015	2016
+24 mois	 	62,1 %	62,7 %	65,9 %
+2-4 ans	56,1 %	57,3 %	59,3 %	61,3 %
+
+Les données montrent des taux de vaccination à 24 mois en Corse pour le méningocoque C inférieur aux taux nationaux.
+5.8.3.	Analyse de l’âge à la vaccination
+La répartition de l’âge à la vaccination pour les enfants nés entre 1993 et 2011, est représentée en graphique XX. 
+ 
+La courbe montre une vaccination à partir de 12 mois allant jusqu’à 16 mois, avant une diminution progressive, sauf à 24-25 mois, où un pic apparaît, en lien avec l’établissement du CS 24. 
+Le tableau XX, présentant l’âge médian en mois, entre 1995 et 2013 en Corse-du-Sud, montre une baisse puis une hausse de l’âge médian.
+Tableau XX : âge médian, en mois, de la vaccination contre le méningocoque C– Corse-du-Sud, 1995-2013
+	1995	1996	1997	1998	1999	2000	2001	2002	2003	2004	2005	2006	2007	2008	2009	2010	2011	2012	2013
+VHB	17	18	14	11	11	13	12	11	11	11	14	14	14	14	15	16	16	16	16 
+
+5.8.4.	Évolution des couvertures vaccinales à 24 mois entre 2010 et 2013 
+Sur l’ensemble de la Corse-du-Sud, l’évolution de la CV contre le méningocoque C entre 2010 et 2013 est donnée en tableau XX. 
+années	2010	2011	2012	2013
+CV	10,8	36,6	46,0	52,3
+IC inf (%)	9,0	33,9	43,2	49,5
+IC sup (%)	12,6	39,3	48,8	55,2
+
+L’évolution comparée entre les données régionales issues de l’analyse de l’EGB et les données issues de la base est représentée en graphe XX. 
+  
+Les données de la base montrent une augmentation de la CV sur la période 2010-2013. Les CV sont cependant inférieures à celles retrouvées au niveau national, obtenues via l’analyse de l’EGB. Entre 2014 et 2016, le taux sur la Corse montre globalement un même décalage. Cependant, rien ne permet de connaître la si celui-ci est équivalent au taux de Corse-du-Sud, en absence de données poru la Haute-Corse. 
+5.8.5.	Évolution des couvertures vaccinales à 4 ans entre 2010 et 2015 
+L’évolution des CV à 4 ans en Corse-du-Sud entre 2010 et 2015 est présentée dans le tableau XX.
+années	2010	2011	2012	2013	2014	2015
+CV	3,6	15,5	34,5	56,2	61,5	69,0
+IC inf (%)	2,6	13,4	31,8	53,3	58,7	66,3
+IC sup (%)	4,8	17,8	37,3	59,0	64,2	71,6
+
+Le graphique XX montre l’évolution des vaccinations chez les enfants de 24 mois et 4 ans entre 2010 et 2015 en Corse-du-Sud.
+
+ 
+Le graphe XX montre un rattrapage constant entre 24 mois et 4 ans. L’augmentation pour les enfants nés entre 2009 et 2011 provient d’une meilleure vaccination avant 24 mois.
+5.8.6.	Comparaison des couvertures vaccinales suivant les regroupements de cantons
+Le tableau XX présente les CV à 24 mois et à 4 ans dans les différents cantons de Corse-du-Sud pour les enfants nés entre 2007 et 2011.
+
+	24 mois	4 ans
+ 	valeur	IC	valeur	IC
+Ajaccio	33,6	[31,6 –35,6]	54,0	[51,9 – 56,1]
+Bavella-Grand sud	25,8	[23,6 - 28,0]	43,1	[40,7 - 45,6]
+Gravona-Prunelli	34,5	[30,8 – 38,5]	54,3	[50,3 – 58,3]
+Sartenais Valinco	28,3	[24,9 – 32,0]	38	[34,2 – 41,9]
+Sevi-Sorru-Cinarca	36,3	[26,4 – 47,0]	42,9	[32,5 – 53,7]
+Taravo-Ornano	29,0	[25,1 – 33,1]	41,8	[37,5 – 46,2]
+
+Il existe une différence de vaccination à 24 mois entre le canton de Bavella-Grand sud et ceux d’Ajaccio et Gravona-Prunelli. Pour la CV à 4 ans, la différence est significative entre, d’une part les cantons d’Ajacico et Gravona-Prunelli et, d’autre part, ceux de Bavella-Grand sud, Sartenais-Valinco et Taravo-Ornano. Le canton de Sevi-Sorru-Cinarca présente une largeur d’intervalle de confiance de 20 points, ne permettant pas de le comparer aux autres.
+5.8.7.	Discussion
+La vaccination contre le méningocoque C montre une augmentation entre 2010 (année d’introduction dans le calendrier vaccinal) où la CV était à 10,8 % à 24 mois et 2014 où elle a atteint 52,3 %. En 2015, les données montrent une CV à 4 ans de 69,0 %, en progression depuis 2010.
+La répartition de l’âge à la vaccination, entre 2010 et 2015, montre une tendance à se rapprocher des préconisations, à savoir une vaccination à 12 mois. Cette vaccination a donc lieu sans attendre la visite médicale liée au certificat médical du 24ième mois.  
+Deux regroupements de cantons se distinguent. D’une part les cantons d’Ajaccio et Gravona-Prunelli, cantons principalement urbains ou péri-urbains et, d’autre part, les cantons de Bavella-Grand sud, Sartenais-Valinco et Taravo-Ornano, qui sont des cantons plus ruraux. 
+
+ 
+
+
+5.9.	Vaccination contre la rougeole, les oreillons, la rubéole (ROR)
+Dans la base, il y a neuf vaccinations effectuées pour rubéole seule, 15 pour rougeole rubéole, 171 pour rougeole seule, 7 pour oreillons seuls et 34928 avec les valences ROR. De ce fait, l’analyse ne portera que sur les injections avec les 3 valences. 
+5.9.1.	Calendrier vaccinal
+Le calendrier vaccinal de 1993 recommande la vaccination ROR à partir de 12 mois, en une seule injection. Pour les enfants vivant en collectivité, la vaccination contre la rougeole doit être pratiquée à partir de 9 mois, avec une revaccination 6 mois plus tard en association avec les oreillons et la rubéole.
+Le calendrier vaccinal de 1998 ajoute une seconde dose entre 3 et 6 ans qui ne constitue pas un rappel, mais un rattrapage (pas de première vaccination, non séroconversion lors de la première injection). 
+À partir du calendrier vaccinal de 2005, l’injection à 9 mois pour les enfants vivant en collectivité, comporte les 3 valences. Par ailleurs, la première dose est recommandée à 12 mois (et non plus à partir de 12 mois) et la deuxième dose entre 13 et 24 mois avec un intervalle d’au moins 1 mois. Deux dose sont recommandées pour les enfants de plus de 24 mois, nés en 1992 ou après. 
+Le plan français 2005-2010 d’élimination de la rougeole a comme objectif, à 24 mois, une CV à 1 dose de 95 % et une CV à 2 doses de 80 % qui doit monter à six ans à 90 % [22].
+En avril 2012, un nouveau plan stratégique mondial de lutte contre la rougeole et la rubéole sur la période 2012-2020 [3] a comme but l’élimination de la rougeole dans au moins cinq régions de l’OMS. L’un des objectifs principaux à atteindre est l’obtention d’une CV 2 doses de 95 % pour stopper la circulation du virus.
+5.9.2.	Données de couverture vaccinale venant d’autres sources
+•	CS 24, niveau national
+Les données de couverture vaccinale nationale sont données dans les tableaux XX et XX. L’évolution est présentée en figure XX.
+Couverture vaccinale rougeole, oreillons, rubéole « 1 dose » à l’âge de 24 mois, France, 1997-2008 (source : Drees, Remontées des services de PMI – Certificat de santé du 24ème mois. Traitement Santé publique France) (%)
+année	1997	1998	1999	2000	2001	2002	2003	2004	2005	2006 	2007 	2008
+rougeole	83,3	82,5	82,7	84,1	84,6	85,9	87,3	87,5	87,2	89,4	90,1	89,1
+oreillons			81,0	83,5	84,2	85,7	87,1	87,2	87,0	89,2	89,7	89,0
+rubéole	82,5	81,9	82,3	83,8	84,2	85,6	87,0	87,3	87,0	89,1	89,5	88,9
+
+Couverture vaccinale rougeole, oreillons, rubéole "1 dose" et "2 doses" à l’âge de 24 mois, France, 2010-2015 (source : Drees, Remontées des services de PMI – Certificat de santé du 24e mois. Traitement Santé publique France) (%)
+Année	2010	2011	2012	2013	2014	2015
+	1 dose	2 doses	1 dose	2 doses	1 dose	2 doses	1 dose	2 doses	1 dose	2 doses	1 dose	2 doses
+ROR	89,2	60,9	89,4	67,3	90,5	72	90,3	74,5	90,6	76,8	90,5	78,8
+
+•	CS 24, niveau départemental
+Les données des CS24 spécifiques à la Corse-du-Sud, pour les 3 valences, sont données dans le tableau XX(2) (3).
+Couvertures vaccinales rougeole, rubéole, oreillons "1 dose" et "2 doses" à 24 mois (%)
+	2004	2005	2006	2007	2008	2009	2010	2011	2012	2013	2014	2015
+	1 dose	1 dose	2 doses	1 dose	2 doses	1 dose	2 doses	1 dose	2 doses	1 dose	2 doses
+rougeole	87,7	88,9	89,9	91,3	85,7	-	-	83,6	71	89	80,2	90,7	81,2	90	84,4	84,9	72,9
+oreillons	87,6	88,6	89,9	91,2	85,7	-	-										
+rubéole	87,6	88,6	89,8	91,2	85,5	-	-										
+
+•	Données à 6 ans
+Aucune donnée n’existe au niveau national pour les enfants de 4 ans. De ce fait, il a été choisi de présenter les données des CV à 5-6 ans (4) (5). Celles-ci sont présentées sur trois années scolaires (2002-2003, 2005-2006 et 2012-2013), dans le tableau XX.
+Couverture vaccinale rougeole chez les enfants scolarisés en grande section de maternelle (5-6 ans)
+	2002-2003	2005-2006	2012-2013
+rougeole 1 dose 	93,3%	93,7 % [93,3 - 94,2]	96,4% [96,1-96,7]
+rougeole 2 doses 	28,1%	45,1 [44,3 - 46,0]	83,2% [82,7-83,8]
+oreillon 1 dose	92,6%	91,4 % [90,8 - 91,9]	-
+oreillon 2 doses	24,4%	43,2 % [42,3 - 44,1]	-
+rubéole 1 dose	93,1%	91,4 % [90,8 - 91,9]	-
+rubéole 2 doses	28,0%	43,3 [42,4 - 44,1]	-
+
+5.9.3.	Analyse de l’âge à la 1ière et 2ième dose 
+Les répartitions des âges lors des premières et deuxièmes pour les enfants nés entre 1993 et 2011, sont représentées en graphiques X et X. 
+ 
+
+ 
+La courbe de première dose montre une vaccination principalement à 12 mois. Le pic à 9 mois montre les enfants recevant une injection nécessaire pour la vie en collectivité, conformément aux préconisations du calendrier vaccinal. Un léger rebond à 24 mois doit correspondre à une vaccination lors de la visite médicale pour le CS24.
+L’étalement pour le graphe de la deuxième injection est beaucoup plus important. Le pic correspond aux 24 mois, les recommandations valables depuis 2005 mentionnent une deuxième dose entre 13 et 24 mois. La visite médicale correspondant au CS24 doit être utilisée afin d’effectuer cette seconde injection. L’augmentation à 36 mois correspond au calendrier valable entre 1998 et 2005 préconisant une deuxième vaccination entre 3 et 6 ans. 
+Le tableau XX, présentant l’âge médian en mois, entre 1995 et 2013 en Corse-du-Sud, montre une baisse puis une hausse de l’âge médian. Sur les dernières années, celui est de 16 ans, c'est-à-dire tel que préconisé dans le schéma vaccinal en étant toutefois plus faible d’un mois (16 au lieu de 17) par rapport aux valences DTP et coqueluche.
+Tableau XX : âge médian, en mois, des 1ière et 2nde vaccination pour le ROR – Corse-du-Sud, 1995-2013
+	1995	1996	1997	1998	1999	2000	2001	2002	2003	2004	2005	2006	2007	2008	2009	2010	2011	2012	2013
+1ière vaccination	17	18	14	11	11	13	12	11	11	11	14	14	14	14	15	16	16	16	16
+2ième vaccination	17	18	14	11	11	13	12	11	11	11	14	14	14	14	15	16	16	16	16
+5.9.4.	Évolution des couvertures vaccinales à 24 mois entre 1995 et 2013 
+Sur l’ensemble de la Corse-du-Sud, l’évolution de la CV entre 1995 et 2013 est donnée en tableau XX. 
+années	1995	1996	1997	1998	1999	2000	2001	2002	2003	2004	2005	2006	2007	2008	2009	2010	2011	2012	2013
+1 dose	70,2	75,9	76,8	79,2	80,3	79,4	79,9	80,4	82,8	83,5	84,2	86,8	85,5	85,9	89,1	88,6	91,2	91,1	93,0
+IC inf (%)	67,6	73,5	74,5	77,0	77,8	76,9	77,5	78,2	80,5	81,2	81,9	84,7	83,2	83,7	87,1	86,7	89,4	89,4	91,4
+IC sup (%)	72,7	78,2	79,1	81,4	82,7	81,7	82,2	82,5	84,9	85,7	86,4	88,7	87,5	87,9	90,9	90,3	92,7	92,7	94,3
+2 doses	0,2	0,1	0,2	0,4	0,3	0,9	1,4	0,4	1,1	2,0	4,8	17,7	24,4	32,3	41,2	42,4	52,2	63,5	65,4
+IC inf (%)	0,0	0,0	0,0	0,1	0,1	0,4	0,8	0,1	0,6	1,3	3,6	15,6	21,9	29,6	38,3	39,6	49,4	60,8	62,7
+IC sup (%)	0,6	0,4	0,6	0,9	0,8	1,6	2,2	0,9	1,9	3,1	6,3	20,1	27,1	35,1	44,2	45,3	55,0	66,2	68,1
+L’évolution comparée entre les données nationales, les remontés des CS24 et les données issues de la base est représentée en graphe XX. 
+  
+  
+Les données de la base montrent une augmentation de la CV très importante sur la période 1995-1997, puis une stagnation. Le taux de CV remonte sur les dernières années, bien que passé en-dessous de la CV au niveau national. Ce graphique montre une différence importante entre les taux issus des CS24 et les taux issus de la base, d’environ 10 points de pourcentage. 
+5.9.5.	Évolution des couvertures vaccinales à 4 ans entre 1997 et 2015 
+L’évolution des CV à 4 ans en Corse-du-Sud entre 1997 et 2015 est présentée dans le tableau XX.
+années	1997	1998	1999	2000	2001	2002	2003	2004	2005	2006	2007	2008	2009	2010	2011	2012	2013	2014	2015
+1 dose	83,6	87,8	88,1	90,5	90,1	90,2	90,9	91,9	92,0	92,3	92,1	93,2	91,9	93,2	94,7	93,1	94,5	94,5	95,1
+IC inf (%)	81,5	85,9	86,2	88,8	88,1	88,3	89,0	90,3	90,3	90,5	90,3	91,6	90,1	91,6	93,2	91,5	93,1	93,1	93,7
+IC sup (%)	85,6	89,6	89,8	92,0	91,8	91,8	92,4	93,3	93,5	93,8	93,7	94,6	93,4	94,6	96,0	94,5	95,7	95,7	96,2
+2 doses	0,4	0,4	1,4	5,3	8,1	9,7	13,4	20,0	22,8	40,5	57,4	69,0	73,6	74,6	81,2	81,7	84,2	85,4	86,9
+IC inf (%)	0,1	0,1	0,8	4,1	6,5	8,0	11,5	17,9	20,4	37,6	54,3	66,2	70,9	71,9	78,8	79,4	82,0	83,3	84,9
+IC sup (%)	0,9	0,9	2,2	6,6	9,9	11,5	15,5	22,2	25,3	43,5	60,4	71,7	76,2	77,1	83,5	83,8	86,2	87,3	88,7
+
+Le graphique XX montre l’évolution des vaccinations chez les enfants de 24 mois et 4 ans entre 1997 et 2015 en Corse-du-Sud.
+
+ 
+Mis à part pour les premières années, il y a sinon un faible rattrapage de la couverture vaccinale pour le VHB entre 24 mois et 4 ans.
+5.9.6.	Comparaison des couvertures vaccinales suivant les regroupements de cantons
+Le tableau XX présente les CV à 24 mois et à 4 ans dans les différents cantons de Corse-du-Sud pour les enfants nés entre 2007 et 2011.
+
+	24 mois	4 ans
+	1 dose	2 doses	1 dose	2 doses
+ 	valeur	IC	valeur	IC	valeur	IC	valeur	IC
+Ajaccio	93,2	[92,0 - 94,2]	59,6	[57,5 - 61,7]	95,6	[94,7 - 96,4]	87,5	[86,0 - 88,8]
+Bavella-Grand sud	87,7	[86,0 - 89,3]	40,9	[38,4 - 43,4]	93,8	[92,4 - 94,9]	80,7	[78,7 - 82,6]
+Gravona-Prunelli	93,1	[90,8 - 95,0]	61,5	[57,6 - 65,4]	96,7	[95,0 - 98,0]	89,2	[86,5 - 91,5]
+Sartenais Valinco	89,1	[86,4 - 91,4]	61,8	[58,0 - 65,6]	91,0	[88,5 - 93,1]	77,6	[74,1 - 80,7]
+Sevi-Sorru-Cinarca	91,2	[83,4 - 96,1]	40,7	[30,5 - 51,5]	93,4	[86,2 - 97,5]	79,1	[69,3 - 86,9]
+Taravo-Ornano	89,1	[86,1 - 91,7]	50,6	[46,2 – 55,0]	92,6	[90,0 - 94,7]	81,3	[77,7 - 84,6]
+
+À 24 mois, la même différence de vaccination existe pour le ROR à 1 dose que pour les autres vaccinations, entre, d’une part Ajaccio, et, d’autre part, Bavella-Grand Sud, Sartenais-Valinco et Taravo-Ornano. Le Sartenais-Valinco a, par contre, un très bon taux à 2 doses.
+À 4 ans, tous les cantons ont un taux de vaccination à 1 dose supérieur à 90 %, le canton Gravona-Prunelli présentant le meilleur taux à 96,7 % [95 – 98]. À deux doses, tous les cantons approchent ou dépassent les 80 %. 
+5.9.7.	Discussion
+
+ 
+
+6.	Discussion
+Cette action permet d’avoir des données transversales de la CV sur une classe d’âge de la population. En effet, près de 100 % des enfants de 3 ans fréquentent l’école maternelle . Il n’y a donc pas de biais de recrutement.
+Enfin, les CS24 sont réalisés par un médecin, les enfants ayant eu un CS24 sont donc plus susceptibles d’être mieux suivis et donc mieux vaccinés, entrainant des surestimations des CV basées sur les CS24. ??
+Ils sont néanmoins utiles pour pouvoir comparer, entre eux différents départements ou par rapport au niveau national.
+Deux regroupements de cantons se distinguent. D’une part les cantons d’Ajaccio et Gravona-Prunelli, cantons principalement urbains ou péri-urbains et, d’autre part, les cantons de Bavella-Grand sud, Sartenais-Valinco et Taravo-Ornano, qui sont des cantons plus ruraux. À voir la place de Porto-Vecchio par rapport au reste du canton de Bavella-Grand sud. Par ailleurs, même si le canton de Sevi-Sorru-Cinarca n’a pu être comparé aux autres étant donné les largeurs de ses intervalles de confiance, dues à la faible population d’enfants, étant donné son caractère rural, il est envisageable de l’inclure dns le groupe de canton avec les plus faibles vaccinations.
+ 
+
+
+À signaler des incohérences entre vaccin_code et protocole_code :
+protocole_code == FJ, correspond à un vaccin_code DTP et un HA
+protocole _code == T, a une correspondance vaccin_code de 10 P
+
+Annexe : 
+ 
+
+Biblio
+
+1. 	Institut de veille sanitaire (France), Ruello M, Six C, Malfait P, Guthmann J-P. Organisation de la vaccination et mesure de la couverture vaccinale en région Corse. Saint-Maurice: Institut de veille sanitaire; 2014. 
+2. 	Fonteneau L, Guthmann J-P, Lévy-Bruhl D. Estimations  des  couvertures  vaccinales  à  24  mois  à  partir  des  certificats  de  santé   du 24 e  mois – 2004-2007. Saint-Maurice (Fr): Institut de veille sanitaire; 2010 août p. 30. 
+3. 	Données de couverture vaccinale diphtérie, tétanos, poliomyélite, coqueluche à 24 mois, site de Santé publique France [Internet]. [cité 9 août 2017]. Disponible sur: http://invs.santepubliquefrance.fr/Dossiers-thematiques/Maladies-infectieuses/Maladies-a-prevention-vaccinale/Couverture-vaccinale/Donnees/Diphterie-tetanos-poliomyelite-coqueluche/Infra-nationales/Couverture-vaccinale-pour-la-primovaccination-et-le-rappel-de-DT-poliomyelite-et-coqueluche-a-24-mois
+4. 	Fonteneau L, Urcun J-M, Guthmann J-P, Collet M, Neulat N, Bristol-Gauzy P, et al. Couverture vaccinale des enfants âgés de 6ans, scolarisés en grande section de maternelle, France, 2005–2006. Arch Pédiatrie. mars 2013;20(3):241-7. 
+5. 	Données de couverture vaccinale diphtérie, tétanos, poliomyélite, coqueluche à 6 ans, site de santé publqiue France [Internet]. [cité 9 août 2017]. Disponible sur: http://invs.santepubliquefrance.fr/Dossiers-thematiques/Maladies-infectieuses/Maladies-a-prevention-vaccinale/Couverture-vaccinale/Donnees/Diphterie-tetanos-poliomyelite-coqueluche
+6. 	HCSP. Avis relatif à la vaccination par le vaccin méningococcique conjugué de sérotype C. 2009 avril et 26 juin. 
+7. 	Données de couverture vaccinale méningocoque C, site de Santé publique France [Internet]. [cité 16 juin 2017]. Disponible sur: http://invs.santepubliquefrance.fr/Dossiers-thematiques/Maladies-infectieuses/Maladies-a-prevention-vaccinale/Couverture-vaccinale/Donnees/Meningocoque-C
+8. 	HCSP. Avis relatif à l’adaptation de la stratégie de vaccination contre les infections invasives à ménigocoque de sérogroupe C en situationd e pénurie de vaccins. 2014 oct. 
+
