@@ -197,7 +197,7 @@ f_dtp4 <- function (df_dtp,an){
 ###################################################
 # boucle de sortie des resultats
 
-
+sink("sorties/dtp/dtp_24.txt") # sorties vers le fichier specifie
 
 print("###################################### 24 mois #########################################")
 
@@ -220,9 +220,9 @@ for (d in 3:4){ # d pour dose
       rm(tempo,sortie) # on efface les fichiers temporaires pour faire de la place
 }
 
+sink()
 
-
-
+sink("sorties/dtp/dtp_4.txt") # sorties vers le fichier specifie
 print("###################################### 4 ans #########################################")
 
 #remplissage des tableaux de sortie
@@ -243,10 +243,10 @@ for (d in 3:4){ # d pour dose
       print(round(sortie,2))
       rm(tempo,sortie) # on efface les fichiers temporaires pour faire de la place
 }
+sink()
 
 
-
-
+sink("sorties/dtp/dtp_canton.txt") # sorties vers le fichier specifie
 cat("
       ******************************
       ****** DTP *******************
@@ -388,12 +388,13 @@ rownames(result) <- c("primovacci","rappel")
 colnames(result) <- levels(donnees$canton)
 write.csv2(result,"sorties/dtp/result_cantons.csv")
 
+sink()
 
-
+sink("sorties/dtp/dtp_ana_primovacci.txt")
 cat("
       **********************************
       **********************************
-      ****** ANALYSE AGE PRIMOVACCI ****
+      ****** ANALYSE AGE VACCI ET RAPPEL ****
       **********************************
       **********************************")
 
@@ -416,26 +417,7 @@ cat("
       
       # analyse en tant que telle
       summary(primovacci$age_vacci_mois)
-      # analyse de ce df
-      png("sorties/dtp/age-primovacci%01d.png")
-      plot(table(primovacci$age_vacci_mois[primovacci$age_vacci_mois < 36]),
-           main = "Répartition de l'âge en mois à la primovaccination DTP,
-pour les enfants nés entre le 1er janvier 1993
-et le 31 décembre 2011, Corse-du-Sud",
-           xlab = "âge en mois - coupure à 36 mois", ylab = "effectif") 
-      dev.off()
-
       
-
-cat("
-      **********************************
-      **********************************
-      ******** ANALYSE AGE RAPPEL ******
-      **********************************
-      **********************************")
-
-
-      #############################################################
       
       # on reapplique une derniere fois pour enlever la derniere injection de la primovacci
       rappelvacci <- rappelvacci[duplicated(rappelvacci$nodossier),] 
@@ -445,23 +427,24 @@ cat("
       
       # analyse en tant que telle
       summary(rappelvacci$age_vacci_mois)
+
       # analyse de ce df
-      png("sorties/dtp/age-rappelvacci%01d.png")
-      plot(table(rappelvacci$age_vacci_mois[rappelvacci$age_vacci_mois < 60]),
-           main = "Répartition de l'âge en mois lors du rappel DTP,
+      png("sorties/dtp/age-primovacci%02d.png", width=25 ,height=15, units="cm",res = 400)
+      barplot(table(primovacci$age_vacci_mois[primovacci$age_vacci_mois < 48]),
+           main = "Répartition de l'âge en mois à la primovaccination DTP,
 pour les enfants nés entre le 1er janvier 1993
 et le 31 décembre 2011, Corse-du-Sud",
-           xlab = "âge en mois - coupure à 60 mois", ylab = "effectif") 
+           xlab = "âge en mois - coupure à 48 mois", ylab = "effectif") 
+
+      barplot(table(rappelvacci$age_vacci_mois[rappelvacci$age_vacci_mois < 48]),
+           main = "Répartition de l'âge en mois au rappel DTP,
+pour les enfants nés entre le 1er janvier 1993
+et le 31 décembre 2011, Corse-du-Sud",
+           xlab = "âge en mois - coupure à 48 mois", ylab = "effectif") 
       dev.off()
+      
 
 sink()
-
-
-
-
-
-
-
 
 
 # fin analyse DTPolio
