@@ -21,12 +21,12 @@ png("sorties/dtp/evolution_CV_nat-dep-PMI%02d.png",width=25 ,height=15, units="c
       abline(h = 95, col = "darkorange",lty = 2)
 
 # figure sur les rappels, cad lignes paires du df, soit graphe[c(F,T),]
-      matplot(t(graphe[c(F,T),]),type = "b",pch = c(rep(1,2),3), xlab = "années", ylim = c(75,100),ylab = "taux de couverture vaccinal en %",
+      matplot(t(graphe[c(F,T),]),type = "b",pch = c(rep(5,2),4), xlab = "années", ylim = c(75,100),ylab = "taux de couverture vaccinal en %",
                main = "Comparaison de l'évolution du rappel DTP
       à l'âge de 24 mois suivant les sources, 1995-2015 - axe des ordonnées débutant à 75 %", xaxt="n",lty = c(1,rep(3,2)),
               col = couleurs)
       axis(1,at=1:21,labels=1995:2015)
-      legend(15,80,legend = rownames(graphe[c(F,T),]), pch = c(1,1,3), col = couleurs, cex=0.8,bty="n",lwd=1,lty = c(1,rep(3,2)))
+      legend(15,80,legend = rownames(graphe[c(F,T),]), pch = c(5,5,4), col = couleurs, cex=0.8,bty="n",lwd=1,lty = c(1,rep(3,2)))
       legend(15,77,legend = "objectif de vaccination", pch="",col = "darkorange", cex=0.8,bty="n",lwd=1,lty = 2)
       abline(h = 95, col = "darkorange",lty = 2)
 dev.off()
