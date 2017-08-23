@@ -182,6 +182,7 @@ f_coq4 <- function (df_coq,an){
 
 sink("sorties/coq/coq_24.txt") # sorties vers le fichier specifie
 
+
 print("###################################### 24 mois #########################################")
 
 #remplissage des tableaux de sortie
@@ -372,11 +373,15 @@ sink()
 # write.csv2(result,"sorties/coq/result_cantons.csv")
 
 
-sink("sorties/coq/coq_ana_primovacci.txt") # sorties vers le fichier specifie
+
+
+
+
+sink("sorties/coq/coq_ana_primovacci.txt")
 cat("
       **********************************
       **********************************
-      ****** ANALYSE AGE PRIMOVACCI ****
+      ****** ANALYSE AGE VACCI ET RAPPEL ****
       **********************************
       **********************************")
 
@@ -399,27 +404,7 @@ cat("
       
       # analyse en tant que telle
       summary(primovacci$age_vacci_mois)
-      # analyse de ce df
-      png("sorties/coq/age-primovacci%01d.png")
-      plot(table(primovacci$age_vacci_mois[primovacci$age_vacci_mois < 36]),
-           main = "Répartition de l'âge en mois à la primovaccination coqueluche,
-pour les enfants nés entre le 1er janvier 1993
-et le 31 décembre 2011, Corse-du-Sud",
-           xlab = "âge en mois - coupure à 36 mois", ylab = "effectif") 
-      dev.off()
-
-sink()      
-
-sink("sorties/coq/coq_ana_rappel.txt") # sorties vers le fichier specifie
-cat("
-      **********************************
-      **********************************
-      ******** ANALYSE AGE RAPPEL ******
-      **********************************
-      **********************************")
-
-
-      #############################################################
+      
       
       # on reapplique une derniere fois pour enlever la derniere injection de la primovacci
       rappelvacci <- rappelvacci[duplicated(rappelvacci$nodossier),] 
@@ -429,18 +414,25 @@ cat("
       
       # analyse en tant que telle
       summary(rappelvacci$age_vacci_mois)
+      
+
       # analyse de ce df
-      png("sorties/coq/age-rappelvacci%01d.png")
-      plot(table(rappelvacci$age_vacci_mois[rappelvacci$age_vacci_mois < 60]),
-           main = "Répartition de l'âge en mois lors du rappel coqueluche,
+      png("sorties/coq/age-primovacci%02d.png", width=25 ,height=15, units="cm",res = 400)
+      barplot(table(primovacci$age_vacci_mois[primovacci$age_vacci_mois < 48]),
+           main = "Répartition de l'âge en mois à la primovaccination coqueluche,
 pour les enfants nés entre le 1er janvier 1993
 et le 31 décembre 2011, Corse-du-Sud",
-           xlab = "âge en mois - coupure à 60 mois", ylab = "effectif") 
+           xlab = "âge en mois - coupure à 48 mois", ylab = "effectif") 
+
+      barplot(table(rappelvacci$age_vacci_mois[rappelvacci$age_vacci_mois < 48]),
+           main = "Répartition de l'âge en mois au rappel coqueluche,
+pour les enfants nés entre le 1er janvier 1993
+et le 31 décembre 2011, Corse-du-Sud",
+           xlab = "âge en mois - coupure à 48 mois", ylab = "effectif") 
       dev.off()
+      
 
 sink()
-
-
 
 # fin analyse coq
 ####################################################################################################
