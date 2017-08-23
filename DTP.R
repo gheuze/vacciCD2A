@@ -14,6 +14,10 @@
 # plot(table(format(DTPolio_2015$dateopv,"%Y")))
 # plot(table(DTPolio_2015$age_vacci)) 
 
+rm(list=ls())
+
+setwd("I:\\DIRECTION ACTION TERRITORIALE DE SANTE\\VSSE\\CIRE\\Dossiers MI\\Vaccination\\etude_CG2A\\analyse")
+
 load("donnees/df_pour_analyse.RData")
 
 dtp <- c("D(A)TC(A)P","D(A)TP","DT","DTC","DTCP","DTCPHIB","DTCPHIBHB","DTP","DTP CA+HIB",
