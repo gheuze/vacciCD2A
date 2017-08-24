@@ -29,35 +29,7 @@ ror <- c("ROR")
 # analyse donnees nationales
 ###################################################################
 
-donnees_nat <- read.csv2("donnees/donnees_nationales_CS_24_ror.csv",header=F)
 
-colnames(donnees_nat) <- 1997:2015
-rownames(donnees_nat) <- c("primovaccination DT", "rappel DT", "primovaccination P", "rappel P")
-
-
-# analyse evolution DT
-for (i in 1:4){
-      print(rownames(donnees_nat)[i])
-      print(summary(lm(as.numeric(donnees_nat[i,]) ~ as.numeric(1997:2015))))
-      
-}
-
-
-
-
-# graphe evolution
-couleurs <- c("blue","red","darkgreen", "black")
-
-png("sorties/ror/evolution_nat_CS24.png",width=25 ,height=15, units="cm",res = 200)
-matplot(t(donnees_nat),type="b",pch=1:4,xlab = "années", ylim = c(85,100),ylab = "taux de couverture vaccinal en %",
-         main = "Couverture vaccinale diphtérie, tétanos, poliomyélite à l'âge de 24 mois, 
-         analyse des CS 24 - France, 1997-2015 - résultats en % - axe des ordonnées débutant à 85 %", xaxt="n",
-        col = couleurs)
-axis(1,at=1:19,labels=1997:2015)
-legend(14,89,legend = rownames(donnees_nat), pch=1:4,col = couleurs, cex=0.8,bty="n",lwd=1)
-abline(h = 95, col = "darkorange",lty = 2)
-dev.off()
- 
 
 # fin analyse nationale ror     
 #################################
@@ -370,12 +342,12 @@ cat("
       # analyse en tant que telle
       summary(Prem_vacci$age_vacci_mois)
       # analyse de ce df
-      png("sorties/ror/age-Prem_vacci%01d.png", width=25 ,height=15, units="cm",res = 400)
-      barplot(table(Prem_vacci$age_vacci_mois[Prem_vacci$age_vacci_mois < 48]),
-           main = "Répartition de l'âge en mois à la première vaccination ROR,
-pour les enfants nés entre le 1er janvier 1993
-et le 31 décembre 2011, Corse-du-Sud",
-           xlab = "âge en mois - coupure à 48 mois", ylab = "effectif") 
+      png("sorties/ror/age-Prem_vacci%02d.png", width=25 ,height=15, units="cm",res = 400)
+            barplot(table(Prem_vacci$age_vacci_mois[Prem_vacci$age_vacci_mois < 48]),
+                 main = "Répartition de l'âge en mois à la première vaccination ROR,
+                  pour les enfants nés entre le 1er janvier 1993
+                  et le 31 décembre 2011, Corse-du-Sud",
+                 xlab = "âge en mois - coupure à 48 mois", ylab = "effectif") 
       dev.off()
 
       
@@ -397,12 +369,12 @@ cat("
       # analyse en tant que telle
       summary(Deuz_vacci$age_vacci_mois)
       # analyse de ce df
-      png("sorties/ror/age-deuxieme_vacci%01d.png", width=25 ,height=15, units="cm",res = 400)
-      barplot(table(Deuz_vacci$age_vacci_mois[Deuz_vacci$age_vacci_mois < 48]),
-           main = "Répartition de l'âge en mois lors de la deuxième vaccination ROR,
-pour les enfants nés entre le 1er janvier 1993
-et le 31 décembre 2011, Corse-du-Sud",
-           xlab = "âge en mois - coupure à 48 mois", ylab = "effectif") 
+      png("sorties/ror/age-deuxieme_vacci%02d.png", width=25 ,height=15, units="cm",res = 400)
+            barplot(table(Deuz_vacci$age_vacci_mois[Deuz_vacci$age_vacci_mois < 48]),
+                  main = "Répartition de l'âge en mois lors de la deuxième vaccination ROR,
+                  pour les enfants nés entre le 1er janvier 1993
+                  et le 31 décembre 2011, Corse-du-Sud",
+                  xlab = "âge en mois - coupure à 48 mois", ylab = "effectif") 
       dev.off()
 
 
