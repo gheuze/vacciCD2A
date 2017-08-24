@@ -7,6 +7,7 @@
 
 rm(list = ls())
 
+setwd("I:\\DIRECTION ACTION TERRITORIALE DE SANTE\\VSSE\\CIRE\\Dossiers MI\\Vaccination\\etude_CG2A\\analyse")
 load("donnees/df_pour_analyse.RData")
 
 vhb <- c("DTCPHIBHB","HA+HB","HB")
@@ -26,18 +27,6 @@ rownames(donnees_nat) <- c("3 doses")
 
       print(summary(lm(as.numeric(donnees_nat) ~ as.numeric(1998:2015))))
 
-# graphe evolution
-couleurs <- c("red")
-
-png("sorties/vhb/evolution_nat_CS24.png",width=25 ,height=15, units="cm",res = 400)
-matplot(t(donnees_nat),type="b",pch=1,xlab = "années", ylim = c(0,100), ylab = "taux de couverture vaccinal en %",
-         main = "Couverture vaccinale VHB à l'âge de 24 mois, 
-         analyse des CS 24 - France, 1998-2015 - résultats en %", xaxt="n",
-        col = couleurs)
-axis(1,at=1:18,labels=1998:2015)
-abline(h = 95, col = "darkorange",lty = 2)
-dev.off()
- 
 
 # fin analyse nationale vhb     
 #################################
@@ -394,11 +383,11 @@ cat("
       summary(primovacci$age_vacci_mois)
       # analyse de ce df
       png("sorties/vhb/age-primovacci%01d.png", width=25 ,height=15, units="cm",res = 400)
-      barplot(table(primovacci$age_vacci_mois[primovacci$age_vacci_mois < 60]),
-           main = "Répartition de l'âge en mois à la primovaccination VHB,
+      barplot(table(primovacci$age_vacci_mois[primovacci$age_vacci_mois < 49]),
+           main = "Répartition de l'âge en mois à la vaccination 3 doses VHB,
 pour les enfants nés entre le 1er janvier 1993
 et le 31 décembre 2011, Corse-du-Sud",
-           xlab = "âge en mois - coupure à 60 mois", ylab = "effectif") 
+           xlab = "âge en mois - coupure à 48 mois", ylab = "effectif") 
       dev.off()
 
 sink()      
