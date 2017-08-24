@@ -1,11 +1,11 @@
 # comparaison niveau national, CS24 et departedtptal
 
-graphe <- read.csv2("sorties/dtp/dtp_24 - Copie.csv",header = T)
+graphe <- read.csv2("sorties/dtp/dtp_24 - pour graphe.csv",header = T)
 
 colnames(graphe) <- 1995:2015
 rownames(graphe) <- c("CV nationale issue des CS 24", "CV nationale, issue des CS 24",
                       "CV 2A issue des CS 24", "CV 2A, issue des CS 24",
-                      "CV 2A issue de le base", "CV 2A, issue de le base")
+                      "CV 2A issue de la base", "CV 2A, issue de la base")
 
 couleurs <- c("red",rep("blue",2))
 
