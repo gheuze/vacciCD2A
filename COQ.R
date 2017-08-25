@@ -7,6 +7,7 @@
 
 rm(list = ls())
 
+setwd("I:\\DIRECTION ACTION TERRITORIALE DE SANTE\\VSSE\\CIRE\\Dossiers MI\\Vaccination\\etude_CG2A\\analyse")
 load("donnees/df_pour_analyse.RData")
 
 coq <- c("C","D(A)TC(A)P","DTC","DTCP","DTCPHIB","DTCPHIBHB","DTP CA+HIB","DTP+C(A)")
@@ -28,23 +29,6 @@ for (i in 1:2){
       print(summary(lm(as.numeric(donnees_nat[i,]) ~ as.numeric(1997:2015))))
       
 }
-
-
-
-
-# graphe evolution
-couleurs <- c("red", "black")
-
-png("sorties/coq/evolution_nat_CS24.png",width=25 ,height=15, units="cm",res = 200)
-matplot(t(donnees_nat),type="b",pch=1:2,xlab = "années", ylim = c(85,100),ylab = "taux de couverture vaccinal en %",
-         main = "Couverture vaccinale coqueluche à l'âge de 24 mois, 
-         analyse des CS 24 - France, 1997-2015 - résultats en % - axe des ordonnées débutant à 85 %", xaxt="n",
-        col = couleurs)
-axis(1,at=1:19,labels=1997:2015)
-legend(14,88,legend = rownames(donnees_nat), pch=1:2,col = couleurs, cex=0.8,bty="n",lwd=1)
-abline(h = 95, col = "darkorange",lty = 2)
-dev.off()
- 
 
 # fin analyse nationale coq     
 #################################
