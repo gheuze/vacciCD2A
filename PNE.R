@@ -7,6 +7,7 @@
 
 rm(list = ls())
 
+setwd("I:\\DIRECTION ACTION TERRITORIALE DE SANTE\\VSSE\\CIRE\\Dossiers MI\\Vaccination\\etude_CG2A\\analyse")
 load("donnees/df_pour_analyse.RData")
 
 pne <- c("PNEU13","PNEU7")
@@ -396,27 +397,30 @@ cat("
       summary(avant_2009$age_vacci_mois)
       summary(apres_2009$age_vacci_mois)
       
+      
+      
 
       # analyse de ce df
-      png("sorties/pne/age-primovacci%01d.png", width=25 ,height=15, units="cm",res = 400)
+      png("sorties/pne/age-primovacci%02d.png", width=25 ,height=15, units="cm",res = 400)
       
       barplot(table(avant_2009$age_vacci_mois[avant_2009$age_vacci_mois < 48]),
-           main = "Répartition de l'âge en mois à la vaccination 3 doses contre le pneumocoque,
-pour les enfants nés entre le 1er janvier 2006
-et le 31 décembre 2008, Corse-du-Sud",
+           main = "Répartition de l'âge en mois à la vaccination 3+1 doses contre le pneumocoque,
+                  pour les enfants nés entre le 1er janvier 2006
+                  et le 31 décembre 2008, Corse-du-Sud",
            xlab = "âge en mois - coupure à 48 mois", ylab = "effectif")
       
       barplot(table(apres_2009$age_vacci_mois[apres_2009$age_vacci_mois < 48]),
-           main = "Répartition de l'âge en mois à la vaccination 3 doses contre le pneumocoque,
-pour les enfants nés entre le 1er janvier 2009
-et le 31 décembre 2011, Corse-du-Sud",
+           main = "Répartition de l'âge en mois à la vaccination 2+1 doses contre le pneumocoque,
+                  pour les enfants nés entre le 1er janvier 2009
+                  et le 31 décembre 2011, Corse-du-Sud",
            xlab = "âge en mois - coupure à 48 mois", ylab = "effectif")
       
       apres_2009 <- apres_2009[apres_2009$datenaiss > as.Date("2009-12-31"),]
+      
       barplot(table(apres_2009$age_vacci_mois[apres_2009$age_vacci_mois < 48]),
-           main = "Répartition de l'âge en mois à la vaccination 3 doses contre le pneumocoque,
-pour les enfants nés entre le 1er janvier 2010
-et le 31 décembre 2011, Corse-du-Sud",
+           main = "Répartition de l'âge en mois à la vaccination 2+1 doses contre le pneumocoque,
+                  pour les enfants nés entre le 1er janvier 2010
+                  et le 31 décembre 2011, Corse-du-Sud",
            xlab = "âge en mois - coupure à 48 mois", ylab = "effectif") 
       
       dev.off()

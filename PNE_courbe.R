@@ -9,9 +9,9 @@ couleurs <- c("red","blue","blue")
 png("sorties/pne/evolution_CV_nat-reg-PMI.png",width=25 ,height=15, units="cm",res = 400)
       matplot(t(graphe),type = "b",pch = c(1,1,3),xlab = "années", ylim = c(0,100), ylab = "taux de couverture vaccinal en %",
                main = "Comparaison de l'évolution de la couverture vaccinale pneumocoque
-      à l'âge de 24 mois suivant les sources, 2006-2015", xaxt="n",lty = c(1,1,3),col = couleurs)
+      à l'âge de 24 mois suivant les sources, 2006-2015", xaxt="n",lty = c(1,3,3),col = couleurs)
       axis(1,at=1:10,labels=2006:2015)
-      legend(8,20,legend = rownames(graphe), pch = c(1,1,3),col = couleurs, cex=0.8,bty="n",lwd=1,lty = c(1,1,3))
+      legend(8,20,legend = rownames(graphe), pch = c(1,1,3),col = couleurs, cex=0.8,bty="n",lwd=1,lty = c(1,3,3))
       legend(8,7,legend = "objectif de vaccination", pch="",col = "darkorange", cex=0.8,bty="n",lwd=1,lty = 2)
       abline(h = 95, col = "darkorange",lty = 2)
 dev.off()
