@@ -11,7 +11,7 @@ couleurs <- c("red",rep("blue",2))
 
 png("sorties/hib/evolution_CV_nat-dep-PMI%02d.png",width=25 ,height=15, units="cm",res = 400)
 # figure sur les primovacci, cad lignes impaires du df, soit graphe[c(T,F),]
-      matplot(t(graphe[c(T,F),]),type = "b",pch = c(rep(1,2),3), xlab = "années", ylim = c(45,100),ylab = "taux de couverture vaccinal en %",
+      matplot(t(graphe[c(T,F),]),type = "b",pch = c(rep(1,2),3), xlab = "années", ylim = c(75,100),ylab = "taux de couverture vaccinal en %",
                main = "Comparaison de l'évolution de la primovaccination Hib
       à l'âge de 24 mois suivant les sources, 1995-2015 - axe des ordonnées débutant à 45 %", xaxt="n",lty = c(1,rep(3,2)),
               col = couleurs)
@@ -21,7 +21,7 @@ png("sorties/hib/evolution_CV_nat-dep-PMI%02d.png",width=25 ,height=15, units="c
       abline(h = 95, col = "darkorange",lty = 2)
 
 # figure sur les rappels, cad lignes paires du df, soit graphe[c(F,T),]
-      matplot(t(graphe[c(F,T),]),type = "b",pch = c(rep(5,2),4), xlab = "années", ylim = c(45,100),ylab = "taux de couverture vaccinal en %",
+      matplot(t(graphe[c(F,T),]),type = "b",pch = c(rep(5,2),4), xlab = "années", ylim = c(75,100),ylab = "taux de couverture vaccinal en %",
                main = "Comparaison de l'évolution du rappel Hib
       à l'âge de 24 mois suivant les sources, 1995-2015 - axe des ordonnées débutant à 45 %", xaxt="n",lty = c(1,rep(3,2)),
               col = couleurs)
