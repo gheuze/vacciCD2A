@@ -7,6 +7,7 @@
 
 rm(list = ls())
 
+setwd("I:\\DIRECTION ACTION TERRITORIALE DE SANTE\\VSSE\\CIRE\\Dossiers MI\\Vaccination\\etude_CG2A\\analyse")
 load("donnees/df_pour_analyse.RData")
 
 men <- c("MEN C")
